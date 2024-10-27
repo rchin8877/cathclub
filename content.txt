@@ -1,0 +1,228 @@
+-------------------------------------------------WORKFLOW----------------------------------------------
+Workflow
+    1. Prepare pt in the room
+        Ideally be in room for time-out (should occur prior to pt transfer)
+        Help transfer to table
+        Set up arm board with bluey (if radial access), foot pedal and control panel (unscrew lock on RHS and pull up and drag to the left, ensuring arrow does NOT reach end of metal bar. Leave the attached lead shield sticking out so nurse can easily drape)
+        Introduce yourself and ask for height/weight + pregnancy if required
+        Get pt sticker
+        Bring bed into holding bay, and if needed get it ready for end of examination (e.g. flatten and prepare slide-board)
+    2. Set up computers
+        Open EMR cathlab list and add a documentation for radiation dose and protocol
+            Open pt file by doublecking first column arrow
+            Go to documentation and click the + sign to add a new entry
+            Title: Radiation dose and protocol (procedure)
+            Using auto-text, pre-fill area being xrayed (usually thorax), date and consultant name.
+            Save (only sign at the end once dose details are typed in)
+        Open Microsoft Teams and add the case to the excel spreadsheet
+            Type in key details including start time of the case
+    3. Set up xray equipment
+        Open pt on Siemens
+            Find pt on scheduler (will only appear if arrived by cardio tech!)
+            Check details, enter height, weight, ward and the consultants initials
+        Bring tube in either manually or the preset positions (beware of table moving up at the end)
+        Open the pt on Sony screen (controls what appears on the monitors inside and outside the lab. Always set the haemo on the screen inside (lab) and the left CR (control room) screens)
+            If needed bring up previous imaging on connected PC and be ready to display on Sony 1
+        Change the screen display setting (e.g. half half life and assist screens)
+    4. During the examination - changes depending on procedures, but generally:
+        Be ready to save reference images (showing stenosis) in initial runs
+        Listen out for Dr asking to fluorosave
+        Collimate to border of heart when possible and move filter around to block glare
+        Generally start on 25 mag, then once engaged in artery go down to 20
+        Be ready to change the screen display setting (e.g. if using IVUS select a format with Sony)
+        Label images
+
+    5. Ending examination
+        Disable radiation and bring the tube out (preset position: transfer pt)
+        Go back in lab and help transfer pt back
+            Remove armboard and move pedal back
+            Bring bed in
+            Wipe down armboards and table
+            Change bin liners (find in bottom corner cupboards, fit in place with blue band)
+            From the adjacent storeroom grab a new bedsheet, blanket and 2 saline bags for the nurses
+        Close pt on the computer before going back to fill in the excel spreadsheet (add any intervention performed in comments e.g. LCx stent x 2 and update the procedure if necessary e.g. LHC PCI) and EMR documentation (this time clicking sign to complete)
+
+-------------------------------------------------ANATOMY-------------------------------------------------
+Cranial - LAD runs down
+Caudal - circumflex
+
+https://radiopaedia.org/cases/normal-coronary-angiogram-dsa?lang=gb
+
+
+
+
+
+
+-------------------------------------------------EQUIPMENT-----------------------------------------------
+
+      <!-----------------------------Siemens ----------------------------->
+- Turning off: make sure u turn off XWP first, then  turn off the Siemens Artis Q
+- Turning on: no specific order
+
+        <!-----------------------------Table----------------------------->
+- Press both tilt buttons to re-zero back to 0 tilt
+- Hold down orientation button to change. Make sure this matches where the console is! (Otherwise machine will not move as expected)
+
+
+        <!-----------------------------Tube----------------------------->
+- For all auto/preset movements:
+      - Hold and push forward to get list of presets. Push to 'scroll' through them
+      - Select desired position by clicking side buttons
+      - Hold and push forward to move into position
+      - Will appear on assist screen as moving into target position or movement completed
+- For manual movements:
+      - To move the whole C-arm unit back/forward and angle, push down whilst pressing side buttons
+      - To tilt the C-arm into cranial/caudal and RAO/LAO, just push down
+- Back of the joystick has up and down buttons to change SID (be careful of hitting pt)
+- Reset filter/collimators by pressing down
+- Magnification button on bottom right (start with 25 prior to engaging then drop to 20 once beginning to acquire in artery)
+- Final clean: drive machine in, and rotate whole c-arm to lateral to clean bottom easier
+
+        <!-----------------------------Fluoroscopy and Acquisitions----------------------------->
+Fluoroscopy
+- Depending on Dr, may go down to 4p/s or 6p/s (lower p/s means the imaging will be less smooth)
+- Ensure the bottom RDMP buttons are NOT selected (or else the reference image will overlay live image)
+- Default: stay on lowest setting (FL - )
+
+Acquisitions
+- May increase to VHH 2 or Coro BMI+ for the spiderview in large pts (going through dense area and at a steep angle)
+- Select the C-arm button to automatically display the reference image based on the tube position (only works with limited ~5 reference images)
+- For LV and aortograms, increase to 15 f/s for better image quality.
+- When dose is getting high, reduce by
+
+
+        <!----------------------------- Injection ----------------------------->
+- First select protocol, still checking with cardiologist what rate, volume and PSI they want (ask exact numbers, not just 'protocol/preset' as each radiologist has their preference)
+- Ensure ISI is on if injecting and acquiring automatically and not by hand-injection
+- Check for error stating need to re-wind syringe to remove air - make sure to let nurses inside know!
+- Make sure to end case once completed (will reset volume used/injected to start fresh for new pt)
+
+        <!-----------------------------Sony screen----------------------------->
+- Ensure correct pt and cardiologist is selected (otherwise unknown)
+- Finish once case is done
+- May be (very infrequently) used to record the case (so make sure each time the correct pt/dr is selected)
+
+
+        <!-----------------------------Troubleshooting ----------------------------->
+TABLE NOT MOVING
+- Re-zero tilt (even 0.4 degrees tilt which will appear as 0 on the screen will affect table movement)
+- Ensure lock is not selected on the touch screen
+- Check bedside and our console emergency brakes are not on
+
+TUBE NOT MOVING
+- Monitor sensors activated on roof railings
+- Tube sensors activated/pressing on something
+- 'Collision with pt': hold down preset position buttons 1 and 2.
+
+RESET MACHINES
+- WHilst holding preset buttons 1 and 2, press emergency button
+- Wait a few seconds before releasing the emergency button
+
+- Restart:
+  - Absolute final resort
+  - Let cardiologist know the table/tube will not be able to be moved for the next 10-15 minutes during restart
+  - Put table/tube in safe position first
+
+INCORRECT PT/DETAILS
+- Only correct once finished (otherwise half will be correct and half will be wrong; very hard to fix)
+- Tell superisor
+
+
+
+
+-------------------------------------------------PROCEDURES----------------------------------------------
+LHC (Left heart catheterisation)
+    Always 5 views of LCA, 3 views of RCA
+    Assess arteries after pt presenting w chest pain, positive echo stress test
+    May perform treatment on the spot or if complicated (e.g. multiple stenosis) leave to be discussed at conference (every Mon and Thurs)
+    Label images immediately taken post stent insertion or GTN (or take notes on the run number)
+    For post dilation of stent, STENTBOOST/CLEAR which has high rad dose will be used to clearly visualise stent walls - try to collimate tightly to stent
+
+    BONUSES
+        PCI (percutaneous coronary intervention) aka angioplasty
+            Bare-metal stent (mesh)
+                Most common?
+                Shorter duration of antiplatelet therapy = higher pt compliance, less chance of thrombosis/bleeding
+                Quicker to deploy? (More efficient for MI)
+            Drug-eluting (releases immunosuppressants or chemotherapeutic agents over 9-12months)
+                Most effective in smaller vessels likely to restenose
+        Left Ventriculogram/Aortogram
+            Change acquisition to 15f/s
+            Catheter advanced into left ventricle
+            Assess function and pressure
+            LV: get ejection fraction + assess for mitral regurgitation
+            A: Assess for aortic aneurysm, regurgitation + dissection
+        IMR (Index of microcirculatory resistance)
+            When large vessels are functioning well but pt still experiencing pain, the cause can be smaller vessels
+            IMR measures pressure and flow in smaller vessels, checking for spasms or decreased flow
+        FFR (fractional flow reserve)
+            Measures severity of stenosis - how the stenosis is impacting blood flow
+            Pressure is measured before and after the block (1=normal, 0.8=bad)
+            If determined to be causing significant ischaemia (reduced blood flow), then intervention will be performed
+        OCT (optical coherence tomography)
+            Intraluminal view of lumen pre and post stent
+            Used to differentiate btw thrombus and plaque
+        QCA (quantitative coronary analysis)
+            Performed in syngovia (click angio tab, calibrate vessel based on catheter size, select area of interest, create report and save)
+            Measures degree of stenosis
+        IVUS
+            Provides internal view of inner lumen + outer vessel wall (and plaque in between)
+            Used to decide stent size + length (also dependent on lesions characteristics e.g. diffuse disease making lumen + vessel wall difficult to differentiate may require a more aggresive approach/larger stent)
+
+CRM
+Pacemaker
+    Pacing: Electrical stimulation of the myocardium to depolarise, causing a mechanical contraction (when the heart fails to do so)
+    Transcutaneous pacemakers: Cardiac arrest complicated by asystole, severe symptomatic bradycardia
+    Epicardial: Used after cardiac surgery to augment cardiac output
+    Leads
+        Negative electrode is used to deliver the impulse
+        Positive electrode completes the circuit and enables detection of the hearts intrinsic rhythm
+    Pacing terms
+        Stimulus: spike (energy has been delivered)
+        Captured: pacing stimulus causes depolarisation
+
+Ablations (Percutaneous Septal Myocardial Ablation)
+    Indications: treatment for hypertropic obstructive cardiomyopathy (HOCM), thickened heart muscle most often in the septum and LV
+    1. Temporary pacing wire inserted as the proximal septal branches of the LAD supply the conduction system therefore AV block is a common
+    2. Using standard coronary angioplasty methods, the most proximal septal branch is accessed
+    3. Contast is injected to check for absence of backflow into the LAD itself. Correct catheter placement is also confirmed by myocardial contrast echocardiography
+    4. Dehydrated ethanol, usually 1 ml at a time, is then injected slowly through the balloon catheter, causing a carefully targeted myocardial infarction
+    Common complications:
+        3rd degree AV block occurs during the procedure in 60%-70% of patients and 40% will require PPM, especially if they have a L)BBB prior to procedure.
+        RBBB is present in approximately one half of patients
+        Coronary dissection, PE, heart block
+
+Loop Monitors
+    Indications: arrhythmia, stroke, fainting
+    Monitors the heart rate and rhythm for 3 years
+
+STRUCTURAL
+TAVI (Transcatheter Aortic Valve Implantation)
+    Indications: aortic stenosis in pts unsuitable for open-heart surgery
+    1. Diseased valve fissures are pushed away with balloon
+    2. Temporary right ventricular cardiac pacing lead is inserted venously
+        Rapid cardiac pacing is performed to reduce cardiac output to ensure balloon does not migrate out from annulus (transition point between left ventricle and aortic root)
+        Pacing lead is available for back up as AV block may be transitional post-procedure
+    3. TAVI prosthesis is loaded in a special delivery catheter to be deployed
+    4. Contrast is used to check for aortic regurgitation and ensure coronary ostium is not obstructed by valve frame
+    Common complications:
+        Mild AR (annular rupture)
+        Arrhythmia
+
+Mitral Clipping
+    Indications: Mitral Regurgitation for patients denied surgery due to high risk
+    Contraindications: Active endocarditis, rheumatic valve disease, mitral stenosis
+    1. Pt under GA
+    2. Guided by TOE (trans-oesophageal echocardiogram)
+    3. Access valve via femoral vein, into the right atrium and through the septum to the left atrium!
+    4. Clip positioned on opposing edges of anterior and posterior leaflets of the mitral valve
+    5. 1 or 2 clips may be deployed
+
+ASD/PFO Closure
+    ASD (Atrial Septal Defect): A hole between the heart's two upper chambers (the atria)
+        Typically a congenital defect
+        Blood flows from LA to RA, increasing volume of blood in RA = increased work in right side
+        Oxygenated and deoxygenated blood mixed together
+    PFO (Patent Foramen Ovale): Foramen ovale failed to close during foetal development
+    Tx depends on the type and size of the defect, its effect on the heart, and the presence of any other related conditions, such as pulmonary hypertension, valve disease or CAD are present.
+        Septal occluder used to block the hole and facilitate tissue growth

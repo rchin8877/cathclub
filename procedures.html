@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--ensure browser uses latest rendering mode-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--enables scaling for mobile devices-->
+    <title>Cath Club</title>
+    <link rel="icon" href="Images/cc_icon.png" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/procedures.css">
+
+</head>
+
+<body>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="Images/cathclub.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar"> <!-- ARIA: Accessible Rich Internet Applications, aria-controls points to the id of another element on the page, typically the one that will be shown -->
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
+              <!-- Navigation Bar Content-->
+               <!--create button to toggle/exit the offcanvas, with div element set to flex-->
+               <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar">
+                  <div class="d-flex justify-content-between p-3">
+                    <a class="navbar-brand" href="#"><img src="Images/cathclub.png"></a>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+            </button>
+            <ul class="navbar-nav ms-lg-auto p-4 p-lg-0">
+                <li class="nav-item px-3 px-lg-0 py-lg-4">
+                    <a class="nav-link" href="home_page.html">Home</a>
+                  </li>
+
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="anatomy.html" id="navbarDropdown" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                        Anatomy
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="anatomy.html#LCA">LCA</a></li>
+                        <li><a class="dropdown-item" href="anatomy.html#RCA">RCA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="anatomy.html#cardiac_conduction_sys">Cardiac Conduction System</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="equipment.html" id="navbarDropdownEquipment" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                        Equipment
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="equipment.html#siemens">Siemens/Syngovia Computer</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#table">Control Module</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#injection">Injection</a></li>
+                        <li><a class="dropdown-item" href="equipment.html#sony-screen">Sony Screen</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#troubleshooting">Troubleshooting</a></li>
+                    </ul>
+                 </li>
+
+                    <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                        <a class="nav-link dropdown-toggle" href="procedures.html" id="navbarDropdownProcedures" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                            Procedures
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="procedures.html#LHC">LHC</a></li>
+                            <li><a class="dropdown-item" href="procedures.html#CRM">CRM</a></li>
+                            <li><a class="dropdown-item" href="procedures.html#Structural">Structural</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="procedures.html#PICC">PICC Lines</a></li>
+                        </ul>
+                      </li>
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4">
+                    <a class="nav-link" href="dictionary.html">Dictionary</a>
+                  </li>
+            </ul> <!--autoalign right when screen is large-->
+            </div>
+    </nav>
+    </section>
+<!----------------------------------------title---------------------------------------------------->
+    <section id="procedures" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="mb-4">Procedures</h1>
+            <p> The first procedure you will learn about is the LHC (left heart catheterisation). Following this will be CRM, TAVIs and less common PICC lines. Don't let your knowledge skip a beat—keep reading to understand the procedures in the cath lab! </p>
+            </div>
+          </div>
+      </section>
+
+<!---------------------------------------------------- LHC ---------------------------------------------------->
+<div class="content">
+<section id="LHC" class="container mt-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="mb-4" style="color:#549dd1">Left Heart Catheterisations (LHC or left heart caths)</h2>
+            <h4 class="mb-4">Indications/purpose</h4>
+            <ul>
+                <li>Assess arteries after patient presents with chest pain, positive echo stress test</li>
+                <li>May perform treatment on the spot or leave complicated cases (e.g., multiple stenosis) to be discussed at a conference (every Mon and Thurs)</li>
+            </ul>
+            <h4 class="mb-4">Key Actions</h4>
+            <ul>
+                <li> 5 views of LCA <strong>and</strong> 3 views of RCA are always performed in order to assess the heart in its entirety prior to any intervention
+                <li>Label images immediately post stent insertion and when GTN is administered (or take notes on the run number)
+                    <ul>
+                        <li>Listen out for <strong>GTN or nitrate</strong> and the <strong>stent size</strong> used!</li>
+                    </ul>
+                </li>
+                <li>For post dilation of stent, STENTBOOST/CLEAR (which has a high radiation dose) will be used to clearly visualise stent walls – collimate tightly to the stent</li>
+            </ul>
+            <h4 class="mb-4">Additional Imaging/Tests</h4>
+                <div class="container  mt-4">
+                    <div class="tab-container1">
+                    <ul class="nav nav-tabs" id="procedureTabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pci-tab" data-bs-toggle="tab" href="#pci" role="tab" aria-controls="pci" aria-selected="true">PCI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="lv-tab" data-bs-toggle="tab" href="#lv" role="tab" aria-controls="lv" aria-selected="false">Left Ventriculogram/Aortogram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="imr-tab" data-bs-toggle="tab" href="#imr" role="tab" aria-controls="imr" aria-selected="false">IMR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="ffr-tab" data-bs-toggle="tab" href="#ffr" role="tab" aria-controls="ffr" aria-selected="false">FFR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="oct-tab" data-bs-toggle="tab" href="#oct" role="tab" aria-controls="oct" aria-selected="false">OCT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="qca-tab" data-bs-toggle="tab" href="#qca" role="tab" aria-controls="qca" aria-selected="false">QCA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="ivus-tab" data-bs-toggle="tab" href="#ivus" role="tab" aria-controls="ivus" aria-selected="false">IVUS</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content mt-4" id="procedureTabContent">
+                        <div class="tab-pane fade show active" id="pci" role="tabpanel" aria-labelledby="pci-tab">
+                            <h5>PCI (Percutaneous Coronary Intervention)</h5>
+                            <ul>
+                                <li><strong>Bare-metal Stent:</strong> Short duration of antiplatelet therapy, higher compliance, less thrombosis risk.</li>
+                                <li><strong>Drug-eluting Stent:</strong> Releases agents over 9-12 months; effective in smaller vessels.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="lv" role="tabpanel" aria-labelledby="lv-tab">
+                            <h5>Left Ventriculogram/Aortogram</h5>
+                            <ul>
+                                <li>Change acquisition to 15 f/s.</li>
+                                <li>Catheter advanced into left ventricle to assess function and pressure.</li>
+                                <li>LV: Calculate ejection fraction; assess for mitral regurgitation.</li>
+                                <li>A: Check for aortic aneurysm, regurgitation, and dissection.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="imr" role="tabpanel" aria-labelledby="imr-tab">
+                            <h5>IMR (Index of Microcirculatory Resistance)</h5>
+                            <ul>
+                                <li>Checks pressure and flow in smaller vessels when larger vessels function well but patient has pain.</li>
+                                <li>Helps identify spasms or decreased flow in smaller vessels.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="ffr" role="tabpanel" aria-labelledby="ffr-tab">
+                            <h5>FFR (Fractional Flow Reserve)</h5>
+                            <ul>
+                                <li>Measures severity of stenosis; calculates blood flow impact.</li>
+                                <li>If FFR ≤ 0.8, intervention may be necessary. FFR of 1 means the pressure before and after the stenosis is equal, thus normal.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="oct" role="tabpanel" aria-labelledby="oct-tab">
+                            <h5>OCT (Optical Coherence Tomography)</h5>
+                            <ul>
+                                <li>Provides intraluminal view of lumen pre- and post-stent.</li>
+                                <li>Useful for differentiating thrombus from plaque.</li>
+                                <li>May also be used to identify if stenting has caused dissection, indicated by a 'flap' in the lumen wall.</li>
+                            </ul>
+                        </div>
+
+                    <div class="tab-pane fade" id="qca" role="tabpanel" aria-labelledby="qca-tab">
+                        <h5>QCA (Quantitative Coronary Analysis)</h5>
+                        <ul>
+                            <li>Performed in syngovia </li>
+                            <li>Process: Click the angio tab, calibrate vessel based on catheter size, select area of interest, create report, and save.</li>
+                            <li>Purpose: Measures the degree of stenosis.</li>
+                        </ul>
+                    </div>
+                <div class="tab-pane fade" id="ivus" role="tabpanel" aria-labelledby="ivus-tab">
+                    <h5>IVUS (Intravascular Ultrasound)</h5>
+                    <ul>
+                        <li>Provides an internal view of the inner lumen and outer vessel wall.</li>
+                        <li>Helps in deciding stent size and length, especially in cases of diffuse disease affecting lumen clarity.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!---------------------------------------CRM-------------------------------------------------------->
+<section id="CRM" class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h2 class="mb-4" style="color:#67bcdb">Cardiac Rhythm Management (CRM)</h2>
+
+            <h4 class="mb-4">Indications/Purpose</h4>
+            <ul>
+                <li>Diagnose arrhythmia</li>
+                <li>Record electrical signals</li>
+            </ul>
+
+            <h4 class="mb-4">Key Actions</h4>
+            <ul>
+                <li>Stay awake</li>
+                <li>Get some admin work done</li>
+            </ul>
+
+            <h4 class="mb-4">CRM Examinations</h4>
+            <div class="container mt-4">
+                <div class="tab-container2">
+                    <ul class="nav nav-tabs" id="procedureTabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="ablation-tab" data-bs-toggle="tab" href="#ablation" role="tab" aria-controls="ablation" aria-selected="true">Ablation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pacemakers-tab" data-bs-toggle="tab" href="#pacemakers" role="tab" aria-controls="pacemakers" aria-selected="false">Pacemakers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="loop-monitors-tab" data-bs-toggle="tab" href="#loop-monitors" role="tab" aria-controls="loop-monitors" aria-selected="false">Loop Monitors</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content mt-4" id="procedureTabContent">
+                        <!-- Ablation Content -->
+                        <div class="tab-pane fade show active" id="ablation" role="tabpanel" aria-labelledby="ablation-tab">
+                            <h5>Ablation</h5>
+                            <ul>
+                                <li>Used to treat abnormal heart rhythms by ablating small areas of heart tissue.</li>
+                                <li>Requires precision in locating arrhythmogenic areas.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Pacemakers Content -->
+                        <div class="tab-pane fade" id="pacemakers" role="tabpanel" aria-labelledby="pacemakers-tab">
+                            <h5>Pacemakers</h5>
+                            <ul>
+                                <li>Monitors and regulates heartbeat.</li>
+                                <li>Implantation typically performed in a minimally invasive procedure.</li>
+                                <li>Regular monitoring post-procedure to check battery life and device function.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Loop Monitors Content -->
+                        <div class="tab-pane fade" id="loop-monitors" role="tabpanel" aria-labelledby="loop-monitors-tab">
+                            <h5>Loop Monitors</h5>
+                            <ul>
+                                <li>Implanted devices for continuous monitoring of heart rhythm.</li>
+                                <li>Detects sporadic arrhythmias not captured during standard monitoring.</li>
+                                <li>Stored data is periodically reviewed to assess for irregularities.</li>
+                            </ul>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------------------------------Structural-------------------------------------------------------->
+<section id="Structural" class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h2 class="mb-4" style="color:#e3888d">Structural</h2>
+
+            <h4 class="mb-4">Indications/Purpose</h4>
+            <ul>
+                <li>Abnormalities with the heart structure (walls/septum and valves)</li>
+            </ul>
+            <h4 class="mb-4">Key Actions</h4>
+            <ul>
+                <li>Stay awake</li>
+                <li>Get some admin work done</li>
+            </ul>
+
+            <h4 class="mb-4">Structural Examinations</h4>
+            <div class="container mt-4">
+                <div class="tab-container3">
+                    <ul class="nav nav-tabs" id="structuralProcedureTabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="tavi-tab" data-bs-toggle="tab" href="#tavi" role="tab" aria-controls="tavi" aria-selected="true">TAVI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="mitral-tab" data-bs-toggle="tab" href="#mitral" role="tab" aria-controls="mitral" aria-selected="false">Mitral Clipping</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="asd-pfo-tab" data-bs-toggle="tab" href="#asd-pfo" role="tab" aria-controls="asd-pfo" aria-selected="false">ASD/PFO Closure</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content mt-4" id="structuralProcedureTabContent">
+                        <!-- TAVI Content -->
+                        <div class="tab-pane fade show active" id="tavi" role="tabpanel" aria-labelledby="tavi-tab">
+                            <h5>TAVI</h5>
+                                <h6>Indications</h6>
+                                    <p><strong>Aortic stenosis</strong> in patients unsuitable for open-heart surgery</p>
+                                    <h6>Procedure Steps</h6>
+                                    <ol>
+                                        <li>
+                                            <strong>Balloon dilation:</strong> Diseased valve fissures are pushed away with a balloon.
+                                        </li>
+                                        <li>
+                                            <strong>Temporary right ventricular cardiac pacing:</strong> A pacing lead is inserted venously.
+                                            <ul>
+                                                <li>
+                                                    The pacing lead serves as a backup, as <strong>AV block</strong> may be transitional post-procedure.
+                                                </li>
+                                                <li>
+                                                    Rapid cardiac pacing is performed to reduce cardiac output to ensure balloon does not migrate out from annulus (transition point between left ventricle and aortic root)
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>TAVI prosthesis deployment:</strong> The prosthesis is loaded in a special delivery catheter to be deployed.
+                                        </li>
+                                        <li>
+                                            <strong>Contrast use:</strong> Contrast is used to check for <strong>aortic regurgitation</strong> and ensure the <strong>coronary ostium</strong> is not obstructed by the valve frame.
+                                        </li>
+                                    </ol>
+                                    <h6>Common Complications</h6>
+                                    <ul>
+                                        <li><strong>Mild AR</strong> (annular rupture)</li>
+                                        <li><strong>Arrhythmia</strong></li>
+                                    </ul>
+
+                        </div>
+
+                        <!-- Mitral Clipping Content -->
+                        <div class="tab-pane fade" id="mitral" role="tabpanel" aria-labelledby="mitral-tab">
+                            <h5>Mitral Clipping</h5>
+                            <h6>Indications</h6>
+                                <p><strong>Mitral Regurgitation</strong> for patients denied surgery due to <strong>high risk</strong>.</p>
+                                <h6>Contraindications</h6>
+                                <p><strong>Active endocarditis</strong>, <strong>rheumatic valve disease</strong>, and <strong>mitral stenosis</strong>.</p>
+                                <h6>Procedure Steps</h6>
+                                <ol>
+                                    <li><strong>General Anesthesia (GA):</strong> Patient is placed under general anesthesia.</li>
+                                    <li>
+                                        <strong>Guided by TOE:</strong> Procedure is guided by <strong>trans-oesophageal echocardiogram (TOE)</strong>.
+                                    </li>
+                                    <li>
+                                        <strong>Access:</strong> Access the valve via the <strong>femoral vein</strong>, into the right atrium and through the septum to the left atrium.
+                                    </li>
+                                    <li>
+                                        <strong>Clip positioning:</strong> Clip is positioned on the opposing edges of the anterior and posterior leaflets of the mitral valve.
+                                    </li>
+                                    <li>
+                                        <strong>Clip deployment:</strong> 1 or 2 clips may be deployed.
+                                    </li>
+                                </ol>
+                        </div>
+                        <!-- ASD/PFO Closure Content -->
+                        <div class="tab-pane fade" id="asd-pfo" role="tabpanel" aria-labelledby="asd-pfo-tab">
+                            <h5>ASD/PFO Closure</h5>
+                            <h6>ASD (Atrial Septal Defect)</h6>
+                            <p>A hole between the heart's two upper chambers (the atria), typically a <strong>congenital defect</strong>.</p>
+                            <ul>
+                                <li>Blood flows from <strong>Left Atrium (LA)</strong> to <strong>Right Atrium (RA)</strong>, increasing volume of blood in the RA, leading to increased work on the right side.</li>
+                                <li>Results in mixing of <strong>oxygenated</strong> and <strong>deoxygenated blood</strong>.</li>
+                            </ul>
+                            <h6>PFO (Patent Foramen Ovale)</h6>
+                            <p>A condition where the <strong>foramen ovale</strong> failed to close during fetal development.</p>
+                            <h6>Treatment</h6>
+                            <p>Treatment depends on the type and size of the defect, its effect on the heart, and the presence of any other related conditions, such as <strong>pulmonary hypertension</strong>, <strong>valve disease</strong>, or <strong>coronary artery disease (CAD)</strong>.</p>
+                            <p>A <strong>septal occluder</strong> is used to block the hole and facilitate tissue growth.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------------------------------PICC Lines-------------------------------------------------------->
+<section id="PICC" class="container mt-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="mb-4" style="color:#c75b61">PICC Lines</h2>
+            <h4 class="mb-4">Set Up</h4>
+            <ul>
+                <li>Move control panels to other side</li>
+                <li>Move screen to opposite side</li>
+            </ul>
+            <h4 class="mb-4">Key Actions</h4>
+            <ul>
+                <li>As per fluoro PICC line
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<script src="homepage.js"></script>
+
+</body>

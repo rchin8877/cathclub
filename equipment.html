@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--ensure browser uses latest rendering mode-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--enables scaling for mobile devices-->
+    <title>Cath Club</title>
+    <link rel="icon" href="Images/cc_icon.png" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/equipment.css">
+
+</head>
+
+<body>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="Images/cathclub.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar"> <!-- ARIA: Accessible Rich Internet Applications, aria-controls points to the id of another element on the page, typically the one that will be shown -->
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
+              <!-- Navigation Bar Content-->
+               <!--create button to toggle/exit the offcanvas, with div element set to flex-->
+               <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar">
+                  <div class="d-flex justify-content-between p-3">
+                    <a class="navbar-brand" href="#"><img src="Images/cathclub.png"></a>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+            </button>
+            <ul class="navbar-nav ms-lg-auto p-4 p-lg-0">
+                <li class="nav-item px-3 px-lg-0 py-lg-4">
+                    <a class="nav-link" href="home_page.html">Home</a>
+                  </li>
+
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="anatomy.html" id="navbarDropdown" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                        Anatomy
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="anatomy.html#LCA">LCA</a></li>
+                        <li><a class="dropdown-item" href="anatomy.html#RCA">RCA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="anatomy.html#cardiac_conduction_sys">Cardiac Conduction System</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="equipment.html" id="navbarDropdownEquipment" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                        Equipment
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="equipment.html#siemens">Siemens/Syngovia Computer</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#table">Control Module</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#injection">Injection</a></li>
+                        <li><a class="dropdown-item" href="equipment.html#sony-screen">Sony Screen</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#troubleshooting">Troubleshooting</a></li>
+                    </ul>
+                 </li>
+
+                    <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                        <a class="nav-link dropdown-toggle" href="procedures.html" id="navbarDropdownProcedures" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                            Procedures
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="procedures.html#LHC">LHC</a></li>
+                            <li><a class="dropdown-item" href="procedures.html#CRM">CRM</a></li>
+                            <li><a class="dropdown-item" href="procedures.html#Structural">Structural</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="procedures.html#PICC">PICC Lines</a></li>
+                        </ul>
+                      </li>
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4">
+                    <a class="nav-link" href="dictionary.html">Dictionary</a>
+                  </li>
+            </ul> <!--autoalign right when screen is large-->
+            </div>
+    </nav>
+    </section>
+<!---------------------------------------------------- Title ---------------------------------------------------->
+
+      <section id="heart-vessels" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="mb-4">Equipment</h1>
+            <p>Familiarise yourself with the equipment you are responsible for assisting with during examinations. You will learn as you go, but have a basic understanding of the different machines you will encounter and for what purposes. Be sure to check out the troubleshoot section when things get out of rhythm! </p>
+            </div>
+
+<!---------------------------------------------------- Siemens/Syngovia Computer ---------------------------------------------------->
+      <section id="siemens" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="mb-4" style="color:#549dd1">Siemens/Syngovia Computer</h2>
+                <ul>
+                    <li><strong>Turning off:</strong> Make sure you turn off XWP first, then turn off the Siemens Artis Q (otherwise XWP will not be turned off properly/hard shutdown</li>
+                    <li><strong>Turning on:</strong> No specific order</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<!---------------------------------------------------- Control Module ---------------------------------------------------->
+    <section id="module-controls" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="mb-4" style="color:#67bcdb">Control Module</h2>
+            <div class="row mt-1 table_img d-flex justify-content-center">
+                <figure>
+                    <img src="Images/eq4.png" alt="Table_controls_eq3" class="img-fluid mx-auto" />
+                </figure>
+            </div>
+         </div>
+        </div>
+    </section>
+<!---------------------------------------------------- Table ---------------------------------------------------->
+    <section id="table" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+              <h3 class="mb-4" style="color:#67bcdb">Table</h3>
+                <ul>
+                    <li>Hold both tilt buttons to re-zero back to 0 tilt.</li>
+                    <li>Hold down the orientation button to change. Make sure this matches where the console is! (Otherwise, the machine will not move as expected.)</li>
+                </ul>
+                <div class="row mt-1 table_img d-flex justify-content-center">
+                    <div class="col-md-6">
+                      <figure>
+                        <img src="Images/eq1.png" alt="Table_controls" class="img-fluid" />
+                      </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+<!---------------------------------------------------- Tube ---------------------------------------------------->
+    <section id="tube" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h3 class="mb-4" style="color:#67bcdb">Tube</h3>
+                <h5>Auto/Preset Movements</h5>
+                <ul>
+                    <li>Hold and push forward to get a list of presets. Push to 'scroll' through them.</li>
+                    <li>Select the desired position by clicking side buttons.</li>
+                    <li>Hold and push forward to move into position.</li>
+                    <li>Will appear on assist screen as moving into target position or movement completed.</li>
+                </ul>
+                <h5>Manual Movements</h5>
+                <ul>
+                    <li>To move the whole C-arm unit back/forward and angle, push down whilst pressing side buttons.</li>
+                    <li>To tilt the C-arm into cranial/caudal and RAO/LAO, just push down.</li>
+                </ul>
+                <ul>
+                    <li>Back of the joystick has up and down buttons to change SID (be careful of hitting pt).</li>
+                    <li>Reset filter/collimators by pressing down.</li>
+                    <li>Magnification button on bottom right (start with 25 prior to engaging then drop to 20 once beginning to acquire in artery).</li>
+                    <li>Final clean: drive machine in, and rotate whole C-arm to lateral to clean bottom easier.</li>
+                </ul>
+                <div class="row mt-1 table_img">
+                    <div class="col-md-6 text-center"> <!-- First Column -->
+                        <figure>
+                            <img src="Images/eq2.png" alt="Table_controls_eq2" class="img-fluid mx-auto" />
+                        </figure>
+                    </div>
+                    <div class="col-md-6 text-center"> <!-- Second Column -->
+                        <figure>
+                            <img src="Images/eq3.png" alt="Table_controls_eq3" class="img-fluid mx-auto" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!---------------------------------------------------- Screening ---------------------------------------------------->
+    <section id="screening" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="mb-4" style="color:#A1D6E8">Screening (Fluoroscopy and Acquisitions)</h2>
+            <div class="row mt-1 table_img d-flex justify-content-center">
+                <div class="col-md-6">
+                  <figure>
+                    <img src="Images/eq5.png" alt="Table_controls" class="img-fluid mx auto" />
+                  </figure>
+            </div>
+                <h4>Fluoroscopy</h4>
+                <ul>
+                    <li>Depending on Dr, may go down to 4p/s or 6p/s (lower p/s means the imaging will be less smooth).</li>
+                    <li>Ensure the bottom RDMP buttons are NOT selected (or else the reference image will overlay live image).</li>
+                    <li>Default: stay on lowest setting (FL -).</li>
+                </ul>
+                <h4>Acquisitions</h4>
+                <ul>
+                    <li>May increase to VHH 2 or Coro BMI+ for the spiderview in large pts (going through dense area and at a steep angle).</li>
+                    <li>Select the C-arm button to automatically display the reference image based on the tube position (only works with limited ~5 reference images).</li>
+                    <li>For LV and aortograms, increase to 15 f/s for better image quality.</li>
+                    <li>When dose is getting high, reduce by.</li>
+                </ul>
+                <div class="row mt-1 table_img d-flex justify-content-center">
+                    <div class="col-md-6">
+                      <figure>
+                        <img src="Images/eq6.png" alt="Table_controls" class="img-fluid" />
+                      </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!---------------------------------------------------- Injection ---------------------------------------------------->
+    <section id="injection" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="mb-4"  style="color:#e3888d">Injection</h2>
+                <ul>
+                    <li>First select protocol, still checking with cardiologist what rate, volume, and PSI they want (ask exact numbers, not just 'protocol/preset' as each radiologist has their preference).</li>
+                    <li>For arteries, PSI will never exceed 300 (risk of perforation).</li>
+                    <li>Ensure ISI is on if injecting and acquiring automatically and not by hand-injection.</li>
+                    <li>Check for error stating need to re-wind syringe to remove air - make sure to let nurses inside know!</li>
+                    <li>Make sure to end case once completed (will reset volume used/injected to start fresh for new pt).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<!---------------------------------------------------- Sony-screen ---------------------------------------------------->
+    <section id="sony-screen" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="mb-4"  style="color:#e3888d">Sony Screen</h2>
+                <ul>
+                    <li>Ensure correct pt and cardiologist is selected (otherwise unknown).</li>
+                    <li>Finish once case is done.</li>
+                    <li>May be (very infrequently) used to record the case (so make sure each time the correct pt/dr is selected).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<!---------------------------------------------------- Troubleshooting ---------------------------------------------------->
+    <section id="troubleshooting" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="mb-4" style="color:#c75b61" >Troubleshooting</h2>
+                <h3>Table Not Moving</h3>
+                <ul>
+                    <li>Re-zero tilt (even 0.4 degrees tilt which will appear as 0 on the screen will affect table movement).</li>
+                    <li>Ensure lock is not selected on the touch screen.</li>
+                    <li>Check bedside and our console emergency brakes are not on.</li>
+                </ul>
+
+                <h3>Tube Not Moving</h3>
+                <ul>
+                    <li>Monitor sensors activated on roof railings.</li>
+                    <li>Tube sensors activated/pressing on something.</li>
+                    <li>'Collision with pt': hold down preset position buttons 1 and 2.</li>
+                </ul>
+
+                <h3>Reset Machines</h3>
+                <ul>
+                    <li>While holding preset buttons 1 and 2, press emergency button.</li>
+                    <li>Wait a few seconds before releasing the emergency button.</li>
+                </ul>
+                <h4>Restart:</h4>
+                <ul>
+                    <li>Absolute final resort.</li>
+                    <li>Let cardiologist know the table/tube will not be able to be moved for the next 10-15 minutes during restart.</li>
+                    <li>Put table/tube in safe position first.</li>
+                </ul>
+
+                <h3>Incorrect pt details/examination</h3>
+                <ul>
+                    <li>Only correct once finished (otherwise half will be correct and half will be wrong; very hard to fix)</li>
+                    <li>Tell supervisor</li>
+                </ul>
+
+        </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script>
+
+
+<script src="homepage.js"></script>
+
+</body>

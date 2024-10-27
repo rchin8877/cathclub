@@ -1,0 +1,24 @@
+Blog Day 1
+Started my day off a bit frazzled since it was my first time parking in the underground parking at VHH! (Pro tip: tap your card on the yellow stand that looks like the door swipe entries, not the actual typical parking ticket one lol + note to self: any new places = extra 15min early). Once I got to the labs it was a little hectic since a couple techs were off, but after some quick introductions, I settled into lab 4 where I began my first examination! Despite the chaos, Jo explained things to me as we went and I began getting into the weeds of using the controls, the workflow and other computer bits and bots. One of the first things I noticed was how friendly and team-driven everyone was - from the techs to the consultants, everyone was so welcoming and created such a fun and supportive environment. The labs and general department feel state-of-the-art, with shiny new equipment. After this, we continued with similar LHC cases, with one proceeding to PCI (percutaneous coronary intervention) due to a stenosed vessel. Another case which found multiple stenosis was not treated, and would later be discussed at the conference (the pt may have to undergo open-heart surgery due to the complex nature).
+
+We ended the day with an emergency STEMI case (ST elevated myocardial infarction) and this is where I experienced the 'real-deal'. The pt was known to have a complicated history, and the first 2 attempts at puncture failed due to blocked femoral arteries! (Jo was not surprised, noticing how blue the pts legs were when we slid them straight onto our table) At that point I wondered what would happen if we just couldn't get access to the heart at all. Throughout the examination, the most important task for us was listening for when the Drs wanted a roadmap (including the fem/radial arteries being accessed) and displaying the roadmap on the 'assist' screen (it is also important to select the correct set up they prefer, e.g. half live screen, half assist screen although this may be limited to each computers machine). They also occassionally asked us to move the c-arm into certain positions. Also something to be careful was the number of people walking in and out the lab, potentially lead-less! Unfortuantely the automatic doors at the back open wide and don't close quickly so the people just outside (e.g. Drs on ECMO standby) should be wearing lead as well. Although it was a high stress situation, I felt reassured seeing how efficiently and switfly every team member on the case was - controlled chaos.
+
+Overall, it was a very productive. eye-opening and fulfilling day. I feel so lucky to begin my cathlab training here - the only heart hospital in victoria! I know I am going to learn a lot and see some cool cases.
+
+Since I wasn't able to access the workflow pdf that Penny reccomended I read, I quickly flicked through that with Jo (altho I didn't really need it anyways since she went through everything with me).
+
+
+Dont worry if you dont
+Really, even if you came into cathlab knowing nothing, keep asking questions (don't feel stupid, everyone is super friendly and willing to help) and eventually you will become a master at it!
+
+
+TIL
+1. Everything.
+2. IVUS measures lumen and vessel wall. When using QCA ensure calibration of vessel is correct to get comparable results.
+3. Fentynl = histamines released = itchy nose
+4. Air Kerma, PSD, DAP, time.
+5. Restarting seimens may take up to 10minutes, proceed with warning (to Drs/nurses that nothing will be able to be moved incl table/tube. so go to CPR position etc.)
+
+1. Adenosine does not dilate vessels, but mimics exercise and puts stress on the heart. Used prior to FFR
+2. Curly whirly vessels = likely hypertension
+3. OCT flap = disection. Fix with stent in stent

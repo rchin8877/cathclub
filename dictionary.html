@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--ensure browser uses latest rendering mode-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--enables scaling for mobile devices-->
+    <title>Cath Club</title>
+    <link rel="icon" href="Images/cc_icon.png" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/navbar.css">
+
+</head>
+
+<body>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="Images/cathclub.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar"> <!-- ARIA: Accessible Rich Internet Applications, aria-controls points to the id of another element on the page, typically the one that will be shown -->
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
+              <!-- Navigation Bar Content-->
+               <!--create button to toggle/exit the offcanvas, with div element set to flex-->
+               <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar">
+                  <div class="d-flex justify-content-between p-3">
+                    <a class="navbar-brand" href="#"><img src="Images/cathclub.png"></a>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+            </button>
+            <ul class="navbar-nav ms-lg-auto p-4 p-lg-0">
+                <li class="nav-item px-3 px-lg-0 py-lg-4">
+                    <a class="nav-link" href="home_page.html">Home</a>
+                  </li>
+
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="anatomy.html" id="navbarDropdown" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                        Anatomy
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="anatomy.html#LCA">LCA</a></li>
+                        <li><a class="dropdown-item" href="anatomy.html#RCA">RCA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="anatomy.html#cardiac_conduction_sys">Cardiac Conduction System</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="equipment.html" id="navbarDropdownEquipment" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                        Equipment
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="equipment.html#siemens">Siemens/Syngovia Computer</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#table">Control Module</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#injection">Injection</a></li>
+                        <li><a class="dropdown-item" href="equipment.html#sony-screen">Sony Screen</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#troubleshooting">Troubleshooting</a></li>
+                    </ul>
+                 </li>
+
+                    <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                        <a class="nav-link dropdown-toggle" href="procedures.html" id="navbarDropdownProcedures" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                            Procedures
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="procedures.html#LHC">LHC</a></li>
+                            <li><a class="dropdown-item" href="procedures.html#CRM">CRM</a></li>
+                            <li><a class="dropdown-item" href="procedures.html#Structural">Structural</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="procedures.html#PICC">PICC Lines</a></li>
+                        </ul>
+                      </li>
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4">
+                    <a class="nav-link" href="dictionary.html">Dictionary</a>
+                  </li>
+            </ul> <!--autoalign right when screen is large-->
+            </div>
+    </nav>
+    </section>
+<!-----------------------------------------------DICTIONARY-------------------------------------------->
+
+<section id="overview" class="py-5">
+    <div class="container px-4">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="py-2 text-left fw-bold">Dictionary</h1>
+                <p>May your heart find its way through the maze of terminology. Use this dictionary to help guide you!</p>
+            </div>
+            <div class="col-md-12 px-lg-0">
+                <div class="overview-description mt-4 text-left"> <!-- Align text to the left -->
+                    <input type="text" id="searchInput" placeholder="Search for term..." class="form-control mb-4" onkeyup="searchTerms()">
+                    <table id="dictionaryTable" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Term</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dictionaryList">
+                            <tr>
+                                <td>STEMI</td>
+                                <td>ST-Elevation Myocardial Infarction. Complete blockage of a major artery, causing a spike in the ST segment in an ECG. </td>
+                            </tr>
+                            <tr>
+                                <td>LAD</td>
+                                <td>Left anterior descending artery. Supplies the anterior portion of the left ventricle and anterior ventricular septum! </td>
+                            </tr>
+                            <tr>
+                                <td>NSTEMI</td>
+                                <td>Non-ST Elevation Myocardial Infarction. Partial blockage of a major artery. </td>
+                            </tr>
+                            <tr>
+                                <td>IVUS</td>
+                                <td>Intravascular Ultrasound.. A special catheter with US on the end is placed at the site of stenosis. Used to characterist lesions, quantify plaque and guide stent sizing/length.</td>
+                            </tr>
+                            <tr>
+                                <td>PLV</td>
+                                <td>Posterior Left Ventricular artery. Supplies the posterolateral wall of the left ventricle. </td>
+                            </tr>
+                            <tr>
+                                <td>GTN</td>
+                                <td>Glyceryl Trinitrate. Vasodilator, used to distinguish true vessel narrowing due to disease from a temporary vasospasm. If the artery widens after GTN administration, it suggests the narrowing was likely due to spasm, not a permanent lesion.</td>
+                            </tr>
+                            <tr>
+                                <td>PDA</td>
+                                <td>Posterior Descending Artery. Supplies the inferior wall of the left ventricle and interventricular septum. </td>
+                            </tr>
+                            <tr>
+                                <td>Ramus</td>
+                                <td>Artery that comes off the left main. If it branches off from the LCx, it is named an OM instead.</td>
+                            </tr>
+                            <tr>
+                                <td>Pullback</td>
+                                <td>A technique used in catheterization to assess the blood pressure in the left ventricle. </td>
+                            </tr>
+                            <tr>
+                                <td>Pacemaker</td>
+                                <td>A device that regulates the heartbeat</td>
+                            </tr>
+                            <tr>
+                                <td>Adenosine</td>
+                                <td>Always used prior to FFR, putting the heart under stress/mimicking exercise. </td>
+                            </tr>
+                            <tr>
+                                <td>Beta Blocker</td>
+                                <td>Decrease blood pressure. The negative chronotropic and inotropic effects lead to a decreased oxygen demand. </td>
+                            </tr>
+                            <tr>
+                                <td>Verapamil</td>
+                                <td>Always used prior to radial access - reduces vasospasms.</td>
+                            </tr>
+                            <tr>
+                                <td>Heparin</td>
+                                <td>Anticoagulant, reduces chance of thrombosis/blood clot during procedure whilst inserting equipment into arteries.</td>
+                            </tr>
+                            <tr>
+                                <td>Aramine</td>
+                                <td>Vasopressor used to increase blood pressure when a patient experiences hypotension (low blood pressure). This effect is crucial in maintaining adequate
+                                    perfusion, especially in patients whose blood pressure may drop during or after sedative administration. </td>
+                            </tr>
+                            <tr>
+                                <td>Midazolam</td>
+                                <td>Sedative and anxiolytic (anti-anxiety medication) commonly used to help patients feel relaxed and comfortable during procedures. </td>
+                            </tr>
+                            <tr>
+                                <td>OCT</td>
+                                <td>Optical Coherence Tomography. Captures intra-luminal imaging - contrast is injected to fill the vessel, while pulling back the catheter and
+                                    obtaining the image (the contrast replaces the blood to get an accurate representation of the interior of the vessel). Performed pre-stenting
+                                    to obtain information on morphology or occlusion, length and diameter of stent. Performed post-stenting to check apposition (adherence to vessel wall)
+                                    and potential dissections. </td>
+                            <tr>
+                                <td>CTO</td>
+                                <td>Coronary Total Occlusion. The vessel has been totally occluded and will be difficult to stent. May require use of rotabaltion, and typically 2 access
+                                    points (femoral and arterial) are used to wire the artery from both sides! </td>
+                            </tr>
+                            <tr>
+                                <td>FFR</td>
+                                <td>Fractional Flow Reserve. Measure severity of stenosis, pressure of artery and aids in stent decision making. </td>
+                            </tr>
+                            <tr>
+                                <td>Peak Skin Dose</td>
+                                <td>Highest dose to the imaged area. Relevant to deterministic effects/tissue retention, taking into account the back scatter and overlapping projections. </td>
+                            </tr>
+                            <tr>
+                                <td>Air Kerma</td>
+                                <td>Kinetic energy released per unit mass. Quantifies the energy transferred from the X-rays to the air particles </td>
+                            </tr>
+                            <tr>
+                                <td>DAP</td>
+                                <td>Dose area product. Area multiplied by air kerma. Relevant to stochastic effects.</td>
+                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<script src="homepage.js"></script>
+
+</body>
+</html>

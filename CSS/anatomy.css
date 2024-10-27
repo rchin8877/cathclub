@@ -1,0 +1,58 @@
+#iframe a {
+    color: #549dd1 !important;
+    font-weight: 600;
+    /* text-decoration: none; removes underline from links */
+    /* Optional: Change hyperlink color on hover */
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.sketchfab-embed-wrapper a:hover {
+    color: #3b7b99;
+    text-decoration: underline;
+}
+
+.image-gallery figure {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.LAD_images img {
+    max-width: 175%;
+    height: 175%;
+    object-fit: contain; /* Keeps aspect ratio intact */
+}
+
+
+.LCX_images img {
+    width: 175%;
+    max-width: none; /* Remove max-width limit */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes any extra spacing */
+}
+
+.highlight {
+    color: #3b7b99;
+    font-weight: bold;
+    font-size: 150%
+}
+
+#LCA {
+    color:#549dd1;
+}
+
+#RCA {
+    color:#67bcdb;
+}
+
+#CCS {
+    color:#c75b61;
+}
+
+
+#cardiac_conduction_sys {
+    padding-bottom: 5rem;
+}

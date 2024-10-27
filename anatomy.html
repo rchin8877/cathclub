@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--ensure browser uses latest rendering mode-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--enables scaling for mobile devices-->
+    <title>Cath Club</title>
+    <link rel="icon" href="Images/cc_icon.png" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/anatomy.css">
+
+</head>
+
+<body>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="Images/cathclub.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar"> <!-- ARIA: Accessible Rich Internet Applications, aria-controls points to the id of another element on the page, typically the one that will be shown -->
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
+              <!-- Navigation Bar Content-->
+               <!--create button to toggle/exit the offcanvas, with div element set to flex-->
+               <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar">
+                  <div class="d-flex justify-content-between p-3">
+                    <a class="navbar-brand" href="#"><img src="Images/cathclub.png"></a>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+            </button>
+            <ul class="navbar-nav ms-lg-auto p-4 p-lg-0">
+                <li class="nav-item px-3 px-lg-0 py-lg-4">
+                    <a class="nav-link" href="home_page.html">Home</a>
+                  </li>
+
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="anatomy.html" id="navbarDropdown" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                        Anatomy
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="anatomy.html#LCA">LCA</a></li>
+                        <li><a class="dropdown-item" href="anatomy.html#RCA">RCA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="anatomy.html#cardiac_conduction_sys">Cardiac Conduction System</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="equipment.html" id="navbarDropdownEquipment" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                        Equipment
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="equipment.html#siemens">Siemens/Syngovia Computer</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#table">Control Module</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#injection">Injection</a></li>
+                        <li><a class="dropdown-item" href="equipment.html#sony-screen">Sony Screen</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#troubleshooting">Troubleshooting</a></li>
+                    </ul>
+                 </li>
+
+                    <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                        <a class="nav-link dropdown-toggle" href="procedures.html" id="navbarDropdownProcedures" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                            Procedures
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="procedures.html#LHC">LHC</a></li>
+                            <li><a class="dropdown-item" href="procedures.html#CRM">CRM</a></li>
+                            <li><a class="dropdown-item" href="procedures.html#Structural">Structural</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="procedures.html#PICC">PICC Lines</a></li>
+                        </ul>
+                      </li>
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4">
+                    <a class="nav-link" href="dictionary.html">Dictionary</a>
+                  </li>
+            </ul> <!--autoalign right when screen is large-->
+            </div>
+    </nav>
+    </section>
+
+<!-----------------------------Title section----------------------------->
+      <section id="anatomy-intro" class="container mt-5"> <!--class provides responsive padding on both sides, mt is margin top-->
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="mb-4">Anatomy</h1>
+            <p> Before diving into the different images with all sorts of obscure angles, its best to try to familiarise yourself somewhat with the anatomy. This will help you envision the heart in 3D and be less confusing once you start correlating to the 2D images.</p>
+            </div>
+          </div>
+      </section>
+
+<!----------------------------- Flow of blood through the heart ----------------------------->
+      <section id="heart-vessels" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="mb-4">Anatomy of the Heart</h2>
+            <p>This is a great resource to understand how the heart looks in 3D, as you rotate it to different views. I recommend split-screening this model with the corresponding projections to correlate the anatomy with 2D imaging!</p>
+            </div>
+            <div class="sketchfab-embed-wrapper text-center"></div>
+            <div class="col-lg-8 mx-auto text-center" id="iframe">
+                <iframe title="Cardiac Anatomy: External view of human heart" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/a3f0ea2030214a6bbaa97e7357eebd58/embed"></iframe>
+                <p>
+                    <a href="https://sketchfab.com/3d-models/cardiac-anatomy-external-view-of-human-heart-a3f0ea2030214a6bbaa97e7357eebd58?utm_medium=embed&utm_campaign=share-popup&utm_content=a3f0ea2030214a6bbaa97e7357eebd58" target="_blank" rel="nofollow">Cardiac Anatomy: External view of human heart</a> by
+                    <a href="https://sketchfab.com/HannahNewey?utm_medium=embed&utm_campaign=share-popup&utm_content=a3f0ea2030214a6bbaa97e7357eebd58" target="_blank" rel="nofollow">HannahNewey</a> on
+                    <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=a3f0ea2030214a6bbaa97e7357eebd58" target="_blank" rel="nofollow">Sketchfab</a>
+                </p>
+                </div>
+<!----------------------------- LCA ----------------------------->
+      <section id="anatomy-intro" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1 id="LCA" class="mb-4">Left Coronary Arteries</h1>
+            <p>Typically, <span class="highlight">5</span> views are used to visualize the LCA (Left Coronary Artery) and the 2 main branches: </p>
+            <ul style="list-style-type: disc; margin-left: 20px;">
+              <li><strong>LAD </strong> <i class="bi bi-arrow-right"></i>  Diagonals and Septals</li>
+              <li><strong>LCx </strong> <i class="bi bi-arrow-right"></i>  Obtuse Marginals (OM)</li>
+            </ul>
+
+            <h3>LAD</h3>
+            <p style="margin-bottom: 1px;">Supplies anterior portion of LV (critical region) - usually imaged/checked first if possible.</p>
+            <p style="margin-top: 0; margin-bottom: 6;">♥<span>  </span><span style="text-decoration: underline; font-weight: bold;">Cranial</span> views elongate the LAD so it is shown running down towards the apex of the heart</p>
+            <ul style="list-style-type: disc; margin-left: 20px;">
+              <li><strong> Diagonals </strong> <i class="bi bi-arrow-right"></i>Branch off to the left </li>
+              <li><strong> Septals </strong> <i class="bi bi-arrow-right"></i>  Branch off to the right </li>
+            </ul>
+
+            <div class="row mt-3 LAD_images">
+              <div class="col-md-6">
+                <figure>
+                  <img src="Images/img1.png" alt="LAD Images" class="img-fluid" />
+                </figure>
+              </div>
+
+            <h3>LCx</h3>
+            <p style="margin-bottom: 1px;">Supplies left atrium and postero-lateral aspect of LV.</p>
+            <p style="margin-top: 0; margin-bottom: 6;">♥<span>  </span><span style="text-decoration: underline; font-weight: bold;"> Caudal</span> views show the LCx running down the back of the heart. </p>
+            <p> The last image is called the 'spider view', which shows the beginning of the major vessels bifurcating from the LM - good for visualising proximal stenosis. </p>
+            <ul style="list-style-type: disc; margin-left: 20px;">
+              <li><strong> OM </strong> <i class="bi bi-arrow-right"></i>Branch off down </li>
+            </ul>
+
+            <div class="row mt-3 LCX_images">
+              <div class="col-md-6">
+                <figure>
+                  <img src="Images/img2.png" alt="LCX Images" class="img-fluid" />
+                </figure>
+              </div>
+
+
+            <h3>Normal Variants</h3>
+            <ul style="list-style-type: disc; margin-left: 20px;">
+              <li>Due to stenosis, smaller vessels may expand to compensate (e.g. septals appearing larger than the LAD)</li>
+              <li><strong> (LCx)</strong> If the OM comes off the LM directly, it is called a ramus instead</li>
+              <li><strong> (LM)</strong> Some people have a very short LM that bifucrates almost immediately</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+<!----------------------------- RCA ----------------------------->
+      <section id="anatomy-intro" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1 id="RCA" class="mb-4">Right Coronary Arteries</h1>
+            <p>Typically, <span class="highlight">3</span> views are used to visualize the RCA. </p>
+
+            <h3>Acute Marginal</h3>
+            <p style="margin-bottom: 1px;">Wraps around front of heart, supplying right ventricle.</p>
+
+            <h3 style="margin-top: 5px;">PLV and PDA </h3>
+            <p>The RCA is simplier to understand, with the different angles looking relatively similar. You may notice a thicker PLV that is branching far to the left, supplying the left ventricle. This indicates that the pt has right dominance since the PDA is supplied by the right side. </p>
+            <ul style="list-style-type: disc; margin-left: 20px;">
+              <li><strong> PLV  </strong> <i class="bi bi-arrow-right"></i>Top </li>
+              <li><strong> PDA </strong> <i class="bi bi-arrow-right"></i> Bottom </li>
+            </ul>
+
+
+            <div class="row mt-3 LCX_images">
+              <div class="col-md-6">
+                <figure>
+                  <img src="Images/img3.png" alt="RCA Image" class="img-fluid" />
+                </figure>
+              </div>
+
+
+          </div>
+        </div>
+      </section>
+
+<!----------------------------- Cardiac Conduction System ----------------------------->
+
+      <section id="cardiac_conduction_sys" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1 id="CCS" class="mb-4">Cadriac Conduction System</h1>
+            <p> How the heart conducts its own electrical impulses </p>
+
+            <h3>Pathway of Electrical Conduction</h3>
+            <p style="margin-bottom: 1px;">Wraps around front of heart, supplying right ventricle.</p>
+
+            <h3 style="margin-top: 5px;"> Common Pathology </h3>
+            <p>The RCA is simplier to understand, with the different angles looking relatively similar. You may notice a thicker PLV that is branching far to the left, supplying the left ventricle. This indicates that the pt has right dominance since the PDA is supplied by the right side. </p>
+            <ul style="list-style-type: disc; margin-left: 20px;">
+              <li><strong> PLV  </strong> <i class="bi bi-arrow-right"></i>Top </li>
+              <li><strong> PDA </strong> <i class="bi bi-arrow-right"></i> Bottom </li>
+            </ul>
+            <iframe width="1100" height="619" src="https://www.youtube.com/embed/TnFoJ7Hhi-M" title="Conduction system of the heart - Sinoatrial node, AV Node, Bundle of His, Purkinje fibers Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script>
+
+<script src="homepage.js"></script>
+<!----------------------------- Quiz -----------------------------
+      <section id="quiz" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2>Test Your Knowledge</h2>
+            <p>Think you've got the heart anatomy down? Take this quick quiz to find out!</p>
+            <button class="btn btn-primary">Start Quiz</button>
+          </div>
+        </div>
+      </section>
+
+    -->
+    </body>
+</html>
+

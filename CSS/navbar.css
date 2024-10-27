@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand img {
+    max-width: 200px;
+    width: auto;
+}
+
+#nav-bar {
+    background-image: linear-gradient(to right, #549dd1 7%, #e3888d 40%, #c75b61 100%);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Brand on the left, links on the right */
+    align-items: center;
+    padding: 0 20px; /* Adjust padding as necessary */
+  }
+
+.dropdown-item:hover {
+    color: #FFF;
+    background-color: #e3888d;
+}
+
+
+.fa-bars-staggered {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.fa-xmark {
+    color: #fff;
+    font-size: 30px !important;
+}
+
+.nav-link { /*changes text colour when parent link is clicked, displaying dropdown items*/
+    font-weight: 600;
+    color: #FFF;
+}
+
+.nav-link.show {
+    font-weight: 600;
+    color: #f2b8ce !important;
+}
+
+.nav-link:hover {
+    font-weight: 600;
+    color: #f2b8ce !important;
+}
+
+.dropdown:hover .nav-link { /* maintains hover color of parent link when hovering over dropdown items */
+    color: #f2b8ce !important;
+  }
+
+.navbar-toggler {
+    outline: none !important;
+    border: none !important;
+  }
+
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.dropdown>.dropdown-menu /*UL element with class dropdown menu */ {
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    border-radius: 2;
+}
+
+
+@media (min-width:992px) { /*media query that targets screens smaller than full desktop width*/
+
+    .dropdown>.dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+        top: 100%;
+        display: block;
+        transition: all 0.1s ease-out;
+        border-radius: 5px; /*rounded corners */
+    }
+
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+        visibility: visible;
+        top: 70%; /* adjust y position relative to parent button */
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+}

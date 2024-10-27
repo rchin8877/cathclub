@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the entire navbar section */
+#nav-bar {
+  width: 100%;
+  background-image: linear-gradient(to right, #549dd1 7%, #e3888d 40%, #c75b61 100%);
+  padding: 10px 0;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Brand on the left, links on the right */
+  align-items: center;
+  padding: 0 20px; /* Adjust padding as necessary */
+}
+
+/* Brand logo */
+.navbar-brand img {
+  max-height: 100px; /* Set a maximum height for the logo */
+  width: auto; /* Keep the aspect ratio */
+}
+
+/* Make sure navbar collapse takes full space */
+.navbar-collapse {
+  /* Removed flex-grow and justify-content properties */
+}
+
+/* Right-align the navigation items */
+.navbar-nav {
+  /* Remove display: flex; and flex-direction: row; to allow Bootstrap to handle this */
+  flex-direction: column; /* Stack items vertically in mobile view */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav items will stack vertically in mobile */
+.nav-item {
+  margin: 0; /* Remove left margin for vertical stacking */
+}
+
+/* Keep nav link styles */
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  white-space: nowrap; /* Prevent text from wrapping */
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #f2b8ce;
+}
+
+.dropdown-item {
+  background-color: white;   /* White background */
+      /* Light grey border around each item */
+  margin-bottom: 5px;        /* Space between items */
+  border-radius: 5px;        /*rounded corners */
+  text-align: left;
+
+}
+
+.dropdown-menu div a (
+
+)
+
+/* Responsive behavior for the navbar */
+@media (max-width: 992px) {
+  .navbar-collapse {
+      justify-content: flex-start; /* Align to the left on smaller screens */
+      width: 100%; /* Ensure full width for dropdown */
+  }
+
+    .dropdown-menu {
+      position: static; /* Ensure the dropdown stays within the normal flow */
+      float: none;      /* Remove float to avoid positioning issues */
+      width: 100%;      /* Make the dropdown fill the container */
+      margin-top: 0;    /* Remove any default margin */
+      background-color: white; /* Background to match surrounding menu */
+      justify-content: flex-start;
+    }
+
+  .nav-item {
+      width: 100%; /* Make nav items full width */
+      /* text-align: right; makes text to the right... */
+  }
+}
+
+.fa-bars-staggered {
+  color: #fff;
+  font-size: 30px !important;
+}
+
+.navbar-toggler {
+  outline: none !important;
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-nav li a {
+  text-align: left; /* cause the <a> link inside each li to align to the right within the li element */
+  float: right; /* tried using flexbox justify-content but did not work ...*/
+}

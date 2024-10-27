@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--ensure browser uses latest rendering mode-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--enables scaling for mobile devices-->
+    <title>Cath Club</title>
+    <link rel="icon" href="Images/cc_icon.png" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/home_page.css">
+
+</head>
+
+<body>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="Images/cathclub.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar"> <!-- ARIA: Accessible Rich Internet Applications, aria-controls points to the id of another element on the page, typically the one that will be shown -->
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
+              <!-- Navigation Bar Content-->
+               <!--create button to toggle/exit the offcanvas, with div element set to flex-->
+               <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar">
+                  <div class="d-flex justify-content-between p-3">
+                    <a class="navbar-brand" href="#"><img src="Images/cathclub.png"></a>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+            </button>
+            <ul class="navbar-nav ms-lg-auto p-4 p-lg-0">
+                <li class="nav-item px-3 px-lg-0 py-lg-4">
+                    <a class="nav-link" href="home_page.html">Home</a>
+                  </li>
+
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="anatomy.html" id="navbarDropdown" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                        Anatomy
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="anatomy.html#LCA">LCA</a></li>
+                        <li><a class="dropdown-item" href="anatomy.html#RCA">RCA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="anatomy.html#cardiac_conduction_sys">Cardiac Conduction System</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="equipment.html" id="navbarDropdownEquipment" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                        Equipment
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="equipment.html#siemens">Siemens/Syngovia Computer</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#table">Control Module</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#injection">Injection</a></li>
+                        <li><a class="dropdown-item" href="equipment.html#sony-screen">Sony Screen</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#troubleshooting">Troubleshooting</a></li>
+                    </ul>
+                 </li>
+
+                    <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                        <a class="nav-link dropdown-toggle" href="procedures.html" id="navbarDropdownProcedures" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                            Procedures
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="procedures.html#LHC">LHC</a></li>
+                            <li><a class="dropdown-item" href="procedures.html#CRM">CRM</a></li>
+                            <li><a class="dropdown-item" href="procedures.html#Structural">Structural</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="procedures.html#PICC">PICC Lines</a></li>
+                        </ul>
+                      </li>
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4">
+                    <a class="nav-link" href="dictionary.html">Dictionary</a>
+                  </li>
+
+            </ul> <!--autoalign right when screen is large-->
+            </div>
+    </nav>
+    </section>
+        <!-----------------------------banner section----------------------------->
+
+        <section id="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="promo-title">CATH LAB CRASH COURSE</p>
+                        <p><em>Welcome to the Cath Club!</em> Come get in the flow of the cathlab with me as I share my notes and experiences.</p>
+
+                        <!--<a href="https://www.youtube.com/watch?v=t9d74Zsvabs" target="_blank"><img src="Images/button-removebg-preview.png" class="play-btn">Start here</a> -->
+                        <div> Keep reading to get a feel of the workflow and some important tips. </div>
+
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="Images/catheter_02.png" class="heart-img">
+                    </div>
+                </div>
+            </div>
+
+            <img src="Images/wave1.png" class="wave-img">
+        </section>
+
+<!----------------------------------------What to expect on your first day---------------------------------------------------->
+<section id="intro" class="container mt-9">
+    <div class="row">
+      <div class="content-title col-lg-8 mx-auto">
+        <h1 class="mb-4 text-center">What to expect on your first day</h1>
+        <ul>
+            <li>Tour of the department</li>
+            <li>Familiarising yourself with the workflow</li>
+            <li>LHC Examinations (bread and butter of cathlab)</li>
+            <li>Meeting the cardio techs, nurses and cardiologists</li>
+            <li>Consolidating pre-training readings (anatomy of coronary arteries, procedure steps, using equipment)</li>
+        </ul>
+        </div>
+      </div>
+</section>
+
+
+<!----------------------------------------workflow title---------------------------------------------------->
+    <section id="workflow_title" class="container mt-1">
+        <div class="row">
+          <div class="content-title col-lg-8 mx-auto">
+            <h1 class="mb-4  text-center">Workflow</h1>
+            <p> All examinations begin with first helping bring the pt into the room (check ID) and then coming back to the console area to set up the computers. After the examination, help bring the pt out before closing the pt on the Siemens system/completing documentation.</p>
+            </div>
+          </div>
+    </section>
+<!----------------------------------------workflow content---------------------------------------------------->
+    <section id="workflow" class="container mt-1 ">
+            <div class="content col-lg-11 mx-auto">
+                <h3 style="color:#549dd1" >1. Prepare Patient in the Room</h3>
+                <ul>
+                    <li>Ideally be in room for time-out (should occur prior to pt transfer)</li>
+                    <li>Help transfer to table</li>
+                    <li>Set up armboard with bluey (if radial access), foot pedal, and control panel
+                        (unscrew lock on RHS and pull up and drag to the left, ensuring arrow does <u>NOT</u>
+                        reach end of metal bar. Leave the attached lead shield sticking out so nurse can easily drape)</li>
+                    <li>Introduce yourself and ask for height/weight + pregnancy if required</li>
+                    <li>Get pt sticker (or confirm correct pt with wristband/timeout) </li>
+                    <li>Bring bed into holding bay, and if needed, get it ready for end of examination
+                        (e.g., flatten and prepare slide-board)</li>
+                </ul>
+
+                <h3 style="color:#549dd1" >2. Set Up Documentation</h3>
+                <ul>
+                    <li>Open EMR cathlab list and add documentation for radiation dose and protocol (do this first to ensure EMR accurately displays the dose as per time)</li>
+                    <ul>
+                        <li>Open patient file by double-clicking the first column arrow</li>
+                        <li>Go to documentation and click the + sign to add a new entry</li>
+                        <li>Title: Radiation dose and protocol (cardiac)</li>
+                        <li>Using auto-text, pre-fill the area being x-rayed (usually thorax), date, and consultant's name</li>
+                        <li>Save (only sign at the end once dose details are typed in)</li>
+                    </ul>
+                    <li>Open Microsoft Teams and add the case to the excel spreadsheet (for our own record-keeping purposes)</li>
+                    <ul>
+                        <li>Type in key details including start time of the case</li>
+                    </ul>
+                </ul>
+
+                <h3 style="color:#549dd1" >3. Set Up X-ray Equipment</h3>
+                <ul>
+                    <li>Open patient on Siemens</li>
+                    <ul>
+                        <li>Find the patient on scheduler (will only appear if arrived by cardio tech!)</li>
+                        <ul class="checklist">
+                            <li>Reference with sticker and enter:</li>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="height-weight" name="height-weight">
+                                    <label for="height-weight">Height and weight (Will be used for dose modulation! Can enter using feet/inches and convert to metric on the system.)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ward" name="ward">
+                                    <label for="ward">Ward</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="consultants-initials" name="consultants-initials">
+                                    <label for="consultants-initials">Consultant's initials <span><b>❗ They will be annoyed if incorrect ❗</b></span></label>
+                                </li>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li>Bring the tube in by selecting bottom left button (custom preset 1) and pushing joystick forward. </li>
+                    <li>Once the cardiologist has inserted the sheath, you can turn down the lights. </li>
+                    <li>Open the patient on the Sony screen (controls what appears on monitors inside and outside the lab)</li>
+                    <ul>
+                        <li>Set haemo on the screen inside (lab) and left CR (control room) screens</li>
+                        <li>Bring up previous imaging on connected PC and be ready to display on Sony 1 if needed</li>
+                        <li>Change the screen display setting (e.g., half/half life and assist screens)</li>
+                    </ul>
+                </ul>
+
+                <h3 style="color:#67bcdb">4. During the Examination</h3>
+                <p>Changes depending on procedures and cardiologists workflow, but generally:</p>
+                <ul>
+                    <li>Be ready to save reference images (showing stenosis) in initial runs</li>
+                    <li>Listen out for the cardiologist asking to 'fluorosave' (saving fluoro runs, not needed for acquisitions which are auto-saved)</li>
+                    <li>Collimate to the border of the heart when possible and move filter to block glare</li>
+                    <li>Start on 25 mag, then go down to 20 once engaged in artery</li>
+                    <li>Be ready to change the screen display setting (e.g., if using IVUS select a format with Sony)</li>
+                    <li>Label images and send to PACS (or take note of run # and label at the end)</li>
+                </ul>
+
+                <h3 style="color:#e3888d" >5. Ending Examination</h3>
+                <ul>
+                    <li>Disable radiation and bring the tube out (preset position: transfer patient)</li>
+                    <li>Remove plastic cover over II and put away to re-se as foot pedal cover! </li>
+                    <li>Help transfer patient back into bed</li>
+                    <ul>
+                        <li>Remove armboard and move pedal back</li>
+                        <li>Bring the bed in</li>
+                        <li>Wipe down armboards and table</li>
+                        <li>Change bin liners (bottom corner cupboards, fit with a blue band)</li>
+                        <li>Grab new bedsheet, blanket, and 2 saline bags for the techs from the adjacent storeroom</li>
+                    </ul>
+                    <li>Close patient on the computer after they have left the room <span><b>❗ once closed cannot be opened again ❗</b></span> before going back to fill in the excel spreadsheet</li>
+                    <ul>
+                        <li>Add any intervention performed in comments (e.g., LCx stent x 2)</li>
+                        <li>Update the procedure if necessary (e.g., LHC PCI)</li>
+                        <li>Complete EMR documentation (click sign to complete)</li>
+                    </ul>
+                </ul>
+            </div>
+        </section>
+
+    <!------------------------LEARNING AREAS------------------------>
+        <section id="topics">
+            <div class="container text-center">
+                <h1 class="title">LEARNING AREAS</h1>
+                <div class="row text-center">
+                    <div class="col-md-4 topic">
+                        <img src="Images/heart_icon-removebg-preview.png" class="topic-img">
+                        <h4>Anatomy</h4>
+                        <p>Watch youtube videos and take notes on the coronary arteries. Probably the most important area to begin study before beginning training. </p>
+                    </div>
+                    <div class="col-md-4 topic">
+                        <img src="Images/equipment_icon-removebg-preview.png" class="topic-img">
+                        <h4>Equipment</h4>
+                        <p>Siemens Artis Q is the C-arm in all but 1 of the labs at VHH 0 which is the same as the fluoro controls. Check your email for the Siemens PEP link (may be in spam) to learn the different modules/sections of the controls. Other equipment will be taught when you begin your training.</p>
+                    </div>
+                    <div class="col-md-4 topic ">
+                        <img src="Images/procedures_icon-removebg-preview.png" class="topic-img">
+                        <h4>Procedures</h4>
+                        <p>Let's put our knowledge together with some common procedures that are performed day-to-day at the cathlab!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script>
+
+
+<script src="homepage.js"></script>
+
+</body>
