@@ -1,4 +1,3 @@
 # cathclub
 Cath Lab Training site for new staff/students entering this modality.
-
-home_page.html
+Visit the website at https://rchin8877.github.io/cathclub/
