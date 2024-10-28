@@ -10,39 +10,36 @@
 }
 
 .tab-content h5 {
-    color: ;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-
 .tab-container1 {
-    border: 5px solid #549dd1; /* Change color as needed */
+    border: 5px solid #549dd1; 
     padding: 15px;
-    border-radius: 5px;/* Optional: rounded corners */
+    border-radius: 5px;
 }
 
 .tab-container2 {
-    border: 5px solid #67bcdb; /* Change color as needed */
+    border: 5px solid #67bcdb; 
     padding: 15px;
-    border-radius: 5px;/* Optional: rounded corners */
+    border-radius: 5px;
 }
 
 .tab-container3 {
-    border: 5px solid #e3888d; /* Change color as needed */
+    border: 5px solid #e3888d; 
     padding: 15px;
-    border-radius: 5px;/* Optional: rounded corners */
+    border-radius: 5px;
 }
 
 .tab-container4 {
-    border: 5px solid #c75b61; /* Change color as needed */
+    border: 5px solid #c75b61;
     padding: 15px;
-    border-radius: 5px;/* Optional: rounded corners */
+    border-radius: 5px;
 }
-
+/*
 .content {
     position: relative;
-    /* Adding padding on the left to avoid content overlap with border */
     padding-left: 5rem;
 }
 
@@ -52,10 +49,18 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 5px; /* Width of the left border */
-    background: linear-gradient(to bottom, #549dd1, #67bcdb, #e3888d); /* Gradient colors */
-    border-radius: 4px; /* Optional: rounded corners */
+    width: 5px; 
+    background: linear-gradient(to bottom, #549dd1, #67bcdb, #e3888d); 
+    border-radius: 4px; 
 }
+
+@media (max-width: 768px) {
+    .content {
+        padding-left: 2rem; 
+    }
+  }
+
+*/ 
 
 #PICC {
     padding-bottom: 5rem;
