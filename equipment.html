@@ -51,7 +51,7 @@
                   </li>
 
                   <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
-                    <a class="nav-link dropdown-toggle" href="equipment.html" id="navbarDropdownEquipment" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                    <a class="nav-link dropdown-toggle" href="equipment.html" id="navbarDropdownEquipment" role="button" data-bs-hover="dropdown" aria-expanded="false"> <!--change data-bs-toggle to hover to make dropdown item clickable-->
                         Equipment
                     </a>
                     <ul class="dropdown-menu">
@@ -67,7 +67,7 @@
                  </li>
 
                     <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
-                        <a class="nav-link dropdown-toggle" href="procedures.html" id="navbarDropdownProcedures" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                        <a class="nav-link dropdown-toggle" href="procedures.html" id="navbarDropdownProcedures" role="button" data-bs-hover="dropdown" aria-expanded="false"> <!--change data-bs-toggle to hover to make dropdown item clickable-->
                             Procedures
                         </a>
                         <ul class="dropdown-menu">
@@ -100,7 +100,7 @@
           <div class="col-lg-8 mx-auto">
             <h2 class="mb-4" style="color:#549dd1">Siemens/Syngovia Computer</h2>
                 <ul>
-                    <li><strong>Turning off:</strong> Make sure you turn off XWP first, then turn off the Siemens Artis Q (otherwise XWP will not be turned off properly/hard shutdown</li>
+                    <li><strong>Turning off:</strong> Make sure you turn off XWP first, then turn off the Siemens Artis Q (otherwise XWP will not be turned off properly/hard shutdown)</li>
                     <li><strong>Turning on:</strong> No specific order</li>
                 </ul>
             </div>
@@ -153,12 +153,10 @@
                 <ul>
                     <li>To move the whole C-arm unit back/forward and angle, push down whilst pressing side buttons.</li>
                     <li>To tilt the C-arm into cranial/caudal and RAO/LAO, just push down.</li>
-                </ul>
-                <ul>
                     <li>Back of the joystick has up and down buttons to change SID (be careful of hitting pt).</li>
                     <li>Reset filter/collimators by pressing down.</li>
                     <li>Magnification button on bottom right (start with 25 prior to engaging then drop to 20 once beginning to acquire in artery).</li>
-                    <li>Final clean: drive machine in, and rotate whole C-arm to lateral to clean bottom easier.</li>
+                    <li>Final clean: rotate whole C-arm to lateral to clean bottom easier.</li>
                 </ul>
                 <div class="row mt-1 table_img">
                     <div class="col-md-6 text-center"> <!-- First Column -->
@@ -179,13 +177,11 @@
     <section id="screening" class="container mt-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="mb-4" style="color:#A1D6E8">Screening (Fluoroscopy and Acquisitions)</h2>
-            <div class="row mt-1 table_img d-flex justify-content-center">
-                <div class="col-md-6">
+            <h2 class="mb-4" style="color:#67bcdb">Screening (Fluoroscopy and Acquisitions)</h2>
                   <figure> 
                     <img src="Images/eq5.png" alt="Table_controls" class="img-fluid mx auto img-eq5" />
                   </figure>
-            </div>
+
                 <h4>Fluoroscopy</h4>
                 <ul>
                     <li>Depending on Dr, may go down to 4p/s or 6p/s (lower p/s means the imaging will be less smooth).</li>
@@ -194,10 +190,10 @@
                 </ul>
                 <h4>Acquisitions</h4>
                 <ul>
-                    <li>May increase to VHH 2 or Coro BMI+ for the spiderview in large pts (going through dense area and at a steep angle).</li>
-                    <li>Select the C-arm button to automatically display the reference image based on the tube position (only works with limited ~5 reference images).</li>
+                    <li>May increase to VHH 2 or Coro BMI+ for the spiderview in large pts > <b>100kgs</b> (going through dense area and at a steep angle).</li>
+                    <li>Select the C-arm button to automatically display the reference image based on the tube position (only works with limited ~5 reference images so try not to save too many rubbish references!).</li>
                     <li>For LV and aortograms, increase to 15 f/s for better image quality.</li>
-                    <li>When dose is getting high, reduce by.</li>
+                    <li>When dose is getting high: reduce by using less angle, collimating in, reducing OID or reducing frame rates.</li>
                 </ul>
                 <div class="row mt-1 table_img d-flex justify-content-center">
                     <div class="col-md-6">
@@ -271,7 +267,7 @@
                 <h3>Incorrect pt details/examination</h3>
                 <ul>
                     <li>Only correct once finished (otherwise half will be correct and half will be wrong; very hard to fix)</li>
-                    <li>Tell supervisor</li>
+                    <li>Let a supervisor know and they will contact PACS</li>
                 </ul>
 
         </div>

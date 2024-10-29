@@ -40,6 +40,12 @@
 
 }
 
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
   /*-----------------------------workflow section----------------------------->*/
   #intro {
     padding-top: 10%;

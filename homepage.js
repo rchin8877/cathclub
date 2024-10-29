@@ -5,18 +5,24 @@ document.addEventListener("DOMContentLoaded", function() {
     const proceduresLink = document.getElementById("navbarDropdownProcedures");
     const equipmentLink = document.getElementById("navbarDropdownEquipment");
 
+
+    ////////////////// Navbar offcanvas background image change (otherwise will overlay 'outer'/full width navbar) //////////////////////
     // Offcanvas event listeners for background image toggle
     myOffcanvas.addEventListener('show.bs.offcanvas', function () {
         myOffcanvas.style.backgroundImage = "linear-gradient(to right, #549dd1 7%, #e3888d 40%, #c75b61 100%)";
-    });
+    })
 
+    //When switching from half-screen to full screen (with offcanvas previously opened), need to switch back to no background image 
     myOffcanvas.addEventListener('hidden.bs.offcanvas', function () {
         myOffcanvas.style.backgroundImage = "none";
-    });
+    })
 
-    // Function to toggle dropdown behavior based on screen size and offcanvas state
+    //Methods are actions you perform on objects, while property assignments^ simply set or change the value of a property.
+    //Assigning the style.backgroundImage property on the object myoffcanvas 
+
+    ////////////////// toggles dropdown when offcanvas is shown //////////////////////
     function toggleDropdownAttribute() {
-        if (window.innerWidth < 992 || myOffcanvas.classList.contains("show")) {
+        if (myOffcanvas.classList.contains("show")) {
             anatomyLink.setAttribute("data-bs-toggle", "dropdown");
             proceduresLink.setAttribute("data-bs-toggle", "dropdown");
             equipmentLink.setAttribute("data-bs-toggle", "dropdown");
@@ -27,17 +33,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Initial check
-    toggleDropdownAttribute();
-
-    // Add resize and offcanvas event listeners
-    window.addEventListener("resize", toggleDropdownAttribute);
     myOffcanvas.addEventListener('shown.bs.offcanvas', toggleDropdownAttribute);
-    myOffcanvas.addEventListener('hidden.bs.offcanvas', toggleDropdownAttribute);
-});
 
-
-const table = document.getElementById("dictionaryTable");
+//////////////////////////////////////////////////////////// Alphabetical order Dictionary ////////////////////////////////////////////////////////////
+    const table = document.getElementById("dictionaryTable");
     const tbody = table.querySelector("tbody");
     const rows = Array.from(tbody.rows);
 
@@ -46,7 +45,7 @@ const table = document.getElementById("dictionaryTable");
         const termA = a.cells[0].innerText.toLowerCase();
         const termB = b.cells[0].innerText.toLowerCase();
         return termA.localeCompare(termB);
-    });
+    })
 
     // Remove all rows from tbody
     while (tbody.firstChild) {
@@ -56,9 +55,9 @@ const table = document.getElementById("dictionaryTable");
     // Append sorted rows to tbody
     rows.forEach(row => {
         tbody.appendChild(row);
-    });
+    })
 
-
+//////////////////////////////////////////////////////////// Search Dictionary ////////////////////////////////////////////////////////////
 function searchTerms() {
     const input = document.getElementById('searchInput');
     const filter = input.value.toLowerCase();
@@ -67,10 +66,10 @@ function searchTerms() {
 
     // Loop through all table rows, and hide those that don't match the search query
     for (let i = 1; i < tr.length; i++) { // Start from 1 to skip the header row
-        const td = tr[i].getElementsByTagName('td');
+        const td = tr[i].getElementsByTagName('td'); //whole row
         const term = td[0].textContent || td[0].innerText; // First cell (Term)
         const description = td[1].textContent || td[1].innerText; // Second cell (Description)
-        if (term.toLowerCase().indexOf(filter) > -1 || description.toLowerCase().indexOf(filter) > -1) {
+        if (term.toLowerCase().indexOf(filter) > -1 || description.toLowerCase().indexOf(filter) > -1) { //indexOf = -1 means no index in table/match found
             tr[i].style.display = ""; // Show the row
         } else {
             tr[i].style.display = "none"; // Hide the row
@@ -78,3 +77,14 @@ function searchTerms() {
     }
 }
 
+});
+
+//td[0] itself is an element object (the table cell itself), not the string 
+//textContent: This property returns the text content of the element and its descendants. It retrieves all text, including text that might be hidden or not visually displayed.
+//innerText: This property returns the visible text content of the element. It accounts for CSS styles, meaning it will not include text from hidden elements or text that is not rendered.
+
+//if (string.indexOf("substring/thing being searched") > -1) {
+//     Substring exists
+//} else {
+//     Substring does not exist
+//}
