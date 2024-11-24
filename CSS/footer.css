@@ -1,0 +1,26 @@
+footer {
+    background-color: #549dd1; /* Dark background for footer */
+    color: white; /* White text color */
+    text-align: center; /* Center align the content */
+    padding: 20px 0; /* Padding for spacing */
+    position: relative; /* Fix footer to the bottom */
+    width: 100% !important; /* Full width */
+    bottom: 0; /* Align at the bottom of the page */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.footer-logo {
+    max-width: 100px; /* Adjust logo size */
+    margin-bottom: 10px; /* Space between logo and text */
+}
+
+.footer-text {
+    font-size: 14px; /* Smaller font size */
+    font-style: italic; /* Optional: Makes the text italic */
+}
