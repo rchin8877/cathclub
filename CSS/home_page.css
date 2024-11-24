@@ -32,6 +32,11 @@
     height: auto;
   }
 
+  .heartspin-img {
+    width: 10%;
+    height: auto;
+  }
+
   @media (max-width:992px) { 
   .heart-img {
     width: 50%;
