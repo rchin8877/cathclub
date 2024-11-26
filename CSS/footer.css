@@ -2,7 +2,8 @@ footer {
     background:  #549dd1;
     color: white; /* White text color */
     text-align: center; /* Center align the content */
-    padding: 20px 0; /* Padding for spacing */
+    padding-top: 0; /* Padding for spacing */
+    padding-bottom: 20px;
     position: relative; /* Fix footer to the bottom */
     width: 100% !important; /* Full width */
     bottom: 0; /* Align at the bottom of the page */
@@ -23,7 +24,7 @@ footer {
     padding: 0;
 }
 .footer-logo {
-    max-width: 100px; /* Adjust logo size */
+    max-width: 130px; /* Adjust logo size */
     margin-bottom: 10px; /* Space between logo and text */
 }
 

@@ -5,3 +5,15 @@
 .img-eq4 {
     width: 90%;
 }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.siemens-img {
+    width: 80%;
+    height: auto;
+}
