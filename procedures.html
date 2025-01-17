@@ -137,10 +137,13 @@
                             <a class="nav-link" id="oct-tab" data-bs-toggle="tab" href="#oct" role="tab" aria-controls="oct" aria-selected="false">OCT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="qca-tab" data-bs-toggle="tab" href="#qca" role="tab" aria-controls="qca" aria-selected="false">QCA</a>
+                            <a class="nav-link" id="ivus-tab" data-bs-toggle="tab" href="#ivus" role="tab" aria-controls="ivus" aria-selected="false">IVUS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="ivus-tab" data-bs-toggle="tab" href="#ivus" role="tab" aria-controls="ivus" aria-selected="false">IVUS</a>
+                            <a class="nav-link" id="ACH-tab" data-bs-toggle="tab" href="#ACH" role="tab" aria-controls="ACH" aria-selected="false">ACH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="qca-tab" data-bs-toggle="tab" href="#qca" role="tab" aria-controls="qca" aria-selected="false">QCA</a>
                         </li>
                     </ul>
 
@@ -167,6 +170,7 @@
                             <ul>
                                 <li>Used when all the major arteries are deemed proficient, so the cause of symptoms may be smaller vessels</li>
                                 <li>Helps identify spasms or decreased flow in smaller vessels.</li>
+                                <li>Normal IMR result is < 25. </li>
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="ffr" role="tabpanel" aria-labelledby="ffr-tab">
@@ -188,22 +192,29 @@
                                 <li>While the contrast is injected to fill the vessel, the cather is pulled back, obtaining the image (the contrast replaces the blood to get an accurate representation of the interior of the vessel).</li>
                             </ul>
                         </div>
-
-                    <div class="tab-pane fade" id="qca" role="tabpanel" aria-labelledby="qca-tab">
-                        <h5>QCA (Quantitative Coronary Analysis)</h5>
-                        <ul>
-                            <li>Performed in syngovia </li>
-                            <li>Measures the degree of stenosis.</li>
-                            <li>Process: Click the angio tab, calibrate vessel based on catheter size, select area of interest, create report (shows diameter of stenosis), and save.</li>
-                        </ul>
-                    </div>
-                <div class="tab-pane fade" id="ivus" role="tabpanel" aria-labelledby="ivus-tab">
-                    <h5>IVUS (Intravascular Ultrasound)</h5>
-                    <ul>
-                        <li>Provides an internal view of the inner lumen, plaque and vessel wall.</li>
-                        <li>Helps in deciding stent size and length, especially in cases of diffuse disease affecting lumen clarity.</li>
-                    </ul>
-                </div>
+                        <div class="tab-pane fade" id="ivus" role="tabpanel" aria-labelledby="ivus-tab">
+                            <h5>IVUS (Intravascular Ultrasound)</h5>
+                            <ul>
+                                <li>Provides an internal view of the inner lumen, plaque and vessel wall.</li>
+                                <li>Helps in deciding stent size and length, especially in cases of diffuse disease affecting lumen clarity.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="ACH" role="tabpanel" aria-labelledby="ACH-tab">
+                            <h5>ACH Challenge</h5>
+                            <ul>
+                                <li>Acetylcholine challenge.</li>
+                                <li>Stimulates the endothelial muscarinic receptors, leading to either vasodilation (in a healthy endothelium) or vasoconstriction/spasm (in dysfunctional endothelium).</li>
+                                <li>Like GTN, <u>label</u> post ACH.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="qca" role="tabpanel" aria-labelledby="qca-tab">
+                            <h5>QCA (Quantitative Coronary Analysis)</h5>
+                            <ul>
+                                <li>Performed in syngovia </li>
+                                <li>Measures the degree of stenosis.</li>
+                                <li>Process: Click the angio tab, calibrate vessel based on catheter size, select area of interest, create report (shows diameter of stenosis), and save.</li>
+                            </ul>
+                        </div>
             </div>
         </div>
     </div>
@@ -250,9 +261,17 @@
                         <div class="tab-pane fade show active" id="ablation" role="tabpanel" aria-labelledby="ablation-tab">
                             <h5>Ablation</h5>
                             <ul>
+                                <li>The pt is under GA (takes a while to set up)</li>
+                                <li>Set up: </li>
+                                    <ul>
+                                        <li>2 blueys on table (catch blood/prep solution from femoral access)</li>
+                                        <li>Have US machine and TOE (if crossing transeptally), enter pt details onto the TOE. </li>
+                                        <li>After pt is asleep, move the tube to ~75 deg (MORE than 45 for minimal rad dose to anaesthetist) BEFORE draping. </li>
+                                    </ul>
                                 <li>Used to treat abnormal heart rhythms by ablating small areas of heart tissue.</li>
                                 <li>Requires precision in locating arrhythmogenic areas - may be mapped using EPS first</li>
                                 <li>Will typically use TOE to scross the septum - save this image!</li>
+                                <li>Main action is setting up and then changing the screens as required (e.g. when they are crossing the septum, change to transeptal screen with Sony 1 connected to the TOE machine.)</li>
                             </ul>
                         </div>
 
@@ -260,12 +279,15 @@
                         <div class="tab-pane fade" id="pacemakers" role="tabpanel" aria-labelledby="pacemakers-tab">
                             <h5>Pacemakers</h5>
                             <ul>
-                                <li>Monitors and regulates heartbeat.</li>
-                                <li>Dual or single chamber (only 1 lead in the right ventricle)</li>
-                                <li> Atrial placement of lead: atrial arrhythmias or SA node impairement</li>
-                                <li>Ventricular placement of lead: Complete heart block or significant bradycardia</li>
+                                <li>The pt is usually lightly sedated. </li>
+                                <li>Single (lead in only right ventricle) or dual (also in right atrium)</li>
+                                    <ul>
+                                        <li>Atrial lead used to treat atrial arrhythmias or SA node impairement</li>
+                                        <li>Ventricular lead used to treat complete heart block or significant bradycardia</li>
+                                    </ul>
                                 <li>Biventricular (leads in both ventricles and right atrium) coordinates the ventricles contractions</li>
-                                <li>Pulse generator and leads (inserted via subclavian vein into the right atrium and/or ventricle)</li>
+                                <li>Accessed via subclavian vein into the right atrium and/or ventricle). </li>
+                                <li>Save final run with the leads and generator</li>
                             </ul>
                         </div>
 
@@ -298,6 +320,7 @@
             <h4 class="mb-4">Key Actions</h4>
             <ul>
                 <li>Saving relevant images (e.g. with contrast or device deployment) </li>
+                <li> Measuring balloon sizes (for ASDs) </li>
             </ul>
 
             <h4 class="mb-4">Structural Examinations</h4>
@@ -324,10 +347,13 @@
                                     <h6>Procedure Steps</h6>
                                     <ol>
                                         <li>
-                                            <strong>Balloon dilation:</strong> Diseased valve fissures are pushed away with a balloon.
+                                            <strong>3 sites of access:</strong> Both femoral veins need to be accessed as well as the femoral artery on the opposite side to device delivery (need maximum space for the device and prevent perforation)
                                         </li>
                                         <li>
-                                            <strong>Temporary right ventricular cardiac pacing:</strong> A pacing lead is inserted venously.
+                                            <strong>Catheter insertion:</strong>  2 pigtail catheters are positioned at the aortic root and LV (save image of crossing into LV!). A higher pressure gradient between the 2 indicates higher level of stenosis. A pigtail catheter which has holes throughout ensures more uniform distribution of contrast, decreasing chances of perforation since a high rate of contrast injection is used during deployment.
+                                        </li>
+                                        <li>
+                                            <strong>Temporary right ventricular cardiac pacing:</strong> A pacing lead is inserted venously into the RV.
                                             <ul>
                                                 <li>
                                                     The pacing lead serves as a backup, as <strong>AV block</strong> may be transitional post-procedure.
@@ -338,10 +364,22 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <strong>TAVI prosthesis deployment:</strong> The prosthesis is loaded in a special delivery catheter prepared by the rep. During deployment, its position can be adjusted! It may be self-inflating or need post-dilation depending on the model. Save ALL runs with the device as they may review and use to decide positioning. 
+                                            <strong>TAVI prosthesis deployment:</strong> The prosthesis is loaded in a special delivery catheter prepared by the rep. During deployment, its position can be adjusted/recaptured depending on brand. It may be self-inflating or need post-dilation depending on the model. The tech will enter the lab to pace the heart to 180 bpm to induce tacchychardia and stop cardiac output/motion for easier deployment.
+                                            <ul>
+                                                <li>
+                                                    Gradients
+                                                </li>
+                                                <li>
+                                                    Aortogram
+                                                </li>
+                                                <li>
+                                                    Pigtail cather at aortic root 
+                                                </li>
+                                            </ul>
+                                            Save <strong>ALL</strong> runs with the device as they may review and use to decide positioning. 
                                         </li>
                                         <li>
-                                            <strong>Contrast use:</strong> Contrast is used to check for <strong>aortic regurgitation</strong> and ensure the <strong>coronary ostium</strong> is not obstructed by the valve frame. It is also used to check the vessels after for dissections and bleeds near the access point after deployment. 
+                                            <strong>DSA run:</strong> Dr will ask to change aqcuisition mode to DSA when ready. Used to check fem vein for dissections and bleeds near the access point after deployment. A normal contrast run may be used on the opposite side.
                                         </li>
                                     </ol>
                                     <h6>Common Complications</h6>
@@ -376,9 +414,10 @@
                             <ul>
                                 <li>Blood flows from <strong>Left Atrium (LA)</strong> to <strong>Right Atrium (RA)</strong>, increasing volume of blood in the RA, leading to increased work on the right side.</li>
                                 <li>Results in mixing of <strong>oxygenated</strong> and <strong>deoxygenated blood</strong>.</li>
+                                <li><strong>Measure the balloon waist size</strong> so the appropriate sized device can be used. In the angio tab, calibrate first then using tools make meausrement. </li>
                             </ul>
                             <h6>PFO (Patent Foramen Ovale)</h6>
-                            <p>A condition where the <strong>foramen ovale</strong> failed to close during fetal development. Typically smaller than ASD.</p>
+                            <p>A condition where the <strong>foramen ovale</strong> failed to close during fetal development. Typically smaller than ASD, like a flap.</p>
                             <h6>Treatment</h6>
                             <p>Treatment depends on the type and size of the defect, its effect on the heart, and the presence of any other related conditions, such as <strong>pulmonary hypertension</strong>, <strong>valve disease</strong>, or <strong>coronary artery disease (CAD)</strong>.</p>
                             <p>A <strong>septal occluder</strong> is used to block the hole and facilitate tissue growth.</p>
