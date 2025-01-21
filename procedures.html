@@ -125,7 +125,7 @@
                             <a class="nav-link active" id="pci-tab" data-bs-toggle="tab" href="#pci" role="tab" aria-controls="pci" aria-selected="true">PCI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="lv-tab" data-bs-toggle="tab" href="#lv" role="tab" aria-controls="lv" aria-selected="false">Left Ventriculogram/Aortogram</a>
+                            <a class="nav-link" id="lv-tab" data-bs-toggle="tab" href="#lv" role="tab" aria-controls="lv" aria-selected="false">LV/Aortogram</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="imr-tab" data-bs-toggle="tab" href="#imr" role="tab" aria-controls="imr" aria-selected="false">IMR</a>
@@ -140,10 +140,16 @@
                             <a class="nav-link" id="ivus-tab" data-bs-toggle="tab" href="#ivus" role="tab" aria-controls="ivus" aria-selected="false">IVUS</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" id="rch-tab" data-bs-toggle="tab" href="#rhc" role="tab" aria-controls="rch" aria-selected="false">RCH</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" id="ACH-tab" data-bs-toggle="tab" href="#ACH" role="tab" aria-controls="ACH" aria-selected="false">ACH</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="qca-tab" data-bs-toggle="tab" href="#qca" role="tab" aria-controls="qca" aria-selected="false">QCA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="ivus-tab" data-bs-toggle="tab" href="#qrf" role="tab" aria-controls="qrf" aria-selected="false">QFR</a>
                         </li>
                     </ul>
 
@@ -157,7 +163,7 @@
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="lv" role="tabpanel" aria-labelledby="lv-tab">
-                            <h5>Left Ventriculogram/Aortogram</h5>
+                            <h5>LV/Aortogram</h5>
                             <ul>
                                 <li>Change acquisition to <b>15 f/s</b>.</li>
                                 <li>Catheter advanced into left ventricle to assess function and pressure.</li>
@@ -169,7 +175,8 @@
                             <h5>IMR (Index of Microcirculatory Resistance)</h5>
                             <ul>
                                 <li>Used when all the major arteries are deemed proficient, so the cause of symptoms may be smaller vessels</li>
-                                <li>Helps identify spasms or decreased flow in smaller vessels.</li>
+                                <li>Helps identify spasms or decreased flow/function in smaller vessels.</li>
+                                <li>Adenosine is administered to induce hyperaemia. </li>
                                 <li>Normal IMR result is < 25. </li>
                             </ul>
                         </div>
@@ -199,6 +206,16 @@
                                 <li>Helps in deciding stent size and length, especially in cases of diffuse disease affecting lumen clarity.</li>
                             </ul>
                         </div>
+
+                        <div class="tab-pane fade" id="rch" role="tabpanel" aria-labelledby="rch-tab">
+                            <h5>ACH Challenge</h5>
+                            <ul>
+                                <li>Acetylcholine challenge.</li>
+                                <li>Stimulates the endothelial muscarinic receptors, leading to either vasodilation (in a healthy endothelium) or vasoconstriction/spasm (in dysfunctional endothelium).</li>
+                                <li>Like GTN, <u>label</u> post ACH.</li>
+                            </ul>
+                        </div>
+
                         <div class="tab-pane fade" id="ACH" role="tabpanel" aria-labelledby="ACH-tab">
                             <h5>ACH Challenge</h5>
                             <ul>
@@ -213,6 +230,13 @@
                                 <li>Performed in syngovia </li>
                                 <li>Measures the degree of stenosis.</li>
                                 <li>Process: Click the angio tab, calibrate vessel based on catheter size, select area of interest, create report (shows diameter of stenosis), and save.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="qrf" role="tabpanel" aria-labelledby="qrf-tab">
+                            <h5>QFR (Quantitative Flow Ratio)</h5>
+                            <ul>
+                                <li>Performed in syngovia </li>
+                                <li>FFR without need of pressure wires</li>
                             </ul>
                         </div>
             </div>
@@ -319,6 +343,7 @@
             </ul>
             <h4 class="mb-4">Key Actions</h4>
             <ul>
+                <li> Setting up the room for femoral access (e.g. TOE or US machines) </li>
                 <li>Saving relevant images (e.g. with contrast or device deployment) </li>
                 <li> Measuring balloon sizes (for ASDs) </li>
             </ul>
@@ -331,10 +356,10 @@
                             <a class="nav-link active" id="tavi-tab" data-bs-toggle="tab" href="#tavi" role="tab" aria-controls="tavi" aria-selected="true">TAVI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="mitral-tab" data-bs-toggle="tab" href="#mitral" role="tab" aria-controls="mitral" aria-selected="false">Mitral Clipping</a>
+                            <a class="nav-link" id="asd-tab" data-bs-toggle="tab" href="#asd" role="tab" aria-controls="asd" aria-selected="false">ASD Closure</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="asd-pfo-tab" data-bs-toggle="tab" href="#asd-pfo" role="tab" aria-controls="asd-pfo" aria-selected="false">ASD/PFO Closure</a>
+                            <a class="nav-link" id="pfo-tab" data-bs-toggle="tab" href="#pfo" role="tab" aria-controls="pfo" aria-selected="false">PFO Closure</a>
                         </li>
                     </ul>
 
@@ -390,38 +415,64 @@
 
                         </div>
 
-                        <!-- Mitral Clipping Content -->
-                        <div class="tab-pane fade" id="mitral" role="tabpanel" aria-labelledby="mitral-tab">
-                            <h5>Mitral Clipping</h5>
-                            <h6>Indications</h6>
-                                <p><strong>Mitral Regurgitation</strong> for patients denied surgery due to high risk.</p>
-                                <h6>Contraindications</h6>
-                                <p>Active endocarditis rheumatic valve disease, and mitral stenosis.</p>
-                                <h6>Procedure Steps</h6>
-                                <ol>
-                                    <li>Patient is placed under GA.</li>
-                                    <li>Guided by TOE (trans-oesophageal echocardiogram).</li>
-                                    <li><strong>Access:</strong> Access the valve via the <strong>femoral vein</strong>, into the right atrium and through the septum to the left atrium. </li>
-                                    <li><strong>Clip positioning:</strong> Clip is positioned on the opposing edges of the anterior and posterior leaflets of the mitral valve.</li>
-                                    <li><strong>Clip deployment:</strong> 1 or 2 clips may be deployed.</li>
-                                </ol>
-                        </div>
-                        <!-- ASD/PFO Closure Content -->
-                        <div class="tab-pane fade" id="asd-pfo" role="tabpanel" aria-labelledby="asd-pfo-tab">
-                            <h5>ASD/PFO Closure</h5>
-                            <h6>ASD (Atrial Septal Defect)</h6>
-                            <p>A hole between the heart's two upper chambers (the atria), typically a <strong>congenital defect</strong>.</p>
+                        <!-- ASD Closure Content -->
+                        <div class="tab-pane fade" id="asd" role="tabpanel" aria-labelledby="asd-tab">
+                            <h5>ASD Closure (Atrial Septal Defect) </h5>
+                            <p>A hole between the heart's atrium.</p>
                             <ul>
-                                <li>Blood flows from <strong>Left Atrium (LA)</strong> to <strong>Right Atrium (RA)</strong>, increasing volume of blood in the RA, leading to increased work on the right side.</li>
+                                <li>Blood flows from <strong>Left Atrium </strong> to <strong>Right Atrium </strong>, increasing volume of blood in the RA, leading to increased work on the right side.</li>
                                 <li>Results in mixing of <strong>oxygenated</strong> and <strong>deoxygenated blood</strong>.</li>
                                 <li><strong>Measure the balloon waist size</strong> so the appropriate sized device can be used. In the angio tab, calibrate first then using tools make meausrement. </li>
                             </ul>
-                            <h6>PFO (Patent Foramen Ovale)</h6>
-                            <p>A condition where the <strong>foramen ovale</strong> failed to close during fetal development. Typically smaller than ASD, like a flap.</p>
-                            <h6>Treatment</h6>
-                            <p>Treatment depends on the type and size of the defect, its effect on the heart, and the presence of any other related conditions, such as <strong>pulmonary hypertension</strong>, <strong>valve disease</strong>, or <strong>coronary artery disease (CAD)</strong>.</p>
-                            <p>A <strong>septal occluder</strong> is used to block the hole and facilitate tissue growth.</p>
+                            <h6>Procedure Steps</h6>
+                            <ol>
+                                <li>Set up the room as for <strong>femoral vein</strong> approach (blueys on table, TOE and US machines, arm boards, II turned ~75deg)</li>
+                                <li>
+                                    <strong>Vascular Access:</strong>
+                                    <ul>
+                                        <li>Right femoral vein is accessed with a needle under US guidance.</li>
+                                        <li>A sheath is inserted into the vein over a guidewire.</li>
+                                        <li>Catheters are put in the sheath and advanced up to the heart.</li>
+                                    </ul>
+                                </li>
+                                <li>Initial Haemodynamic measurements are taken by tech (incl RA, RV, PA, confirm left-right shunting of blood and assess pulmonary hypertension).</li>
+                                <li>
+                                    A catheter is advanced through the ASD from the RA to LA using fluoro and TOE. A guidewire is advanced through this and positioned in a stable location like the pulmonary vein.
+                                </li>
+                                <li>
+                                    <strong>Balloon sizing:</strong>
+                                    <ul>
+                                        <li>A measuring balloon catheter is inflated over the ASD to find the accurate size of the defect and confirm correct size of the selected closure device.</li>
+                                        <li>Measure the waist of the balloon (check guide book for instructions).</li>
+                                        <li>On Artis screen, go to angio tab, calibrate first, then using tools make measurement.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Device Deployment:</strong>
+                                    <ul>
+                                        <li>The delivery sheath (a larger catheter) is advanced over the guidewire and positioned across the ASD.</li>
+                                        <li>The closure device is loaded into the sheath.</li>
+                                        <li>
+                                            The device is deployed in two stages:
+                                            <ul>
+                                                <li>The LA disc is deployed first by retracting the sheath and pulled against the foramen for positioning and stability. </li>
+                                                <li>The sheath is then further retracted to deploy the RA disc.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>The device position is checked using fluoro and no residual left-to-right shunting with TOE. </li>
+                            </ol>
+
                         </div>
+
+                        <!-- PFO Closure Content -->
+                        <div class="tab-pane fade" id="pfo" role="tabpanel" aria-labelledby="pfo-tab">
+                            <h5>PFO Closure (Patent Foramen Ovale) </h5>
+                            <p>Unlike ASD, NOT a congenital heart defect, but occurs when the foramen ovale doesn't close AFTER birth. </p>
+                            <p>Otherwise same procedural steps! </p>
+    
+                            
 
                     </div>
                 </div>
