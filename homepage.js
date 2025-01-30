@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     myOffcanvas.addEventListener('shown.bs.offcanvas', toggleDropdownAttribute);
+    
 
 //////////////////////////////////////////////////////////// Alphabetical order Dictionary ////////////////////////////////////////////////////////////
     const table = document.getElementById("dictionaryTable");

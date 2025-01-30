@@ -4,11 +4,12 @@
         Add a go back to top of page button/arrow on right hand side 
         Add a comment section 
         Feedback section in footer
+
     Dictionary
         Continue adding terms 
         Add tags 
         Separate into 'tech terms' (e.g. damping, pullback, pressure ? )
-        Definitions clarity 
+        !!Definitions clarity!!
             Stentboost and stentboost clear: how do they work? Increased dose? 
             beta blockers definition
             Heparin - how often is it given, why do you have to remind the dr? 
