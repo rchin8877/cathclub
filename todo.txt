@@ -4,6 +4,14 @@
         Add a go back to top of page button/arrow on right hand side 
         Add a comment section 
         Feedback section in footer
+        Research how to implement a hover definition for terms
+            Hover over word to get quick reminder on definition
+        Domain names 
+            cathclub.xyz 3.76 fy 38.6 
+            cathclub.org.au 23.95 py 
+            cathclub.live 3.76 fy 
+            thecatsclub.come 19
+            cath.com.au 3 year term 23.95
 
     Dictionary
         Continue adding terms 
@@ -24,17 +32,11 @@
             STEMI (learn about the different types of lead, sizes and how to put it on)
             ROTA, Orbital
             Shockwave 
-            Grafts
+            Graft studies
         CRM?
             Loop monitors
         Add unique cases e.g. pregnant patient, allergic to CM,
-    Update content for errors
-        Not selecting the pt before screening starts
-        No pt/dr coming up on Sony Nucleus 
-        Starting EMR when not needed 
-    Update content for equipment ..? 
-        Clean tube: MUST rotate cos there is blood often on the very bottom of the tube 
-        Its helpful to the cardio techs clean the ECG leads/BP cuff when they're busy! 
+
     Update content for anatomy
         Conus in RCA - heart block ... 
 
@@ -45,11 +47,3 @@
         During the case (alarm, collimating, errors)
 
 
-    Research how to implement a hover definition for terms
-        Hover over word to get quick reminder on definition
-    Domain names 
-        cathclub.xyz 3.76 fy 38.6 
-        cathclub.org.au 23.95 py 
-        cathclub.live 3.76 fy 
-        thecatsclub.come 19
-        cath.com.au 3 year term 23.95
