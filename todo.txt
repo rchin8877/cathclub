@@ -23,13 +23,13 @@
             Heparin - how often is it given, why do you have to remind the dr? 
             FILTERS - how exactly do they work? do they jump to the most 'white' area?
             Damping definition 
+            STEMI - how to put on diff lead, sizes etc. 
 
     QUIZ
         Add key qs to reinforce knowledge at the end of each page 
         Quiz toggle !
     Update content for procedures
         LHC
-            STEMI (learn about the different types of lead, sizes and how to put it on)
             ROTA, Orbital
             Shockwave 
             Graft studies

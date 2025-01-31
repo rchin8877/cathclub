@@ -125,11 +125,9 @@
                             <a class="nav-link active" id="pci-tab" data-bs-toggle="tab" href="#pci" role="tab" aria-controls="pci" aria-selected="true">PCI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="lv-tab" data-bs-toggle="tab" href="#lv" role="tab" aria-controls="lv" aria-selected="false">Left Ventriculogram/Aortogram</a>
+                            <a class="nav-link" id="lv-tab" data-bs-toggle="tab" href="#lv" role="tab" aria-controls="lv" aria-selected="false">LV/Aortogram</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="imr-tab" data-bs-toggle="tab" href="#imr" role="tab" aria-controls="imr" aria-selected="false">IMR</a>
-                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" id="ffr-tab" data-bs-toggle="tab" href="#ffr" role="tab" aria-controls="ffr" aria-selected="false">FFR</a>
                         </li>
@@ -143,7 +141,20 @@
                             <a class="nav-link" id="rhc-tab" data-bs-toggle="tab" href="#rhc" role="tab" aria-controls="rhc" aria-selected="false">RHC</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" id="imr-tab" data-bs-toggle="tab" href="#imr" role="tab" aria-controls="imr" aria-selected="false">IMR</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" id="ACH-tab" data-bs-toggle="tab" href="#ACH" role="tab" aria-controls="ACH" aria-selected="false">ACH</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" id="rota-tab" data-bs-toggle="tab" href="#rota" role="tab" aria-controls="rota" aria-selected="false">Rota</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="shockwave-tab" data-bs-toggle="tab" href="#shockwave" role="tab" aria-controls="shockwave" aria-selected="false">Shockwave</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="graft-tab" data-bs-toggle="tab" href="#graft" role="tab" aria-controls="graft" aria-selected="false">Graft studies</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="qca-tab" data-bs-toggle="tab" href="#qca" role="tab" aria-controls="qca" aria-selected="false">QCA</a>
@@ -157,14 +168,15 @@
                         <div class="tab-pane fade show active" id="pci" role="tabpanel" aria-labelledby="pci-tab">
                             <h5>PCI (Percutaneous Coronary Intervention)</h5>
                             <ul>
-                                <li><strong>Bare-metal Stent:</strong> Short duration of dual antiplatelet (DAP) therapy, higher compliance, less thrombosis risk.</li>
+                                <li><strong>Bare-metal Stent:</strong> Used for non-compliant patients since it has a shorter duration of dual antiplatelet therapy and has less thrombosis risk.</li>
                                 <li><strong>Drug-eluting Stent:</strong> Releases agents over 9-12 months; effective in smaller vessels. </li>
-                                <li><strong>Drug-eluting/coating Balloon:</strong> Releases agent rapidly (within minuntes) and is absorbed by tissue. Agent is typically a cytostatic (anti-proliferative) drug, such as paclitaxel or sirolimus. Effective in smaller vessels which may not be suitable for normal stenting (<2mm) or for opening a stenosed stent. </li>
+                                <li><strong>Drug-eluting/coating Balloon: </strong> Releases agent rapidly (within minuntes) and is absorbed by tissue. Agent is typically a cytostatic (anti-proliferative) drug, such as paclitaxel or sirolimus. Effective in smaller vessels which may not be suitable for normal stenting (< 2mm) or for opening a stenosed stent.</li>
                                 <li>If <strong>more than 1 stent</strong> deployed label final image as per this format: Post Stent (Vessel): 2 x 23mm BRAND </li>
                             </ul>
                         </div>
+
                         <div class="tab-pane fade" id="lv" role="tabpanel" aria-labelledby="lv-tab">
-                            <h5>LV/Aortogram</h5>
+                            <h5>Left Ventriculogram/Aortogram</h5>
                             <ul>
                                 <li>Change acquisition to <b>15 f/s</b>.</li>
                                 <li>Catheter advanced into left ventricle to assess function and pressure.</li>
@@ -172,15 +184,7 @@
                                 <li>A: Check for aortic aneurysm, regurgitation, and dissection.</li>
                             </ul>
                         </div>
-                        <div class="tab-pane fade" id="imr" role="tabpanel" aria-labelledby="imr-tab">
-                            <h5>IMR (Index of Microcirculatory Resistance)</h5>
-                            <ul>
-                                <li>Used when all the major arteries are deemed normal, so the cause of symptoms may be smaller vessels. </li>
-                                <li>Helps identify spasms or decreased flow/function in smaller vessels.</li>
-                                <li>Adenosine is administered to induce hyperaemia. </li>
-                                <li>Normal IMR result is < 25. </li>
-                            </ul>
-                        </div>
+
                         <div class="tab-pane fade" id="ffr" role="tabpanel" aria-labelledby="ffr-tab">
                             <h5>FFR (Fractional Flow Reserve)</h5>
                             <ul>
@@ -211,20 +215,21 @@
                             <h5>RHC</h5>
                             <ul>
                                 <li>Diagnose <strong>pulmonary hypertension</strong>, obtain pressures in the pulmonary circulation (SVC, RA, RV, PA, cardiac output) </li>
-                                <li>Usually performed via femoral vein access, IVC -> RA → RV → PA → PCWP using the natural blood flow. </li>
-                                <li>Usually performed via femoral vein access, IVC -> RA → RV → PA → PCWP using the natural blood flow. </li>
+                                <li>Usually performed via <strong>femoral vein access</strong>, IVC -> RA → RV → PA → PCWP using the natural blood flow. </li>
+                                <li>Prepare room with blues on table and tube angled. If a LHC is also being performed (which is usual) then also prepare the arm board.</li>
                                 <li>The Swan-Ganz catheter which has a balloon at the tip enables "wedging" into a distal pulmonary artery branch for pulmonary capillary wedge pressure (PCWP/PAWP) measurement.</li>
                                 <li>Ice is required to keep the saline cold for cardiac output measurement. The temperature change is detected by a thermistor at the catheter tip in the pulmonary artery, and cardiac output (CO) is calculated.</li>
                                 
                             </ul>
                         </div>
 
-                        <div class="tab-pane fade" id="rch" role="tabpanel" aria-labelledby="rch-tab">
-                            <h5>ACH Challenge</h5>
+                        <div class="tab-pane fade" id="imr" role="tabpanel" aria-labelledby="imr-tab">
+                            <h5>IMR (Index of Microcirculatory Resistance)</h5>
                             <ul>
-                                <li>Acetylcholine challenge.</li>
-                                <li>Stimulates the endothelial muscarinic receptors, leading to either vasodilation (in a healthy endothelium) or vasoconstriction/spasm (in dysfunctional endothelium).</li>
-                                <li>Like GTN, <u>label</u> post ACH.</li>
+                                <li>Used when all the major arteries are deemed normal, so the cause of symptoms may be smaller vessels. </li>
+                                <li>Helps identify spasms or decreased flow/function in smaller vessels.</li>
+                                <li>Adenosine is administered to induce hyperaemia. </li>
+                                <li>Normal IMR result is < 25. </li>
                             </ul>
                         </div>
 
@@ -232,10 +237,37 @@
                             <h5>ACH Challenge</h5>
                             <ul>
                                 <li>Acetylcholine challenge.</li>
+                                <li>Used to diagnose microvascular dysfunction or endothelial dysfunction. Similar to IMR, used when the pt has chest pain or angina but does not have significant stenosis visible on angiography.</li>
                                 <li>Stimulates the endothelial muscarinic receptors, leading to either vasodilation (in a healthy endothelium) or vasoconstriction/spasm (in dysfunctional endothelium).</li>
                                 <li>Like GTN, <u>label</u> post ACH.</li>
                             </ul>
                         </div>
+
+                        <div class="tab-pane fade" id="rota" role="tabpanel" aria-labelledby="rota-tab">
+                            <h5>Rotablation</h5>
+                            <ul>
+                                <li>///</li>
+                                <li>///</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane fade" id="shockwave" role="tabpanel" aria-labelledby="shockwave-tab">
+                            <h5>Shockwave</h5>
+                            <ul>
+                                <li>Also known as lithotripsy</li>
+                                <li>///</li>
+                                <li>///</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane fade" id="graft" role="tabpanel" aria-labelledby="graft-tab">
+                            <h5>Graft Studies</h5>
+                            <ul>
+                                <li>GRAFTS</li>
+                                <li>///</li>
+                            </ul>
+                        </div>
+
                         <div class="tab-pane fade" id="qca" role="tabpanel" aria-labelledby="qca-tab">
                             <h5>QCA (Quantitative Coronary Analysis)</h5>
                             <ul>
@@ -253,6 +285,24 @@
                         </div>
             </div>
         </div>
+        <br>
+        <h4 class="mb-4">STEMI Cases</h4>
+        <ul>
+            <li> As per normal LHC with additional pt gown, blue bag for belongings and shaver on the table. 
+            <li>Check EMR emergency list for WR AV bed for pt details. If unknown, enter as an emergency pt 
+            <li>Sony screen: just put unknown if not appearing </li>
+            <li>Lab right screen: put only haemo on</li>
+            <li>Pt going into cardiac arrest/VF:</li>
+                <ul>
+                    <li>Call a code blue when notified by the consultant</li>
+                    <li style="color: #549dd1; font-style: italic;font-weight: bold;list-style-type: none;">Dial 2222 "Code blue level 4 cathlab lab [e.g. 4]"</li>
+                    <li>Watch for people going into the room without lead - notify them and give them lead to put on </li>
+                    <li> Scribe on paper time of shocks, medications given </li>
+                    <li>Double-check settings since people may have accidently touched the screen inside. ( e.g. frame rate changed to 30 f/s from 10) </li>
+                </ul>
+            </li>
+            <li style="font-weight: bold;"> Be vigilant, communicate when unsure and pay attention to the ECG, pressure and sats!</li>
+        </ul>
     </div>
 </div>
 </section>
