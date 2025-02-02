@@ -1,7 +1,7 @@
 27/1/2024
     Webdev
+        Fix mobile anatomy page ! Overflow of images
         Restructure procedures...better way to format or break into separate pages 
-        Add a go back to top of page button/arrow on right hand side 
         Add a comment section 
         Feedback section in footer
         Research how to implement a hover definition for terms
