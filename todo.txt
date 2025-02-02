@@ -16,7 +16,12 @@
     Dictionary
         Continue adding terms 
         Add tags 
-        Separate into 'tech terms' (e.g. damping, pullback, pressure ? )
+            Equipment - catheter types, 
+            Procedures
+            Anatomy
+            Medications
+            Physics
+
         !!Definitions clarity!!
             Stentboost and stentboost clear: how do they work? Increased dose? 
             beta blockers definition
@@ -24,17 +29,11 @@
             FILTERS - how exactly do they work? do they jump to the most 'white' area?
             Damping definition 
             STEMI - how to put on diff lead, sizes etc. 
+            ROTA in procedures LHC - why do we save all runs w rota? 
 
     QUIZ
         Add key qs to reinforce knowledge at the end of each page 
         Quiz toggle !
-    Update content for procedures
-        LHC
-            ROTA, Orbital
-            Shockwave 
-            Graft studies
-        CRM?
-            Loop monitors
         Add unique cases e.g. pregnant patient, allergic to CM,
 
     Update content for anatomy

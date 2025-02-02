@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const equipmentLink = document.getElementById("navbarDropdownEquipment");
 
 
-    ////////////////// Navbar offcanvas background image change (otherwise will overlay 'outer'/full width navbar) //////////////////////
+    // Navbar offcanvas background image change (otherwise will overlay 'outer'/full width navbar) 
     // Offcanvas event listeners for background image toggle
     myOffcanvas.addEventListener('show.bs.offcanvas', function () {
         myOffcanvas.style.backgroundImage = "linear-gradient(to right, #549dd1 7%, #e3888d 40%, #c75b61 100%)";
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //Methods are actions you perform on objects, while property assignments^ simply set or change the value of a property.
     //Assigning the style.backgroundImage property on the object myoffcanvas 
 
-    ////////////////// toggles dropdown when offcanvas is shown //////////////////////
+    /// toggles dropdown when offcanvas is shown ///
     function toggleDropdownAttribute() {
         if (myOffcanvas.classList.contains("show")) {
             anatomyLink.setAttribute("data-bs-toggle", "dropdown");
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     myOffcanvas.addEventListener('shown.bs.offcanvas', toggleDropdownAttribute);
     
 
-//////////////////////////////////////////////////////////// Alphabetical order Dictionary ////////////////////////////////////////////////////////////
+// Alphabetical order Dictionary 
     const table = document.getElementById("dictionaryTable");
     const tbody = table.querySelector("tbody");
     const rows = Array.from(tbody.rows);
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
         tbody.appendChild(row);
     });
 
-//////////////////////////////////////////////////////////// Search Dictionary ////////////////////////////////////////////////////////////
+// Search Dictionary 
     function searchTerms() {
         const input = document.getElementById('searchInput');
         const filter = input.value.toLowerCase();
@@ -91,3 +91,25 @@ document.addEventListener("DOMContentLoaded", function() {
 //}
 
 });
+
+// Scroll to the specific term. Make all other terms hidden except for header row
+function scrollToTerm(termId) {
+    var term = document.getElementById(termId);
+    
+    if (term) {
+        // Find the closest row to the term and make sure it is visible
+        var row = term.closest("tr"); // Get the closest row <tr> containing the term
+        row.style.display = ""; // Make sure the row is shown
+
+        // Make sure all rows, except the header, are hidden
+        const allRows = document.querySelectorAll("#dictionaryTable tr");
+        allRows.forEach(function (otherRow, index) {
+            if (index !== 0 && otherRow !== row) { // Skip the first row (header) and the clicked row
+                otherRow.style.display = "none"; // Hide other rows
+            }
+        });
+
+        // Smooth scroll the term into view
+        row.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+}
