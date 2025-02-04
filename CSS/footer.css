@@ -44,10 +44,17 @@ footer {
     background-color: #549dd1; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 7px;
+    padding-top: 4px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    width: 50px;
+    height:50px;
   }
+
+  #myBtn img {
+    width: 100%;
+    height: auto;
+}
   
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
