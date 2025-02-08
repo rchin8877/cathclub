@@ -13,7 +13,9 @@
 #nav-bar {
     background-image: linear-gradient(to right, #549dd1 7%, #e3888d 40%, #c75b61 100%);
     width: 100%;
+    max-width: 100%;
     padding: 10px 0;
+    box-sizing: content-box;
 }
 
 .navbar {

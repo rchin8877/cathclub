@@ -1,3 +1,7 @@
+* {
+    outline: 1px solid red;
+  }
+
 #iframe a {
     color: #549dd1 !important;
     font-weight: 600;
@@ -15,15 +19,35 @@ iframe {
     text-decoration: underline;
 }
 
-.image-gallery figure {
-    text-align: center;
-    margin: 10px 0;
-}
+.scroll-container {
+    display: flex;
+    overflow-x: auto;  /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Smooth scroll snapping */
+    -webkit-overflow-scrolling: touch; /* For better scrolling experience on iOS */
+    height: auto;
+  }
+  
+  .scroll-container figure {
+    min-width: 300px; /* Set a minimum width for each image */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove any padding */
+    height: auto;
+  }
+  
+  .scroll-container img {
+    width: 175%;  /* Adjust width for responsiveness */
+    height: auto; /* Keep aspect ratio intact */
+    display: block; /* Ensures no unwanted space below the image */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    height: auto;
+  }
 
 .LAD_images img {
-    max-width: 175%;
+    width: 175%;
     height: 175%;
-    object-fit: contain; /* Keeps aspect ratio intact */
+    height: auto;
+    display: block;
 }
 
 
