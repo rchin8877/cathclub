@@ -1,6 +1,6 @@
 27/1/2024
     Webdev
-        Fix mobile anatomy page ! Overflow of images
+        Fix mobile anatomy page ! Overflow of images -> changed images to scroll rather than scrolling whole page
         Restructure procedures...better way to format or break into separate pages 
         Add a comment section 
         Feedback section in footer
