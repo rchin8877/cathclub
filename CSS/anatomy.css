@@ -15,6 +15,23 @@ iframe {
     text-decoration: underline;
 }
 
+.LAD_images img {
+    width: 175%;
+    height: 175%;
+    height: auto;
+    display: block;
+}
+
+
+.LCX_images img {
+    width: 175%;
+    max-width: none; /* Remove max-width limit */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes any extra spacing */
+}
+
+@media (max-width: 768px) {
+
 .scroll-container {
     display: flex;
     overflow-x: auto;  /* Enable horizontal scrolling */
@@ -38,20 +55,6 @@ iframe {
     padding: 0; /* Remove any padding */
     height: auto;
   }
-
-.LAD_images img {
-    width: 175%;
-    height: 175%;
-    height: auto;
-    display: block;
-}
-
-
-.LCX_images img {
-    width: 175%;
-    max-width: none; /* Remove max-width limit */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Removes any extra spacing */
 }
 
 .highlight {
