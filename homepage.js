@@ -133,3 +133,40 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//strike-checkbox on homepage 
+const checkboxes = document.querySelectorAll('.strike-checkbox');
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            let label = this.nextElementSibling; // Get the label next to the checkbox
+            if (this.checked) {
+                label.style.textDecoration = "line-through";
+                label.style.color = "gray";
+            } else {
+                label.style.textDecoration = "none";
+                label.style.color = "black";
+            }
+        });
+    });
+
+//dark mode toggle
+const toggleButton = document.getElementById("dark-mode-toggle");
+const body = document.body;
+
+// Check if dark mode was previously enabled
+if (localStorage.getItem("dark-mode") === "enabled") {
+  body.classList.add("dark-mode");
+}
+
+toggleButton.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+
+  // Save user preference
+  if (body.classList.contains("dark-mode")) {
+    localStorage.setItem("dark-mode", "enabled");
+  } else {
+    localStorage.setItem("dark-mode", "disabled");
+  }
+});
+

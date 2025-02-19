@@ -1,3 +1,34 @@
-#heade {
+#header {
     background-color: #82c4f3; /* Light blue color */
 }
+
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+/* General Dark Mode */
+.dark-mode {
+    background-color: rgb(48, 45, 45);
+    color: rgb(255, 218, 218);
+  }
+  
+  /* Navbar Dark Mode */
+  .dark-mode #nav-bar {
+    background-image: linear-gradient(to right, #1e3a5f 7%, #632b2e 40%, #4b1e20 100%);
+  }
+  
+  /* Table Header */
+  .dark-mode #dictionaryTable th {
+    background-color: #1e3a5f;
+    color: rgb(218, 218, 219);
+  }
+  
+  /* Table Rows */
+  .dark-mode #dictionaryTable td {
+    border: 1px solid white;
+    background-color: #444;
+    color: white;
+  }
+  
