@@ -9,6 +9,10 @@ footer {
     bottom: 0; /* Align at the bottom of the page */
 }
 
+.dark-mode footer {
+    background:  #632b2e;
+}
+
 .footer-content {
     display: flex;
     justify-content: center; /* Center the content horizontally */
@@ -23,6 +27,7 @@ footer {
     margin: 0; /* Optional: Adds a small gap between the image and footer content */
     padding: 0;
 }
+
 .footer-logo {
     max-width: 130px; /* Adjust logo size */
     margin-bottom: 10px; /* Space between logo and text */
@@ -33,7 +38,7 @@ footer {
     font-style: italic; /* Optional: Makes the text italic */
 }
 
-#myBtn {
+#topBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
@@ -51,11 +56,36 @@ footer {
     height:50px;
   }
 
-  #myBtn img {
+  .dark-mode #topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #172c48; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 7px;
+    padding-top: 4px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    width: 50px;
+    height:50px;
+  }
+
+  #topBtn img {
     width: 100%;
     height: auto;
 }
   
-  #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
+/* #topBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover }*/
+  
+/* Change the switch toggle (circle) color */
+.dark-mode .form-check-input:checked {
+    background-color: #632b2e !important; /* Background when toggled on */
+    border-color: #172c48 !important;
+}
+
+ 

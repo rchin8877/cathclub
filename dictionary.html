@@ -84,6 +84,9 @@
                   <li class="nav-item px-3 px-lg-0 py-1 py-lg-4">
                     <a class="nav-link" href="dictionary.html">Dictionary</a>
                   </li>
+                  <li>
+                  </li>
+                </li>
             </ul> <!--autoalign right when screen is large-->
             </div>
     </nav>
@@ -94,8 +97,10 @@
     <div class="container px-4">
         <div class="row">
             <div class="col-md-12">
-               <!--- <button id="dark-mode-toggle">Toggle Dark Mode</button> -->
-
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="dark-mode-toggle">
+                    <label class="form-check-label" for="dark-mode-toggle">Dark Mode</label>
+                </div>
                 <h1 class="py-2 text-left fw-bold">Dictionary</h1>
                 <p>May your heart find its way through the maze of terminology. Use this dictionary to help guide you!</p>
             </div>
@@ -253,7 +258,7 @@
                                 <td> <strong>Protein</strong> found in the cells of your heart muscle. Without oxygen from blood, heart muscle cells die and release troponin (thus <strong>higher levels = indicator of heart attack</strong>). Troponin I is only found in the heart muscle, while troponin T is found in the heart muscle and other muscles. Troponin levels usually <strong>increase sharply within 3-12 hours after a heart attack</strong> and peak about 24 hours after the heart attack before taking several days to return to normal. </td>
                             </tr>
                             <tr>
-                                <td>IABP / Intra-aortic Balloon Pump </td>
+                                <td>Balloon Pump</td>
                                 <td> A balloon catheter which is place in the <strong>descending aorta</strong> to <strong>increase blood flow</strong>, usually insterted when a patient had heart attack, heart failure, cardiogenic shock or before/after a major surgery. It is <strong>timed to inflate during the heart's relaxation phase</strong>, which helps push blood forward to the body, and deflate during the heart's contraction phase, allowing blood to flow back into the heart more easily - triggered by the ECG. May remain for a few days, all the while the <strong>patient must remain supine</strong>. </td>
                             </tr>
                             <tr>
@@ -361,6 +366,12 @@
                             <td> Similar to FFR, DFR measures coronary pressure to assess stenosis severity; however, it is performed at rest, <strong>without the need for adenosine or hyperemia induced</strong>. Unlike FFR, which evaluates pressure across the entire cardiac cycle, DFR is measured only during diastole, when <strong>resting flow rate</strong> is most stable.  
                             </td>
                         </tr>
+                        <tr>
+                            <td> Cardioversion </td>
+                            <td> Procedure used to <strong>restore a normal heart rhythm</strong> in pts with arrhythmias, such as AF, atrial flutter, or supraventricular tachycardia (SVT). It can be performed electrically or chemically (with medications)! Cardioversion is synchronised whereas defibrillation is unsynchronized and used for life-threatening arrhythmias (e.g., ventricular fibrillation, pulseless VT). <br> 
+                            May be used before ablation since a normal rhythm is necessary to properly map the hearts electrical activity or to safely position catheters, as well as after ablating to confirm the effectiveness of the ablation.
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
@@ -368,8 +379,8 @@
         </div>
     </div>
 </section>
-<button onclick="topFunction()" id="myBtn" title="Go to top">
-    <img src="Images/arrow.png" alt="Go to top">
+<button onclick="topFunction()" id="topBtn" title="Go to top">
+    <img  src="Images/arrow.png" alt="Go to top">
 </button>
 </body>
 

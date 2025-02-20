@@ -7,14 +7,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Navbar offcanvas background image change (otherwise will overlay 'outer'/full width navbar) 
     // Offcanvas event listeners for background image toggle
-    myOffcanvas.addEventListener('show.bs.offcanvas', function () {
-        myOffcanvas.style.backgroundImage = "linear-gradient(to right, #549dd1 7%, #e3888d 40%, #c75b61 100%)";
-    });
+        // Offcanvas event listeners
+        myOffcanvas.addEventListener("show.bs.offcanvas", function () {
+            updateOffcanvasBackground();
+        });
+        // When offcanvas is hidden, reset the background
+        myOffcanvas.addEventListener("hidden.bs.offcanvas", function () {
+            myOffcanvas.style.backgroundImage = "none";
+        });
+    // Function to set the offcanvas background based on dark mode
+    function updateOffcanvasBackground() {
+        if (document.body.classList.contains("dark-mode")) {
+            myOffcanvas.style.backgroundImage = "linear-gradient(to right, #172c48 7%, #632b2e 40%, #4b1e20 100%)"; 
+        } else {
+            myOffcanvas.style.backgroundImage = "linear-gradient(to right, #549dd1 7%, #e3888d 40%, #c75b61 100%)"; 
+        }
+    }
 
-    //When switching from half-screen to full screen (with offcanvas previously opened), need to switch back to no background image 
-    myOffcanvas.addEventListener('hidden.bs.offcanvas', function () {
-        myOffcanvas.style.backgroundImage = "none";
-    });
+    // Apply correct background on page load (in case dark mode is already enabled)
+    if (document.body.classList.contains("dark-mode")) {
+        updateOffcanvasBackground();
+    }
 
     //Methods are actions you perform on objects, while property assignments^ simply set or change the value of a property.
     //Assigning the style.backgroundImage property on the object myoffcanvas 
@@ -115,7 +128,7 @@ function scrollToTerm(termId) {
 }
 
 // Get the button:
-let mybutton = document.getElementById("myBtn");
+let mybutton = document.getElementById("topBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -151,22 +164,41 @@ const checkboxes = document.querySelectorAll('.strike-checkbox');
     });
 
 //dark mode toggle
-const toggleButton = document.getElementById("dark-mode-toggle");
+const toggleSwitch = document.getElementById("dark-mode-toggle");
 const body = document.body;
+const waveImg = document.querySelector(".footer-image"); // Wave image
+const cathClubLogo = document.querySelector(".footer-logo"); // CathClub logo
+const navbarLogos = document.querySelectorAll(".navbar-brand img");
 
-// Check if dark mode was previously enabled
-if (localStorage.getItem("dark-mode") === "enabled") {
-  body.classList.add("dark-mode");
+function updateImages() {
+    if (body.classList.contains("dark-mode")) {
+        waveImg.src = "Images/wavedark.png";
+        cathClubLogo.src = "Images/cathclubdark.png";
+        navbarLogos.forEach(logo => logo.src = "Images/cathclubdark.png");
+    } else {
+        waveImg.src = "Images/wave6.png";
+        cathClubLogo.src = "Images/cathclub.png";
+        navbarLogos.forEach(logo => logo.src = "Images/cathclub.png");
+    }
 }
 
-toggleButton.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
+// Check localStorage for dark mode preference
+if (localStorage.getItem("dark-mode") === "enabled") {
+    body.classList.add("dark-mode");
+    toggleSwitch.checked = true; // Ensure toggle switch is in correct position
+    updateImages();
+}
 
-  // Save user preference
-  if (body.classList.contains("dark-mode")) {
-    localStorage.setItem("dark-mode", "enabled");
-  } else {
-    localStorage.setItem("dark-mode", "disabled");
-  }
+// Event listener for the dark mode toggle
+toggleSwitch.addEventListener("change", () => {
+    body.classList.toggle("dark-mode");
+
+    if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("dark-mode", "enabled");
+    } else {
+        localStorage.setItem("dark-mode", "disabled");
+    }
+
+    updateImages();
 });
 
