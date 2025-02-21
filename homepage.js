@@ -7,29 +7,77 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Navbar offcanvas background image change (otherwise will overlay 'outer'/full width navbar) 
     // Offcanvas event listeners for background image toggle
-        // Offcanvas event listeners
-        myOffcanvas.addEventListener("show.bs.offcanvas", function () {
-            updateOffcanvasBackground();
-        });
+
         // When offcanvas is hidden, reset the background
         myOffcanvas.addEventListener("hidden.bs.offcanvas", function () {
             myOffcanvas.style.backgroundImage = "none";
         });
-    // Function to set the offcanvas background based on dark mode
-    function updateOffcanvasBackground() {
-        if (document.body.classList.contains("dark-mode")) {
-            myOffcanvas.style.backgroundImage = "linear-gradient(to right, #172c48 7%, #632b2e 40%, #4b1e20 100%)"; 
-        } else {
-            myOffcanvas.style.backgroundImage = "linear-gradient(to right, #549dd1 7%, #e3888d 40%, #c75b61 100%)"; 
+
+        myOffcanvas.addEventListener('show.bs.offcanvas', updateOffcanvasBackground)
+            
+        // Function to set the offcanvas background based on dark mode
+        function updateOffcanvasBackground() {
+            if (document.body.classList.contains("dark-mode")) {
+                myOffcanvas.style.backgroundImage = "linear-gradient(to right, #172c48 7%, #632b2e 40%, #4b1e20 100%)"; 
+            } else {
+                myOffcanvas.style.backgroundImage = "linear-gradient(to right, #549dd1 7%, #e3888d 40%, #c75b61 100%)"; 
+            }
         }
-    }
 
     
+//////////////////// Dark mode toggle //////////////////////
+const toggleSwitch = document.getElementById("theme-switch");
+const body = document.body;
 
-    // When offcanvas is hidden, reset the background
-        myOffcanvas.addEventListener("hidden.bs.offcanvas", function () {
-            myOffcanvas.style.backgroundImage = "none";
-        });
+// Select all images that need to change in dark mode
+const imagesToChange = {
+    "Images/wave6.png": "Images/wavedark.png",
+    "Images/wave7.png": "Images/wave8.png",
+    "Images/wave1.png": "Images/wave1dark.png",
+    "Images/cathclub.png": "Images/cathclubdark.png"
+};
+
+// Function to update images based on dark mode state
+// Original function only accounted for light mode, must include || img.src.includes(darkModeSrc) as well
+function updateImages() {
+    document.querySelectorAll("img").forEach(img => {
+        for (const [lightModeSrc, darkModeSrc] of Object.entries(imagesToChange)) {
+            if (img.src.includes(lightModeSrc) || img.src.includes(darkModeSrc)) {
+                img.src = body.classList.contains("dark-mode") ? darkModeSrc : lightModeSrc;
+                break;
+            }
+        }
+    });
+}
+// Apply dark mode **before** the page loads fully                              !! Refer attribute 
+if (localStorage.getItem("dark-mode") === "enabled") {
+    body.classList.add("dark-mode"); // Apply dark mode immediately
+    updateImages();
+}
+
+// Ensure everything loads correctly after page refresh
+document.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem("dark-mode") === "enabled") {
+        body.classList.add("dark-mode");
+        toggleSwitch.checked = true; // Sync the switch with dark mode state
+    } else {
+        toggleSwitch.checked = false;
+    }
+    updateImages(); // Ensure images are correct on load
+});
+
+// Toggle dark mode when button is clicked
+toggleSwitch.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    // Update images AND OFFCANVAS immediately
+    updateImages();
+    updateOffcanvasBackground();
+    
+    localStorage.setItem("dark-mode", body.classList.contains("dark-mode") ? "enabled" : "disabled");
+
+});
+
 
     //Methods are actions you perform on objects, while property assignments^ simply set or change the value of a property.
     //Assigning the style.backgroundImage property on the object myoffcanvas 
@@ -46,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
             equipmentLink.removeAttribute("data-bs-toggle");
         }
     }
-
     myOffcanvas.addEventListener('shown.bs.offcanvas', toggleDropdownAttribute);
     
 
@@ -165,49 +212,3 @@ const checkboxes = document.querySelectorAll('.strike-checkbox');
         });
     });
 
-// Dark mode toggle
-const toggleSwitch = document.getElementById("theme-switch");
-const body = document.body;
-
-// Select all images that need to change in dark mode
-const imagesToChange = {
-    "Images/wave6.png": "Images/wavedark.png",
-    "Images/wave1.png": "Images/wave1dark.png",
-    "Images/cathclub.png": "Images/cathclubdark.png"
-};
-
-// Function to update images based on dark mode state
-// Original function only accounted for light mode, must include || img.src.includes(darkModeSrc) as well
-function updateImages() {
-    document.querySelectorAll("img").forEach(img => {
-        for (const [lightModeSrc, darkModeSrc] of Object.entries(imagesToChange)) {
-            if (img.src.includes(lightModeSrc) || img.src.includes(darkModeSrc)) {
-                img.src = body.classList.contains("dark-mode") ? darkModeSrc : lightModeSrc;
-                break;
-            }
-        }
-    });
-}
-
-// Ensure everything loads correctly after page refresh
-document.addEventListener("DOMContentLoaded", () => {
-    if (localStorage.getItem("dark-mode") === "enabled") {
-        body.classList.add("dark-mode");
-        toggleSwitch.checked = true; // Sync the switch with dark mode state
-    } else {
-        toggleSwitch.checked = false;
-    }
-    updateImages(); // Ensure images are correct on load
-});
-
-// Toggle dark mode when button is clicked
-toggleSwitch.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
-    
-    if (body.classList.contains("dark-mode")) {
-        localStorage.setItem("dark-mode", "enabled");
-    } else {
-        localStorage.setItem("dark-mode", "disabled");
-    }
-    updateImages(); // Update images immediately
-});
