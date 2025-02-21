@@ -166,7 +166,7 @@ const checkboxes = document.querySelectorAll('.strike-checkbox');
     });
 
 // Dark mode toggle
-const toggleSwitch = document.getElementById("dark-mode-toggle");
+const toggleSwitch = document.getElementById("theme-switch");
 const body = document.body;
 
 // Select all images that need to change in dark mode
@@ -200,8 +200,8 @@ document.addEventListener("DOMContentLoaded", () => {
     updateImages(); // Ensure images are correct on load
 });
 
-// Toggle dark mode when switch is clicked
-toggleSwitch.addEventListener("change", () => {
+// Toggle dark mode when button is clicked
+toggleSwitch.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
     
     if (body.classList.contains("dark-mode")) {
@@ -209,6 +209,5 @@ toggleSwitch.addEventListener("change", () => {
     } else {
         localStorage.setItem("dark-mode", "disabled");
     }
-
     updateImages(); // Update images immediately
 });

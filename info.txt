@@ -4,3 +4,26 @@ WEBPAGE tutorial: https://www.youtube.com/watch?v=v0IgI8vYD_o&list=PL1MK7nFniZZY
 https://www.hmpgloballearningnetwork.com/site/cathlab/articles/angiographic-projections-made-simple-easy-guide-understanding-oblique-views
 
 DARK MODE IU https://atmos.style/blog/dark-mode-ui-best-practices
+
+DARK MODE TUTORIAL https://www.youtube.com/watch?v=_gKEUYarehE&t=50s
+    - START BY HAVING A COLOUR PALETTE and switching from dark to root 
+    - Link the javascript file in the header, and use DEFER attribute to execute code only after HTML has been loaded...
+
+    :root{
+  --base-color: white;
+  --base-variant: #e8e9ed;
+  --text-color: #111528;
+  --secondary-text: #232738;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+.darkmode{
+  --base-color: #070b1d;
+  --base-variant: #101425;
+  --text-color: #ffffff;
+  --secondary-text: #a4a5b8;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+
+- 
