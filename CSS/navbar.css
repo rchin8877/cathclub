@@ -30,6 +30,11 @@
     background-color: #e3888d;
 }
 
+.dark-mode .dropdown-item:hover {
+    color: #FFF;
+    background-color: #492123;
+}
+
 
 .fa-bars-staggered {
     color: #fff;
@@ -48,14 +53,20 @@
 
 .nav-link.show {
     font-weight: 600;
-    color: #f2b8ce !important;
+    color: 
+    #f2b8ce ;
+}
+
+.dark-mode .nav-link.show {
+    font-weight: 600;
+    color: #654552 !important;
 }
 
 .nav-link:hover {
     font-weight: 600;
     color: #f2b8ce !important;
 }
-
+/* Colour when hovering over the tabs which are dropdowns */
 .dropdown:hover .nav-link { /* maintains hover color of parent link when hovering over dropdown items */
     color: #f2b8ce !important;
   }
