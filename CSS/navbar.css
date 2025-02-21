@@ -66,9 +66,19 @@
     font-weight: 600;
     color: #f2b8ce !important;
 }
+
+.dark-mode .nav-link:hover {
+    font-weight: 600;
+    color: #96838a !important;
+}
+
 /* Colour when hovering over the tabs which are dropdowns */
 .dropdown:hover .nav-link { /* maintains hover color of parent link when hovering over dropdown items */
     color: #f2b8ce !important;
+  }
+
+.dark-mode .dropdown:hover .nav-link { /* maintains hover color of parent link when hovering over dropdown items */
+    color: #96838a !important;
   }
 
 .navbar-toggler {
