@@ -5,7 +5,7 @@
 body {
     background-color: white;
     color: black;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.2s, color 0.1s;
   }
   
 /* General Dark Mode */

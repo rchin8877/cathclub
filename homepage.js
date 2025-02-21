@@ -24,10 +24,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Apply correct background on page load (in case dark mode is already enabled)
-    if (document.body.classList.contains("dark-mode")) {
-        updateOffcanvasBackground();
-    }
+    
+
+    // When offcanvas is hidden, reset the background
+        myOffcanvas.addEventListener("hidden.bs.offcanvas", function () {
+            myOffcanvas.style.backgroundImage = "none";
+        });
 
     //Methods are actions you perform on objects, while property assignments^ simply set or change the value of a property.
     //Assigning the style.backgroundImage property on the object myoffcanvas 
@@ -163,42 +165,50 @@ const checkboxes = document.querySelectorAll('.strike-checkbox');
         });
     });
 
-//dark mode toggle
+// Dark mode toggle
 const toggleSwitch = document.getElementById("dark-mode-toggle");
 const body = document.body;
-const waveImg = document.querySelector(".footer-image"); // Wave image
-const cathClubLogo = document.querySelector(".footer-logo"); // CathClub logo
-const navbarLogos = document.querySelectorAll(".navbar-brand img");
 
+// Select all images that need to change in dark mode
+const imagesToChange = {
+    "Images/wave6.png": "Images/wavedark.png",
+    "Images/wave1.png": "Images/wave1dark.png",
+    "Images/cathclub.png": "Images/cathclubdark.png"
+};
+
+// Function to update images based on dark mode state
+// Original function only accounted for light mode, must include || img.src.includes(darkModeSrc) as well
 function updateImages() {
-    if (body.classList.contains("dark-mode")) {
-        waveImg.src = "Images/wavedark.png";
-        cathClubLogo.src = "Images/cathclubdark.png";
-        navbarLogos.forEach(logo => logo.src = "Images/cathclubdark.png");
+    document.querySelectorAll("img").forEach(img => {
+        for (const [lightModeSrc, darkModeSrc] of Object.entries(imagesToChange)) {
+            if (img.src.includes(lightModeSrc) || img.src.includes(darkModeSrc)) {
+                img.src = body.classList.contains("dark-mode") ? darkModeSrc : lightModeSrc;
+                break;
+            }
+        }
+    });
+}
+
+// Ensure everything loads correctly after page refresh
+document.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem("dark-mode") === "enabled") {
+        body.classList.add("dark-mode");
+        toggleSwitch.checked = true; // Sync the switch with dark mode state
     } else {
-        waveImg.src = "Images/wave6.png";
-        cathClubLogo.src = "Images/cathclub.png";
-        navbarLogos.forEach(logo => logo.src = "Images/cathclub.png");
+        toggleSwitch.checked = false;
     }
-}
+    updateImages(); // Ensure images are correct on load
+});
 
-// Check localStorage for dark mode preference
-if (localStorage.getItem("dark-mode") === "enabled") {
-    body.classList.add("dark-mode");
-    toggleSwitch.checked = true; // Ensure toggle switch is in correct position
-    updateImages();
-}
-
-// Event listener for the dark mode toggle
+// Toggle dark mode when switch is clicked
 toggleSwitch.addEventListener("change", () => {
     body.classList.toggle("dark-mode");
-
+    
     if (body.classList.contains("dark-mode")) {
         localStorage.setItem("dark-mode", "enabled");
     } else {
         localStorage.setItem("dark-mode", "disabled");
     }
 
-    updateImages();
+    updateImages(); // Update images immediately
 });
-

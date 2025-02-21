@@ -20,10 +20,9 @@
 </head>
 
 <body>
-    <section id="nav-bar">
+  <section id="nav-bar">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class='container-fluid'>
-            <a class="navbar-brand" href="index.html"><img src="Images/cathclub.png"></a>
+            <a class="navbar-brand" href="#"><img src="Images/cathclub.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar"> <!-- ARIA: Accessible Rich Internet Applications, aria-controls points to the id of another element on the page, typically the one that will be shown -->
                 <i class="fa-solid fa-bars-staggered"></i>
             </button>
@@ -55,25 +54,25 @@
                   </li>
 
                   <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
-                    <a class="nav-link dropdown-toggle" href="equipment.html" id="navbarDropdownEquipment" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                    <a class="nav-link dropdown-toggle" href="equipment.html" id="navbarDropdownEquipment" role="button" data-bs-hover="dropdown" aria-expanded="false"> <!--change data-bs-toggle to hover to make dropdown item clickable-->
                         Equipment
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="equipment.html#siemens">Siemens/Syngovia Computer</a></li>
-                      <li><a class="dropdown-item" href="equipment.html#table">Control Module</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="equipment.html#canon">Canon</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="equipment.html#injection">Injection</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="equipment.html#sony-screen">Sony Screen</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="equipment.html#troubleshooting">Troubleshooting</a></li>
+                        <li><a class="dropdown-item" href="equipment.html#siemens">Siemens/Syngovia Computer</a></li>
+                        <li><a class="dropdown-item" href="equipment.html#table">Control Module</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#canon">Canon</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#injection">Injection</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#sony-screen">Sony Screen</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="equipment.html#troubleshooting">Troubleshooting</a></li>
                     </ul>
                  </li>
 
                     <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
-                        <a class="nav-link dropdown-toggle" href="procedures.html" id="navbarDropdownProcedures" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
+                        <a class="nav-link dropdown-toggle" href="procedures.html" id="navbarDropdownProcedures" role="button" data-bs-hover="dropdown" aria-expanded="false"> <!--change data-bs-toggle to hover to make dropdown item clickable-->
                             Procedures
                         </a>
                         <ul class="dropdown-menu">
@@ -87,6 +86,13 @@
                   <li class="nav-item px-3 px-lg-0 py-1 py-lg-4">
                     <a class="nav-link" href="dictionary.html">Dictionary</a>
                   </li>
+                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 d-flex align-items-center ms-3">
+                    <div id="darkmodeswitch" class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="dark-mode-toggle">
+                        <label class="form-check-label" for="dark-mode-toggle"></label>
+                    </div>
+                </li>
+
             </ul> <!--autoalign right when screen is large-->
             </div>
     </nav>
@@ -238,28 +244,27 @@
             <iframe width="1100" height="619" src="https://www.youtube.com/embed/TnFoJ7Hhi-M" title="Conduction system of the heart - Sinoatrial node, AV Node, Bundle of His, Purkinje fibers Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <button onclick="topFunction()" id="topBtn" title="Go to top">
           <img src="Images/arrow.png" alt="Go to top">
       </button>
       </section>
-      </body>
-  
-    <footer>
-      <div class="footer-content">
-          <img src="Images/wave6.png" class="footer-image" alt="Wave Image">
-          <img src="Images/cathclub.png" alt="CathClub Logo" class="footer-logo">
-          <p class="footer-text">Made for my fellow grads with&nbsp;&nbsp;♥&nbsp;&nbsp;let me know if you have any suggestions!</p>
-      </div>
-  </footer>
-  
 
-  <script src="homepage.js"></script>
+      <footer>
+        <div class="footer-content">
+            <img src="Images/wave6.png" class="footer-image" alt="Wave Image">
+            <img src="Images/cathclub.png" alt="CathClub Logo" class="footer-logo">
+            <p class="footer-text">Made for my fellow grads with&nbsp;&nbsp;♥&nbsp;&nbsp;let me know if you have any suggestions!</p>
+        </div>
+    </footer>
+    
+        <script src="homepage.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    
+</body>
 
-<script src="homepage.js"></script>
 
 <!----------------------------- Quiz -----------------------------
       <section id="quiz" class="container mt-5">

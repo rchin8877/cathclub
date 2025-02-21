@@ -27,9 +27,20 @@
     text-decoration: none;
   }
 
+  .dark-mode #banner {
+    background-image: linear-gradient(to right, #172c48 7%, #632b2e 40%, #4b1e20 100%);
+  }
+
+  .dark-mode #banner a {
+    color: #fff;
+    text-decoration: none;
+  }
+
   .wave-img {
     width: 100%;
+    max-width: 100%;
     height: auto;
+    object-fit: cover; 
   }
 
   .heartspin-img {
@@ -91,6 +102,17 @@
     border-radius: 4px;
 }
 
+.dark-mode .content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px; /* Width of the left border */
+  background: linear-gradient(to bottom, #172c48, #632b2e, #4b1e20);
+  border-radius: 4px;
+}
+
 .checklist ul {
     list-style-type: none; /* Remove bullets */
     padding: 0; /* Remove default padding */
@@ -109,6 +131,10 @@
     padding-bottom: 5%;
     background-color: #f0f0f0;
     width: 100%;
+  }
+
+  .dark-mode #topics {
+    background-color: #283758;
   }
 
   #topics .container {

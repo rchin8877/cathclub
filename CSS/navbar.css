@@ -76,6 +76,22 @@
     border-radius: 2;
 }
 
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.2s, color 0.1s;
+  }
+  
+/* General Dark Mode */
+.dark-mode {
+    background-color: #283758;
+    color: #d0d1d3;
+  }
+  
+  /* Navbar Dark Mode */
+  .dark-mode #nav-bar {
+    background-image: linear-gradient(to right, #172c48 7%, #632b2e 40%, #4b1e20 100%);
+  }
 
 @media (min-width:992px) { /*media query that targets screens smaller than full desktop width*/
 
