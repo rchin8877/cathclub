@@ -14,6 +14,54 @@
 }
 
 .siemens-img {
-    width: 80%;
+    width: 100%;
     height: auto;
 }
+
+.h2-siemens {
+    color:#549dd1;
+}
+
+body.dark-mode .h2-siemens {
+    color: #7c9fb8; 
+  }
+
+.h2-control {
+    color: #67bcdb;
+}
+
+body.dark-mode .h2-control {
+    color: #acc0cf; 
+  }
+
+.h2-table {
+    color: #ff5757;
+}
+
+body.dark-mode .h2-table {
+    color: #bf6065; 
+  }
+
+.h2-tube {
+    color: #05d2ff;
+}
+
+body.dark-mode .h2-tube {
+    color: #71b9c8; 
+  }
+
+.h2-screening {
+    color: #67bcdb;
+}
+
+body.dark-mode .h2-screening {
+    color: #a3d6f6; 
+  }
+
+.h2-canon {
+    color: #652a99;
+}
+
+body.dark-mode .h2-canon {
+    color: #b694d4; 
+  }

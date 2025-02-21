@@ -3,10 +3,21 @@
     font-weight: 600;
 }
 
+.dark-mode .nav-tabs .nav-link {
+    color: #d5a1a4;
+    font-weight: 600;
+}
+
 .nav-tabs .nav-link.active {
     color: #fff;
     background-color: #549dd1;
     border-color: #007bff;
+}
+
+.dark-mode .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #ccaece;
+    border-color: #d0b7e5;
 }
 
 .tab-content h5 {
@@ -14,8 +25,40 @@
     margin-bottom: 15px;
 }
 
+.h2-LHC {
+    color: #549dd1;
+}
+
+.dark-mode .h2-LHC {
+    color: #7c9fb8;
+}
+
+.h2-CRM {
+    color: #67bcdb;
+}
+
+.dark-mode .h2-CRM {
+    color: #a3d6f6;
+}
+
+.h2-struct {
+    color: #e3888d;
+}
+
+.dark-mode .h2-struct {
+    color: #ac6d70;
+}
+
+
+
 .tab-container1 {
     border: 5px solid #549dd1; 
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.dark-mode .tab-container1 {
+    border: 5px solid #7c9fb8; 
     padding: 15px;
     border-radius: 5px;
 }
@@ -26,8 +69,20 @@
     border-radius: 5px;
 }
 
+.dark-mode .tab-container2 {
+    border: 5px solid #a3d6f6; 
+    padding: 15px;
+    border-radius: 5px;
+}
+
 .tab-container3 {
     border: 5px solid #e3888d; 
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.dark-mode .tab-container3 {
+    border: 5px solid #ac6d70; 
     padding: 15px;
     border-radius: 5px;
 }
@@ -37,6 +92,7 @@
     padding: 15px;
     border-radius: 5px;
 }
+
 /*
 .content {
     position: relative;

@@ -49,7 +49,20 @@ const imagesToChange = {
     "Images/wave6.png": "Images/wavedark.png",
     "Images/wave7.png": "Images/wave8.png",
     "Images/wave1.png": "Images/wave1dark.png",
-    "Images/cathclub.png": "Images/cathclubdark.png"
+    "Images/cathclub.png": "Images/cathclubdark.png",
+    "Images/img1.png": "Images/img1dark.png",
+    "Images/img2.png": "Images/img2dark.png",
+    "Images/img3.png": "Images/img3dark.png",
+    "Images/siemens.png": "Images/siemensdark.png",
+    "Images/eq4.png": "Images/eq4dark.png",
+    "Images/eq1.png": "Images/eq1dark.png",
+    "Images/eq2.png": "Images/eq2dark.png",
+    "Images/eq3.png": "Images/eq3dark.png",
+    "Images/eq4.png": "Images/eq4dark.png",
+    "Images/eq5.png": "Images/eq5dark.png",
+    "Images/eq6.png": "Images/eq6dark.png",
+    "Images/eq7.png": "Images/eq7dark.png",
+
 };
 
 // Function to update images based on dark mode state
