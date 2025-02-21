@@ -7,24 +7,39 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Navbar offcanvas background image change (otherwise will overlay 'outer'/full width navbar) 
     // Offcanvas event listeners for background image toggle
-
-        // When offcanvas is hidden, reset the background
-        myOffcanvas.addEventListener("hidden.bs.offcanvas", function () {
-            myOffcanvas.style.backgroundImage = "none";
-        });
-
-        myOffcanvas.addEventListener('show.bs.offcanvas', updateOffcanvasBackground)
-            
-        // Function to set the offcanvas background based on dark mode
-        function updateOffcanvasBackground() {
-            if (document.body.classList.contains("dark-mode")) {
-                myOffcanvas.style.backgroundImage = "linear-gradient(to right, #172c48 7%, #632b2e 40%, #4b1e20 100%)"; 
-            } else {
-                myOffcanvas.style.backgroundImage = "linear-gradient(to right, #549dd1 7%, #e3888d 40%, #c75b61 100%)"; 
+            // Function to set the offcanvas background based on dark mode
+            // Function to update the background of offcanvas when dark mode is toggled
+            function updateOffcanvasBackground() {
+                if (window.innerWidth < 992) { // Only update background on smaller screens (mobile/tablet)
+                    if (document.body.classList.contains("dark-mode")) {
+                        myOffcanvas.style.backgroundImage = "linear-gradient(to right, #172c48 7%, #632b2e 40%, #4b1e20 100%)"; 
+                    } else {
+                        myOffcanvas.style.backgroundImage = "linear-gradient(to right, #549dd1 7%, #e3888d 40%, #c75b61 100%)"; 
+                    }
+                } else {
+                    // On desktop, ensure background is removed (offcanvas should not be visible)
+                    myOffcanvas.style.backgroundImage = "none";
+                }
             }
-        }
 
-    
+            // Ensure background is removed when offcanvas is hidden
+            myOffcanvas.addEventListener("hidden.bs.offcanvas", function () {
+                myOffcanvas.style.backgroundImage = "none";
+            });
+
+            // Always update background when offcanvas starts opening, but only for smaller screens
+            myOffcanvas.addEventListener("show.bs.offcanvas", updateOffcanvasBackground);
+
+            // Update the background immediately when toggling dark mode
+            document.addEventListener("DOMContentLoaded", function () {
+                updateOffcanvasBackground(); // Ensure the background is set correctly on load
+            });
+
+            // Make sure to update the background when resizing the window
+            window.addEventListener("resize", function () {
+                updateOffcanvasBackground();
+            });
+
 //////////////////// Dark mode toggle //////////////////////
 const toggleSwitch = document.getElementById("theme-switch");
 const body = document.body;
