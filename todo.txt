@@ -1,4 +1,4 @@
-27/1/2024
+27/1/2025
     Webdev
         Fix mobile anatomy page ! Overflow of images -> changed images to scroll rather than scrolling whole page
         Restructure procedures...better way to format or break into separate pages 
@@ -13,8 +13,7 @@
             thecatsclub.come 19
             cath.com.au 3 year term 23.95
 
-    Dictionary
-        Continue adding terms 
+    Dictionary 
         Add tags 
             Equipment - catheter types, 
             Procedures
@@ -40,9 +39,30 @@
         Conus in RCA - heart block ... 
 
     Add images/tables
-         specifically...
+         Assist screen errors
+         TROUBLESHOOTING
     Canon/lab 7
         Control panel 
         During the case (alarm, collimating, errors)
 
+    Fun tidbits, add your own!
+        Curly whirly vessels
+        Fentynl triggers nose itch
+    Useful tidbits
+        Hovermats in front right in store room, most other things at the back
 
+    
+    Dr preferences
+        Kevin: never uses additional/attached lead shielding, v fast paced
+        Lani: ALWAYS use the lead shielding, 4 p/s
+        Howie: 4 p/s
+        Gavin: 4 p/s
+        Dennis: supersize me = BMI+ 
+
+24/2/2025
+    Add a comment section 
+    Feedback section in footer
+    Random page - tidbits + dr preferences
+    Get images of labs
+    Add icons e.g. STEMI 
+    Quizify ...Actre

@@ -133,10 +133,37 @@ body {
         top: 70%; /* adjust y position relative to parent button */
         opacity: 1;
         transition: all 0.3s ease-in-out;
-
+    }
     }
 
+    @media (max-width: 768px) {
+      #mobile-navbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1050;
+          transition: all 0.3s ease-in-out;
+          
+      }
+
+      #mobile-navbar {background-image: linear-gradient(to right, #549dd1 7%, #e3888d 40%, #c75b61 100%);
+      }
+
+      body.dark-mode #mobile-navbar {
+        background-image: linear-gradient(to right, #172c48 7%, #632b2e 40%, #4b1e20 100%);
+    }
+
+    #mobile-navbar.scrolled {
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Dark mode shadow */
+  body.dark-mode #mobile-navbar.scrolled {
+      box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.7);
+  }
 }
+  
 
 :root{
     --base-color: white;
@@ -169,6 +196,7 @@ button{
   .cta-button{
     background-color: var(--accent-color);
   }
+
   #theme-switch{
     height: 40px;
     width: 40px;
@@ -196,4 +224,3 @@ button{
   .dark-mode #theme-switch svg:last-child{
     display: block;
   }
- 

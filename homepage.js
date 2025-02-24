@@ -62,6 +62,8 @@ const imagesToChange = {
     "Images/eq5.png": "Images/eq5dark.png",
     "Images/eq6.png": "Images/eq6dark.png",
     "Images/eq7.png": "Images/eq7dark.png",
+    "Images/catheter_02.png": "Images/catheter_02dark.png",
+    "Images/heartspin2.gif":"Images/heartspin2dark.gif",
 
 };
 
@@ -218,6 +220,19 @@ function scrollFunction() {
   }
 }
 
+//Navbar shadow appear once scrolled down
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.getElementById("mobile-navbar");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 10) { 
+            navbar.classList.add("scrolled"); // Add shadow on scroll
+        } else {
+            navbar.classList.remove("scrolled"); // Remove shadow when at the top
+        }
+    });
+});
+
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
@@ -239,4 +254,5 @@ const checkboxes = document.querySelectorAll('.strike-checkbox');
             }
         });
     });
+
 
