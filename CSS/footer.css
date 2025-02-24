@@ -1,6 +1,6 @@
 footer {
     background:  #549dd1;
-    color: white; /* White text color */
+    color: white; 
     text-align: center; /* Center align the content */
     padding-top: 0; /* Padding for spacing */
     padding-bottom: 20px;
@@ -39,22 +39,37 @@ footer {
 }
 
 #topBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #549dd1; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
+    display: block; /* Make sure the button is in the document flow */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Position the button at the bottom */
+    right: 30px; /* Position the button 30px from the right */
+    z-index: 99; /* Ensure it is above other content */
+    border: none;
+    outline: none;
+    background-color: #549dd1; 
+    color: white; 
+    cursor: pointer;
     padding: 7px;
-    padding-top: 4px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
+    padding-top: 4px; 
+    border-radius: 10px; 
     width: 50px;
-    height:50px;
-  }
+    height: 50px;
+    transition: opacity 0.2s ease-in-out; /* Smooth opacity transition */
+    opacity: 0; /* Hidden by default */
+    pointer-events: none; /* Make it non-clickable when hidden */
+}
+
+#topBtn.hidden {
+    opacity: 0; /* Fade out */
+    pointer-events: none; /* Disable clicks */
+}
+
+#topBtn:not(.hidden) {
+    opacity: 1; /* Fade in */
+    pointer-events: auto; /* Enable clicks */
+}
+
+
 
   .dark-mode #topBtn {
     display: none; /* Hidden by default */
@@ -62,14 +77,14 @@ footer {
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #172c48; /* Set a background color */
-    color: white; /* Text color */
+    border: none; 
+    outline: none; 
+    background-color: #172c48; 
+    color: white; 
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 7px;
-    padding-top: 4px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
+    padding-top: 4px; 
+    border-radius: 10px; 
     width: 50px;
     height:50px;
   }

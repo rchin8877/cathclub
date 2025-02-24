@@ -206,19 +206,43 @@ function scrollToTerm(termId) {
     }
 }
 
-// Get the button:
-let mybutton = document.getElementById("topBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+// When the user scrolls down 20px from the top of the document, show the button but stop once hitting the footer
+window.onscroll = function () {
+    scrollFunction();
+};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+    const mybutton = document.getElementById("topBtn");
+    const footer = document.querySelector("footer"); // Select the footer
+
+    const footerTop = footer.offsetTop; // Get footer's top position
+    const scrollPosition = window.scrollY + window.innerHeight; // Bottom of viewport
+
+    // Show button when scrolling past 20px from top
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.classList.remove("hidden"); // Fade in button
+    } else {
+        mybutton.classList.add("hidden"); // Fade out button
+    }
+
+    // Hide button when it reaches the footer
+    if (scrollPosition >= footerTop) {
+        mybutton.classList.add("hidden"); // Fade out when footer is reached
+    }
 }
+
+// Navbar shadow appear once scrolled down
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.getElementById("mobile-navbar");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 10) { 
+            navbar.classList.add("scrolled"); // Add shadow on scroll
+        } else {
+            navbar.classList.remove("scrolled"); // Remove shadow when at the top
+        }
+    });
+});
 
 //Navbar shadow appear once scrolled down
 document.addEventListener("DOMContentLoaded", function () {

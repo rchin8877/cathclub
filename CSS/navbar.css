@@ -144,8 +144,11 @@ body {
           width: 100%;
           z-index: 1050;
           transition: all 0.3s ease-in-out;
-          
       }
+
+      body:not(.homepage) {
+        padding-top: 30px; /* Applies the padding to all pages except the homepage */
+    }
 
       #mobile-navbar {background-image: linear-gradient(to right, #549dd1 7%, #e3888d 40%, #c75b61 100%);
       }
