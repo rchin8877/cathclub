@@ -76,9 +76,7 @@ footer {
     pointer-events: auto; /* Enable clicks */
 }
 
-
-
-  .dark-mode #topBtn {
+.dark-mode #topBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
@@ -96,18 +94,11 @@ footer {
     height:50px;
   }
 
-  #topBtn img {
+#topBtn img {
     width: 100%;
     height: auto;
 }
   
-/* #topBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover }*/
-  
-/* Change the switch toggle (circle) color */
-.dark-mode .form-check-input:checked {
-    background-color: #632b2e !important; /* Background when toggled on */
-    border-color: #172c48 !important;
+#topBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover*/
 }
-
- 
