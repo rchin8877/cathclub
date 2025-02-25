@@ -150,11 +150,14 @@ toggleSwitch.addEventListener("click", () => {
     });
 
 // Search Dictionary 
+// MAKE SURE WHEN ENTERING NEW TERMS, no space in front !! e.g. "Angio" not " Angio"
     function searchTerms() {
         const input = document.getElementById('searchInput');
         const filter = input.value.toLowerCase();
         const table = document.getElementById('dictionaryTable');
         const tr = table.getElementsByTagName('tr');
+        let noResultsRow = document.getElementById("noResultsRow"); // Check if the 'No results' row exists
+        let found = false;
 
         // Loop through all table rows, and hide those that don't match the search query
         for (let i = 1; i < tr.length; i++) { // Start from 1 to skip the header row
@@ -163,14 +166,28 @@ toggleSwitch.addEventListener("click", () => {
             const description = td[1].textContent || td[1].innerText; // Second cell (Description)
             if (term.toLowerCase().startsWith(filter) || description.toLowerCase().startsWith(filter)) { //indexOf = -1 means no index in table/match found, will include ENTIRE word. startsWith more suitable? 
                 tr[i].style.display = ""; // Show the row
+                found = true;
             } else {
                 tr[i].style.display = "none"; // Hide the row
+            }
+        }
+        if (!found) {
+            if (!noResultsRow) { // Create row only if it doesn't exist
+                noResultsRow = document.createElement("tr");
+                noResultsRow.id = "noResultsRow";
+                noResultsRow.innerHTML = `<td colspan="2" class="text-center text-muted">Not added yet, pls lmk! :) </td>`;
+                tbody.appendChild(noResultsRow);
+            }
+        } else {
+            if (noResultsRow) {
+                noResultsRow.remove(); // Remove the message if results exist
             }
         }
     }
     //if you define searchterms outside of the global scope/DOMContentLoaded, you NEED to attach the eventlistener inside the DOMContentLoaded block to avoid the 'undefined' error
     const input = document.getElementById('searchInput');
     input.addEventListener('keyup', searchTerms);
+    
 
 //td[0] itself is an element object (the table cell itself), not the string 
 //textContent: This property returns the text content of the element and its descendants. It retrieves all text, including text that might be hidden or not visually displayed.
