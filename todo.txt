@@ -66,3 +66,4 @@
     Get images of labs
     Add icons e.g. STEMI 
     Quizify ...Actre
+    Dictionary - make footer STICKY

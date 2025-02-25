@@ -303,8 +303,8 @@
                             <h5>Graft Studies</h5>
                             <ul>
                                 <li>A graft study is performed to evaluate the effectiveness and patency (openness) of grafts, following symptoms that could be related to graft stenosis. It helps assess how well the grafts are functioning and if further reintervention is required.</li>
-                                <li>Get ready to save references to use as roadmaps to access the grafts which can be tricky to get into!</li>
-                                <li>Occassionally may ask to bring up previous imaging as well to use as a roadmap - login into PC usually closest to the sony screen and set up as Sony 1. </li>
+                                <li class="radaction">Get ready to save references to use as roadmaps to access the grafts which can be tricky to get into!</li>
+                                <li>Occassionally may ask to bring up previous imaging on their screen inside as well to use as a roadmap - login into PC usually closest to the sony screen and set up as Sony 1. </li>
                                 <img src="Images/grafts.png" alt="graft Images" class="img-fluid" />
                                 
                             </ul>
@@ -316,6 +316,7 @@
                                 <li>Performed in syngovia </li>
                                 <li>Measures the degree of stenosis retrospectively.</li>
                                 <li>Process: Click the angio tab, calibrate vessel based on catheter size, select area of interest, create report (shows diameter of stenosis), and save.</li>
+                                <li class="radaction">Get supervisor to perform</li>
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="qrf" role="tabpanel" aria-labelledby="qrf-tab">
@@ -324,28 +325,32 @@
                                 <li>Performed in syngovia </li>
                                 <li>FFR without need of pressure wires</li>
                                 <li>Measures the degree of stenosis retrospectively</li>
-                                <li>Get supervisor to perform</li>
+                                <li class="radaction">Get supervisor to perform</li>
                             </ul>
                         </div>
             </div>
         </div>
         <br>
         <h4 class="mb-4">STEMI Cases</h4>
+        <p>Usually performed in lab 4 after hours, otherwise whichever lab is free next or has the shortest list.</p>
+        <p> Will just be you, 1 cardio tech, 2-3 nurses, consultant and fellow.</p>
+        <li> As per normal LHC set up but also put a <strong>pt gown, blue bag (for pt belongings) and shaver</strong> on the table. </li>
+
         <ul>
-            <li> Usually performed in lab 4 after hours, otherwise whichever lab is free next or has the shortest list. </li>
-            <li> As per normal LHC set up + additional pt gown, blue bag for belongings and shaver on the table. </li>
-            <li> Have a pen and paper handy to jot down runs with GTN, aspiration, stents etc. </li>
-            <li>Check EMR emergency tracking for pt details (may be under pre-arrival or WR AV). Double-click name for UR number and start filling in EMR rad dose. </li>
+            <li> <strong>Set up the Siemens WP first</strong> since they will start screening quickly after pt transfer! Then do EMR/excel. </li>
+            <li>Check EMR emergency tracking for pt details (may be under pre-arrival or WR AV). Double-click name for UR number and start filling in Siemens WP/EMR rad dose if you have a decent amount of time. </li>
             <li>When transferring pt over, <strong>float the table away</strong> if ambos adjust their trolley! </li>
             <li>Sony screen: just put unknown if not appearing </li>
+            <li> Have a pen and paper handy to jot down runs with GTN, aspiration, stents etc. </li>
             <li> Will be more fast-paced, so try to get references as the acquisitions are being taken. </li>
             <li>Pt going into cardiac arrest:</li>
                 <ul>
                     <li>Call a code blue when notified by the consultant</li>
                     <li style="color: #549dd1; font-style: italic;font-weight: bold;list-style-type: none;">Dial 2222 "Code blue level 4 cathlab lab [e.g. 4]"</li>
+                    <li>Move the tube SID up to give more room for CPR, but don't move it all the way out since they still need to <i>keep going with the procedure as quick as possible!</i> </li>
                     <li>Watch for people going into the room without lead - notify them and give them lead to put on </li>
                     <li> Scribe on paper time of shocks, medications given </li>
-                    <li>Double-check settings since people may have accidently touched the screen inside. ( e.g. frame rate changed to 30 f/s from 10) </li>
+                    <li>Afterwards, double-check settings since people may have accidently touched the screen inside. ( e.g. frame rate changed to 30 f/s from 10) </li>
                 </ul>
             </li>
             <li style="font-weight: bold;"> Be vigilant, communicate when unsure and pay attention to ECG, pressure and sats changes!</li>
@@ -482,7 +487,8 @@
                             <a class="nav-link" id="pfo-tab" data-bs-toggle="tab" href="#pfo" role="tab" aria-controls="pfo" aria-selected="false">PFO Closure</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="micra-tab" data-bs-toggle="tab" href="#micra" role="tab" aria-controls="mitral-clip" aria-selected="false">Mitral-Clip</a>
+                            <a class="nav-link" id="mitral" data-bs-toggle="tab" href="#mitral" role="tab" aria-controls="mitral-clip" 
+                            aria-selected="false">Mitral-Clip</a>
                         </li>
                     </ul>
 
@@ -594,10 +600,14 @@
                             <h5>PFO Closure (Patent Foramen Ovale) </h5>
                             <p>Unlike ASD, NOT a congenital heart defect, but occurs when the foramen ovale doesn't close AFTER birth. </p>
                             <p>Otherwise same procedural steps! </p>
-    
-                            
+                        </div>
 
-                    </div>
+                        <!-- Mitral Clip -->
+                        <div class="tab-pane fade" id="mitral-tab" role="tabpanel" aria-labelledby="mitral-tab">
+                            <h5>Mitral Clip </h5>
+                            <p>Unlike ASD, NOT a congenital heart defect, but occurs when the foramen ovale doesn't close AFTER birth. </p>
+                            <p>Otherwise same procedural steps! </p>
+                        </div>
                 </div>
             </div>
         </div>
