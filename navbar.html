@@ -1,124 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--ensure browser uses latest rendering mode-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--enables scaling for mobile devices-->
-    <title>Cath Club</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <link rel="stylesheet" href="CSS/navbar.css">
-
-</head>
-
-<body>
-    <section id="nav-bar">
-    <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="Images/cathclub.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar"> <!-- ARIA: Accessible Rich Internet Applications, aria-controls points to the id of another element on the page, typically the one that will be shown -->
-                <i class="fa-solid fa-bars-staggered"></i>
-            </button>
-
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
-              <!-- Navigation Bar Content-->
-               <!--create button to toggle/exit the offcanvas, with div element set to flex-->
-               <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar">
-                  <div class="d-flex justify-content-between p-3">
-                    <a class="navbar-brand" href="#"><img src="Images/cathclub.png"></a>
-                    <i class="fa-solid fa-xmark"></i>
-                  </div>
-            </button>
-            <ul class="navbar-nav ms-lg-auto p-4 p-lg-0">
-                <li class="nav-item px-3 px-lg-0 py-lg-4">
-                    <a class="nav-link" href="home_page.html">Home</a>
-                  </li>
-
-                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
-                    <a class="nav-link dropdown-toggle" href="anatomy.html" id="navbarDropdown" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
-                        Anatomy
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="anatomy.html#LCA">LCA</a></li>
-                        <li><a class="dropdown-item" href="anatomy.html#RCA">RCA</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="anatomy.html#cardiac_conduction_sys">Cardiac Conduction System</a></li>
-                    </ul>
-                  </li>
-
-                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
-                    <a class="nav-link dropdown-toggle" href="equipment.html" id="navbarDropdownEquipment" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
-                        Equipment
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="equipment.html#siemens">Siemens/Syngovia Computer</a></li>
-                        <li><a class="dropdown-item" href="equipment.html#table">Control Module</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="equipment.html#canon">Canon</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="equipment.html#injection">Injection</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="equipment.html#sony-screen">Sony Screen</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="equipment.html#troubleshooting">Troubleshooting</a></li>
-                    </ul>
-                 </li>
-
-                    <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
-                        <a class="nav-link dropdown-toggle" href="procedures.html" id="navbarDropdownProcedures" role="button" data-bs-hover="dropdown" aria-expanded="false""> <!--change data-bs-toggle to hover to make dropdown item clickable-->
-                            Procedures
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="procedures.html#LHC">LHC</a></li>
-                            <li><a class="dropdown-item" href="procedures.html#CRM">CRM</a></li>
-                            <li><a class="dropdown-item" href="procedures.html#Structural">Structural</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="procedures.html#PICC">PICC Lines</a></li>
-                        </ul>
-                      </li>
-                  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4">
-                    <a class="nav-link" href="dictionary.html">Dictionary</a>
-                  </li>
-            </ul> <!--autoalign right when screen is large-->
-            </div>
-    </nav>
-    </section>
-<!-----------------------------------------------demo-------------------------------------------->
-    <section id="overview" class="py-5">
-    <div class="container px-4">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="py-2 text-left fw-bold">The NavBar Template</h1>
-            </div>
-            <div class="col-md-12 px-lg-0">
-                <div class="overview-description mt-4 text-center">
-                    <ul style="list-style-position: inside; padding-left: 5; text-align: left;">
-                        <li style="margin-bottom: 0.5rem;">Check specific linked style sheets</li>
-                        <li style="margin-bottom: 0.5rem;">Check appropriate scripts are linked at bottom of body</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-<script src="homepage.js"></script>
-
-</body>
-</html>
-
-
-<--------------------- DARK MODE ON HOMEPAGE ------------------------>
 <section id="nav-bar">
-    <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="Images/cathclub.png"></a>
+    <nav class="navbar navbar-expand-lg navbar-light" id="mobile-navbar">
+            <a class="navbar-brand" href="index.html"><img src="Images/cathclub.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar"> <!-- ARIA: Accessible Rich Internet Applications, aria-controls points to the id of another element on the page, typically the one that will be shown -->
                 <i class="fa-solid fa-bars-staggered"></i>
             </button>
@@ -183,10 +65,10 @@
                     <a class="nav-link" href="dictionary.html">Dictionary</a>
                   </li>
                   <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 d-flex align-items-center ms-3">
-                    <div id="darkmodeswitch" class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="dark-mode-toggle">
-                        <label class="form-check-label" for="dark-mode-toggle"></label>
-                    </div>
+                    <button class="dark-mode" id="theme-switch">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                      </button>
                 </li>
 
             </ul> <!--autoalign right when screen is large-->

@@ -1,8 +1,34 @@
+26/2/2025
+    Scroll-up button not working in dark-mode
+    STEMI   
+        Add icon ^^
+        Add images: types of STEMIs, zebra phone alarm 
+        LIGHTNING MEASUREMENT - calib -> auto, tools -> ruler
+    Canon   
+        Go on canva to finish labelling changing orientation image 
+    Googledrive link too all important docs ...
+    Comment + feedback section in footer
+    Random page - tidbits + dr preferences
+    Get images of labs
+        PEDAL
+        Canon orientation change on big screen 
+        Injector screen 
+    Diff start times and responsibilities 
+
+24/2/2025
+    Add a comment section 
+    Feedback section in footer
+    Random page - tidbits + dr preferences
+    Get images of labs
+    Add icons e.g. STEMI 
+    Quizify ...Actre 
+    Dictionary - make footer STICKY
+
 27/1/2025
     Webdev
         Fix mobile anatomy page ! Overflow of images -> changed images to scroll rather than scrolling whole page
         Restructure procedures...better way to format or break into separate pages 
-        Add a comment section 
+        Comment section + feedback in footer
         Feedback section in footer
         Research how to implement a hover definition for terms
             Hover over word to get quick reminder on definition
@@ -58,12 +84,3 @@
         Howie: 4 p/s
         Gavin: 4 p/s
         Dennis: supersize me = BMI+ 
-
-24/2/2025
-    Add a comment section 
-    Feedback section in footer
-    Random page - tidbits + dr preferences
-    Get images of labs
-    Add icons e.g. STEMI 
-    Quizify ...Actre 
-    Dictionary - make footer STICKY

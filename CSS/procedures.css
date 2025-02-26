@@ -121,6 +121,25 @@
 #Structural {
     padding-bottom: 5rem;
 }
+
+.stemi-heading {
+    /*display: flex;
+    align-items: center; */
+    gap: 10px; /* Space between icon and text */
+}
+
+.stemi-icon {
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Apply dark mode gradient */
+.dark-mode .stemi-icon path {
+    fill: url(#dark-gradient-2);
+}
+
+
 /*
 #LHC {
     border-left: 5px solid #549dd1;

@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+.submenu-item {
+  padding-left: 20px; /* Indent the submenu */
+}
+
 .navbar-brand img {
     max-width: 200px;
     width: auto;
