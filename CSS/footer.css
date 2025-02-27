@@ -66,18 +66,8 @@ footer {
     pointer-events: none; /* Make it non-clickable when hidden */
 }
 
-#topBtn.hidden {
-    opacity: 0; /* Fade out */
-    pointer-events: none; /* Disable clicks */
-}
-
-#topBtn:not(.hidden) {
-    opacity: 1; /* Fade in */
-    pointer-events: auto; /* Enable clicks */
-}
-
 .dark-mode #topBtn {
-    display: none; /* Hidden by default */
+    /*display: none; Hidden by default -> COMPLETELY REMOVES:( overrides the .nothidden opacity of 1 */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
@@ -93,6 +83,16 @@ footer {
     width: 50px;
     height:50px;
   }
+
+  #topBtn.hidden {
+    opacity: 0; /* Fade out */
+    pointer-events: none; /* Disable clicks */
+}
+
+#topBtn:not(.hidden) {
+    opacity: 1; /* Fade in */
+    pointer-events: auto; /* Enable clicks */
+}
 
 #topBtn img {
     width: 100%;
