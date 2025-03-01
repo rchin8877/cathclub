@@ -56,16 +56,28 @@
                             Equipment
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="equipment.html#siemens">Siemens/Syngovia Computer</a></li>
-                            <li><a class="dropdown-item" href="equipment.html#table">Control Module</a></li>
+                            <li><a class="dropdown-item" href="equipment.html#siemens">Siemens (labs 1-6)</a></li>
+                            <li class="submenu-item">
+                                <a class="dropdown-item" href="equipment.html#module-controls"><i>Controls</i></a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="dropdown-item" href="equipment.html#STEMI"><i>Troubleshooting</i></a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="dropdown-item" href="equipment.html#STEMI"><i>Sony Screen</i></a>
+                            </li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="equipment.html#canon">Canon</a></li>
+                            <li><a class="dropdown-item" href="equipment.html#canon">Canon (lab 7)</a></li>
+                            <li class="submenu-item">
+                                <a class="dropdown-item" href="equipment.html#canon-controls"><i>Controls</i></a>
+                            </li>
+                            <li class="submenu-item">
+                                <a class="dropdown-item" href="equipment.html#STEMI"><i>Troubleshooting</i></a>
+                            </li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="equipment.html#injection">Contrast Injector</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="equipment.html#sony-screen">Sony Screen</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="equipment.html#troubleshooting">Troubleshooting</a></li>
+                            <li><a class="dropdown-item" href="equipment.html#troubleshooting">General Troubleshooting</a></li>
                         </ul>
                      </li>
     
@@ -148,7 +160,7 @@
                     <li>Hold down the orientation button to change. Make sure this matches where the console is! (Otherwise, the machine will not move as expected.)</li>
                 </ul>
                 <div class="row mt-1 table_img d-flex justify-content-center">
-                    <div class="col-md-6">
+                    <div class="col-md-9">
                       <figure>
                         <img src="Images/eq1.png" alt="Table_controls" class="img-fluid img-eq1" />
                       </figure>
@@ -196,18 +208,18 @@
     <section id="screening" class="container mt-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="h2-screening">Screening (Fluoroscopy and Acquisitions)</h2>
+            <h3 class="h2-screening">Screening (Fluoroscopy and Acquisitions)</h3>
                   <figure> 
                     <img src="Images/eq5.png" alt="Table_controls" class="img-fluid mx auto img-eq5" />
                   </figure>
 
-                <h4>Fluoroscopy (left side)</h4>
+                <h4>Fluoroscopy (left/blue background)</h4>
                 <ul>
                     <li>Depending on cardiologist, may go down to 4p/s or 6p/s (lower p/s means the imaging will be less smooth, but save dose).</li>
                     <li>Ensure the bottom RDMP buttons are NOT selected (or else the reference image will overlay live image).</li>
                     <li>Default: stay on lowest setting (FL -).</li>
                 </ul>
-                <h4>Acquisitions (right side)</h4>
+                <h4>Acquisitions (right/purple background)</h4>
                 <ul>
                     <li>May increase to VHH 2 or Coro BMI+ for the spiderview in large pts > <b>100kgs</b> (going through dense area and at a steep angle).</li>
                     <li>Select the C-arm button to automatically display the reference image based on the tube position (only works with limited ~5 reference images so try not to save too many rubbish references!).</li>
@@ -215,7 +227,7 @@
                     <li>When dose is getting high: reduce by using less angle, collimating in, reducing OID or reducing frame rates.</li>
                 </ul>
                 <div class="row mt-1 table_img d-flex justify-content-center">
-                    <div class="col-md-6">
+                    <div class="col-md-9">
                       <figure>
                         <img src="Images/eq6.png" alt="Table_controls" class="img-fluid img-eq6" />
                       </figure>
@@ -224,29 +236,91 @@
             </div>
         </div>
     </section>
-<!----------------------- Canon ------------------------>
+<!----------------------- CANON ------------------------>
     <section id="canon" class="container mt-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="h2-canon" >Canon</h2>
+            <h2 class="h2-canon" >Canon Alphenix Sky</h2>
                 <ul>
                     <li> Mostly set up for PPMs - controls on left side. </li>
-                    <li> Table and tube can only be moved from inside the room! </li>
-                    <li> When starting an examination, make sure to also start the dose calculation screen for PSD! </li>
+                    <li> Table and tube can only be moved from inside the room! Either using buttons on the back of the C-arm or the control modules. </li>
+                    <li> When starting an examination, make sure to also start the dose calculation screen for PSD - check correct weight range is selected as well! </li>
                     <li> Switch between screens using ALT + space </li>
                     <li><strong>Don't finish/close pt until you record the doses!</strong> </li>
-
-                    <div class="row mt-1 table_img d-flex justify-content-center">
-                        <div class="col-md-6">
-                          <figure>
-                            <img src="Images/eq7.png" alt="canon_controls" class="img-fluid img-eq7" />
-                          </figure>
-                        </div>
                 </ul>
             </div>
         </div>
     </section>
-<!--------------- Injection ----------------------------->
+<!----------------------- Our controls ------------------------>
+    <section id="table" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+              <h3 class="">Our Controls</h3>
+                <ul>
+                    <li>Hold both tilt buttons to re-zero back to 0 tilt.</li>
+                    <li>Hold down the orientation button to change. Make sure this matches where the console is! (Otherwise, the machine will not move as expected.)</li>
+                </ul>
+                <div class="row mt-1 table_img d-flex justify-content-center">
+                    <div class="col-md-9">
+                      <figure>
+                        <img src="Images/eq7.png" alt="Table_controls" class="img-fluid img-eq1" />
+                      </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+<!----------------- Canon inside room controls ------------->
+    <section id="table" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+              <h3 class="">Inside room controls</h3>
+                <ul>
+                    <li>Same as ours with added:
+                        <ul>
+                            <li>"Mechanical Operation Section" which controls table and tube</li>
+                            <li>"Playback/Operation Section" which enables auto-positions + changing orientation as below! </li>
+                        </ul>
+                </ul>
+                <div class="row mt-1 table_img d-flex justify-content-center">
+                    <div class="col-md-9" >
+                      <figure>
+                        <img src="Images/eq8.png" alt="Table_controls" class="img-fluid img-eq" />
+                      </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-------Ccanon troubleshi ------------------>
+<section id="table" class="container mt-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+          <h3 class="">Canon Troubleshooting</h3>
+          <ul>
+            <li>Emergency stop button accidentally pressed: all movement is stopped EXCEPT longitudinal and lateral movement. </li>
+            <li>To reset Hardware errors (H-errors) 
+                <ol>
+                    <li>Press the Emergency Stop Button</li>
+                    <li>Wait for 5 seconds</li>
+                    <li>Press the Power Reset Button located near the table base. All mechanical functions will be reset. </li>
+                </ol>
+            </li>
+        </ul>
+            <div class="row mt-1 table_img d-flex justify-content-center">
+                <div class="col-md-9" >
+                  <figure>
+                    <img src="Images/eq8.png" alt="Table_controls" class="img-fluid img-eq" />
+                  </figure>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--------------- INJECTION ----------------->
 <section id="injection" class="container mt-5">
     <div class="row">
         <div class="col-lg-8 mx-auto">
@@ -265,7 +339,7 @@
         </div>
     </div>
 
-    <!-- Responsive YouTube Video -->
+    <!-- YouTube Video -->
     <div class="row mt-4">
         <div class="col-lg-8 mx-auto">
             <div class="video-container">
@@ -277,7 +351,7 @@
     </div>
 </section>
 
-<!--------------------- Sony-screen ------------------------>
+<!--------------------- SONY-SCREEN ------------------------>
     <section id="sony-screen" class="container mt-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -292,7 +366,7 @@
             </div>
         </div>
     </section>
-<!----------------- Troubleshooting --------------------------->
+<!----------------- GENERAL TROUBLESHI ------------------------->
     <section id="troubleshooting" class="container mt-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">

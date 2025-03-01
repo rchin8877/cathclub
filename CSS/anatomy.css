@@ -47,6 +47,7 @@ iframe {
     display: block; /* Removes any extra spacing */
 }
 
+/* for mobile */
 @media (max-width: 768px) {
 
 .scroll-container {
