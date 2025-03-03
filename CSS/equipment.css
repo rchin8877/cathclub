@@ -83,3 +83,59 @@ body.dark-mode .h2-canon {
     height: 100%;
 }
 
+.liner {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+  
+    &:after {
+      content: '';
+      flex-grow: 1;
+      height: 1px;
+      background: #549dd1;
+      min-width: 20px;
+      margin: auto;
+    }
+
+    .dark-mode &:after {
+        content: '';
+        flex-grow: 1;
+        height: 1px;
+        background: #7c9fb8;
+        min-width: 20px;
+        margin: auto;
+      }
+  
+    .dark-mode &:after {
+      margin-left: 20px;
+    }
+  }
+  
+  .liner-c {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+  
+    &:after {
+      content: '';
+      flex-grow: 1;
+      height: 1px;
+      background: #652a99;
+      min-width: 20px;
+      margin: auto;
+    }
+
+    .dark-mode &:after {
+        content: '';
+        flex-grow: 1;
+        height: 1px;
+        background: #b694d4;
+        min-width: 20px;
+        margin: auto;
+      }
+  
+    .dark-mode &:after {
+      margin-left: 20px;
+    }
+  }
+  

@@ -3,14 +3,14 @@
         Types of STEMIs + image
         Lightning MEASUREMENT
     Canon   
-        Get image of entire inside controls
+        Take picture of entire inside controls
         Insert: https://us.medical.canon/products/angiography/interventional-cardiology/
         TROUBLESHOOTING: how to screenshot/log errors
     Label images
         Pedal
         Tea/biccies station 
         TOE machines
-        Controls!!
+        Controls!
 
     Random page
         Googledrive link to all important docs
@@ -19,7 +19,7 @@
         Store room + layout 
         fUn fAcTs hehe 
     Home layout 
-        Separate subpage for workflow
+        Separate subpage for day 1 BASICS, workflow, layout
 
 
 26/2/2025

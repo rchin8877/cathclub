@@ -66,6 +66,8 @@ const imagesToChange = {
     "Images/eq9.png": "Images/eq9dark.png",
     "Images/eq10.png": "Images/eq10dark.png",
     "Images/eq11.png": "Images/eq11dark.png",
+    "Images/assist.png": "Images/assistdark.png",
+    "Images/stemi_ur.png": "Images/stemi_urdark.png",
     "Images/catheter_02.png": "Images/catheter_02dark.png",
     "Images/heartspin2.gif":"Images/heartspin2dark.gif",
 
