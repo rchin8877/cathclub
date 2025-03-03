@@ -5,6 +5,7 @@
     Canon   
         Get image of entire inside controls
         Insert: https://us.medical.canon/products/angiography/interventional-cardiology/
+        TROUBLESHOOTING: how to screenshot/log errors
     Label images
         Pedal
         Tea/biccies station 
