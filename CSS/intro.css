@@ -1,0 +1,84 @@
+#workflow_title {
+    padding-top: 2%;
+    padding-bottom: 0%;
+  }
+
+.content-title {
+    position: relative;
+    /* Adding padding on the left to avoid content overlap with border */
+}
+
+
+
+.content {
+    position: relative;
+    /* Adding padding on the left to avoid content overlap with border */
+    padding-left: 5rem;
+    padding-right: 2rem;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px; /* Width of the left border */
+    background: linear-gradient(to bottom, #549dd1, #67bcdb, #e3888d); 
+    border-radius: 4px;
+}
+
+.dark-mode .content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px; /* Width of the left border */
+  background: linear-gradient(to bottom, #172c48, #632b2e, #4b1e20);
+  border-radius: 4px;
+}
+
+.checklist ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.h3-step1 {
+    color: #1889da;
+  }
+  
+  body.dark-mode .h3-step1 {
+    color: #6f7e8b; 
+  }
+  
+  .h3-step3 {
+    color: #549dd1;
+  }
+  
+  body.dark-mode .h3-step3 {
+    color: #a1c4e5; 
+  }
+  
+  .h3-step4 {
+    color: #67bcdb; 
+  }
+  
+  body.dark-mode .h3-step4 {
+    color: #bf9f9f; 
+  }
+  
+  .h3-step5 {
+    color: #e3888d; 
+  }
+  
+  body.dark-mode .h3-step5 {
+    color: #905454;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+        padding-left: 2rem; /* Reduce border padding on smaller screens */
+    }
+  }

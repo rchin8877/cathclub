@@ -8,19 +8,25 @@
         TROUBLESHOOTING: how to screenshot/log errors
     Label images
         Pedal
-        Tea/biccies station 
-        TOE machines
-        Controls!
+        Layout page: scrubs/TOE, Tea/biccies station, store room
 
     Random page
-        Googledrive link to all important docs
-        Links of useful websites (life in the fast lane: https://litfl.com/left-bundle-branch-block-lbbb-ecg-library/)
-        Dr preferences
-        Store room + layout 
-        fUn fAcTs hehe 
+        - Googledrive link to all important docs
+        - Useful websites (life in the fast lane: https://litfl.com/left-bundle-branch-block-lbbb-ecg-library/)
+        - Dr preferences
+        - fUn fAcTs hehe 
     Home layout 
-        Separate subpage for day 1 BASICS, workflow, layout
-
+        Separate subpage for interventional
+            Basics 
+                What is cathlab? What does cathlab mean?
+                What happens in cathlab? 
+                What to do before day 1
+                What to expect on day 1
+            Workflow
+                Copy paste
+            Layout of cathlab...cathlab cartography
+                Each lab (e.g. 5 usually private cases)
+                General layout incl labs, lockers, lunch room/tea station, store room, disposal shoot, warm blankets <3 
 
 26/2/2025
     Scroll-up button not working in dark-mode
