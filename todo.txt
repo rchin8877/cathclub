@@ -1,3 +1,22 @@
+10/4/2025 
+    Go through each page and check content!
+    Anatomy tab not working
+    TAVIs
+        Trial Cases
+        Mask shifting for DSA
+    Troubleshooting
+        Storage running out (e.g. for TAVI trial case where we're fluorosaving a lot) - on the Artis screen, go to browser -> local database and right click AN OLD to delete 
+    Label images: store rooms, scrubs + TOE
+    How to do quick measurements 
+    Dev 
+        Line dividers in equipment !
+    By the end of ur training:
+        Where can you find more information?
+            Ask the doctors/nurses/techs! Or fellow radiographers 
+    Side notes
+        ECG yoikes 
+
+
 1/3/2025
     STEMI
         Types of STEMIs + image

@@ -139,6 +139,11 @@
     fill: url(#dark-gradient-2);
 }
 
+.helmet {
+    width: 60%;
+    height: auto;
+}
+
 
 /*
 #LHC {

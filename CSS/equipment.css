@@ -95,6 +95,7 @@ body.dark-mode .h2-canon {
       background: #549dd1;
       min-width: 20px;
       margin: auto;
+      margin-left: 20px;
     }
 
     .dark-mode &:after {
@@ -104,11 +105,8 @@ body.dark-mode .h2-canon {
         background: #7c9fb8;
         min-width: 20px;
         margin: auto;
+        margin-left: 20px;
       }
-  
-    .dark-mode &:after {
-      margin-left: 20px;
-    }
   }
   
   .liner-c {
@@ -123,6 +121,7 @@ body.dark-mode .h2-canon {
       background: #652a99;
       min-width: 20px;
       margin: auto;
+      margin-left: 20px;
     }
 
     .dark-mode &:after {
@@ -132,10 +131,8 @@ body.dark-mode .h2-canon {
         background: #b694d4;
         min-width: 20px;
         margin: auto;
+        margin-left: 20px;
       }
-  
-    .dark-mode &:after {
-      margin-left: 20px;
-    }
+
   }
   
