@@ -134,6 +134,10 @@
     transition: fill 0.3s ease-in-out; /* Smooth transition */
 }
 
+#LHC {
+    padding-bottom: 20px;
+}
+
 /* Apply dark mode gradient */
 .dark-mode .stemi-icon path {
     fill: url(#dark-gradient-2);
@@ -144,6 +148,17 @@
     height: auto;
 }
 
+
+.stemi-bg {
+    background-color: #f0f0f0; /* Or any other color */
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+
+.dark-mode .stemi-bg {
+    background-color: #172c48;
+  }
 
 /*
 #LHC {
