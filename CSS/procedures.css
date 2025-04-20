@@ -160,6 +160,14 @@
     background-color: #172c48;
   }
 
+.hyper {
+    color: black;
+  }
+  
+  .dark-mode .hyper {
+    color: white;
+  }
+
 /*
 #LHC {
     border-left: 5px solid #549dd1;

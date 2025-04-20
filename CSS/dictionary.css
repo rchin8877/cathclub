@@ -11,7 +11,7 @@ html, body {
 }
 
 #header {
-    background-color: #82c4f3; /* Light blue color */
+    background-color: #82c4f3; 
 }
 
 body {
@@ -20,13 +20,11 @@ body {
     transition: background-color 0.2s, color 0.1s;
   }
   
-/* General Dark Mode */
 .dark-mode {
     background-color: #283758;
     color: #d0d1d3;
   }
   
-  /* Navbar Dark Mode */
   .dark-mode #nav-bar {
     background-image: linear-gradient(to right, #172c48 7%, #632b2e 40%, #4b1e20 100%);
   }

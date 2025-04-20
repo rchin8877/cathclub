@@ -5,8 +5,8 @@
 }
 
 .container-fluid {
-  padding-left: 0; /* Remove left padding */
-  padding-right: 0; /* Remove right padding */
+  padding-left: 0; 
+  padding-right: 0; 
 }
 
 /*---------------banner section----------->*/
@@ -75,8 +75,8 @@
   }
 
 .content-title {
-    position: relative;
-    /* Adding padding on the left to avoid content overlap with border */
+  /* Adding padding on the left to avoid content overlap with border */
+  position: relative;
 }
 
 #workflow {
@@ -86,7 +86,6 @@
 
 .content {
     position: relative;
-    /* Adding padding on the left to avoid content overlap with border */
     padding-left: 5rem;
     padding-right: 2rem;
 }
@@ -108,7 +107,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 5px; /* Width of the left border */
+  width: 5px; 
   background: linear-gradient(to bottom, #172c48, #632b2e, #4b1e20);
   border-radius: 4px;
 }
@@ -239,7 +238,6 @@ body.dark-mode .h3-step5 {
   fill: url(#light-gradient-2);
 }
 
-/* Dark Mode */
 .dark-mode .svg-path-2 {
   fill: url(#dark-gradient-2);
 }
@@ -248,13 +246,11 @@ body.dark-mode .h3-step5 {
   fill: url(#light-gradient-3);
 }
 
-/* Dark Mode */
 .dark-mode .svg-path-3 {
   fill: url(#dark-gradient-3);
 }
 
-
-#nothing {
+#color-palette {
   light-colors: #0e588d #549dd1 #e8a8ab #f12a34;
   dark-colors: #2a4262 #406da8 #784c4e #4b1e20;
 
