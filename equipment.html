@@ -347,6 +347,15 @@
                 <li>Go to browser > local database and delete an old studies folder by right clicking. </li>
                 <li>May happen with long TAVI cases in which many runs are fluorostored and using higher frame rates. </li>
             </ul>
+
+            <h3>Images not sending to PACS </h3>
+            <ul>
+                <li>Reminder: Images are sent from the Artis -> Syngovia -> Intellispace and (a while later) PACS</li>
+                <li>Double-check if you entered the correct pt details if done manually (its okay, happens to everyone esp during a sudden STEMI!)</li>
+                <li>Check if the images have been sent to Syngovia from the Artis. If the pt had a recent examination in the same lab, the current exam will be coupled under that same pt file, so open the browser, type the first letter of their name and see if it is there. </li>
+                <li>Might sound silly, but also check you have indeed saved any images esp in EP where acquisitions may not be taken. </li>
+                <li>To push the image to PACS manually, you can do so by opening the browser, selecting the images and sending to PACS just like with 3D spins. </li>
+            </ul>
     </div>
 </section>
 <!----------------------- CANON ------------------------>
@@ -413,15 +422,14 @@
           <h3 style="color:#c75b61">Canon Troubleshooting</h3>
           <ul>
             <li>Emergency stop button accidentally pressed: all movement is stopped EXCEPT longitudinal and lateral movement. </li>
-            <li>Hardware errors (<b>H-errors</b>) 
-            </br><i>Typically appears when movement is blocked.</i>
+            <li>To reset Hardware errors (<b>H-errors</b>) 
                 <ol>
                     <li>Press the Emergency Stop Button</li>
                     <li>Wait for 5 seconds</li>
                     <li>Press the <b>Power Reset Button</b> located near the table base. All mechanical functions will be reset. </li>
                 </ol>
-            </li>
-        </ul>
+          </ul>
+
             <div class="row mt-1 table_img d-flex justify-content-center">
                 <div class="col-md-9" >
                   <figure>
@@ -437,6 +445,18 @@
                 </ol>
             </li>
         </div>
+
+        <h3>Error in image transfer to server</h3>
+          <ul>
+              <li>May be an issue with the PACS server (e.g. temporary outage).</li>
+              <li>To manually push the images: 
+                <ol>
+                    <li>Go to the screen where you start the examination/select the pt.</li>
+                    <!--<li>Select directory tab</li>
+                    <li>Select images you want and drag them into the right hand side </li> -->
+                </ol> 
+            </li>
+          </ul>
     </div>
 </section>
 
@@ -526,6 +546,14 @@
                     <li>Let the team know our screens are malfunctioning </li>
                     <li>HARD restart (soft restart wasted time and doesn't appear to do anything)</li>
                     <li>Otherwise continue with case, try to use the CR screens to follow along and reference/store/filter. </li>
+                </ul>
+
+                <h3>Images not sending to PACS</h3>
+                <ul>
+                    <li>If it affecting the case/needs to be fixed urgently, call the supervisor to let them know asap.</li>
+                    <li>If it is not affecting the case, continue and do not try to identify the issue/troubleshoot until after the case is finished - focus on the case first.</li>
+                    <li>After the case has finished, communicate with drs that there is an error in image transferring to PACS at the moment but you have let the supervisor know and they're working on it. </li>
+                    <li>Refer to Siemens or Canon specific steps to manually push image. </li>
                 </ul>
         </div>
     </section>
