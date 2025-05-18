@@ -5,6 +5,8 @@
         Pregnant pts 
         High dose 
     How to do quick measurements 
+    Fix the scroll up button on the sidenotes page 
+    Add Canon equipment! Pedal, controls, back of tube controls 
 
 10/4/2025 
     Go through each page and check content!
@@ -17,7 +19,7 @@
     Label images: store rooms, scrubs + TOE
     How to do quick measurements 
     Dev 
-        Line dividers in equipment !
+        DONE - Line dividers in equipment !
     By the end of ur training:
         Where can you find more information?
             Ask the doctors/nurses/techs! Or fellow radiographers 
