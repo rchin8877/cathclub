@@ -1,5 +1,6 @@
 ## 🩺 Description  
 Welcome to the **Cath Club** — a resource hub for new staff and students entering the cardiac catheterization lab (Cath Lab)!  
+Visit the site at: [cathclub](https://rchin8877.github.io/cathclub/)
 
 This site is tailored specifically for **medical imaging technologists or students** working with **Siemens** equipment 🖥️.  
 It provides structured, clear, and accessible content covering:  
