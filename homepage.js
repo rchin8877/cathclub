@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const myOffcanvas = document.getElementById('top-navbar');
-    const anatomyLink = document.getElementById("navbarDropdown");
+    const introLink = document.getElementById("navbarDropdownIntro");
+    const anatomyLink = document.getElementById("navbarDropdownAnatomy");
     const proceduresLink = document.getElementById("navbarDropdownProcedures");
     const equipmentLink = document.getElementById("navbarDropdownEquipment");
 
@@ -121,10 +122,12 @@ toggleSwitch.addEventListener("click", () => {
     /// toggles dropdown when offcanvas is shown ///
     function toggleDropdownAttribute() {
         if (myOffcanvas.classList.contains("show")) {
+            introLink.setAttribute("data-bs-toggle", "dropdown");
             anatomyLink.setAttribute("data-bs-toggle", "dropdown");
             proceduresLink.setAttribute("data-bs-toggle", "dropdown");
             equipmentLink.setAttribute("data-bs-toggle", "dropdown");
         } else {
+            introLink.setAttribute("data-bs-toggle", "dropdown");
             anatomyLink.removeAttribute("data-bs-toggle");
             proceduresLink.removeAttribute("data-bs-toggle");
             equipmentLink.removeAttribute("data-bs-toggle");
