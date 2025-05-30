@@ -1,4 +1,4 @@
--------------------------------------------------WORKFLOW----------------------------------------------
+-------------------------------------------------WORKFLOW-----------------------
 Workflow
     1. Prepare pt in the room
         Ideally be in room for time-out (should occur prior to pt transfer)

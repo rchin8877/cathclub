@@ -1,15 +1,25 @@
+18/5/2025
+     Go through each page and check content!
+     Edge cases 
+        TAVI trial cases, mask shifting for DSA run 
+        Pregnant pts 
+        High dose 
+    How to do quick measurements 
+    Fix the scroll up button on the sidenotes page 
+    Add Canon equipment! Pedal, controls, back of tube controls 
+
 10/4/2025 
     Go through each page and check content!
-    Anatomy tab not working
+    DONE - Anatomy tab not working
     TAVIs
         Trial Cases
         Mask shifting for DSA
-    Troubleshooting
+    DONE - Troubleshooting
         Storage running out (e.g. for TAVI trial case where we're fluorosaving a lot) - on the Artis screen, go to browser -> local database and right click AN OLD to delete 
     Label images: store rooms, scrubs + TOE
     How to do quick measurements 
     Dev 
-        Line dividers in equipment !
+        DONE - Line dividers in equipment !
     By the end of ur training:
         Where can you find more information?
             Ask the doctors/nurses/techs! Or fellow radiographers 
