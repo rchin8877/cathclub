@@ -168,6 +168,11 @@ toggleSwitch.addEventListener("click", () => {
         let noResultsRow = document.getElementById("noResultsRow"); // Check if the 'No results' row exists
         let found = false;
 
+        // Ensure the noResultsRow does not remain with each new search
+        if (noResultsRow) {
+            noResultsRow.remove();
+        }
+
         // Loop through all table rows, and hide those that don't match the search query
         for (let i = 1; i < tr.length; i++) { // Start from 1 to skip the header row
             const td = tr[i].getElementsByTagName('td'); //whole row including term and definition, 
