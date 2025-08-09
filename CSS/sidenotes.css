@@ -1,0 +1,7 @@
+.hyper {
+  color: black;
+}
+
+.dark-mode .hyper {
+  color: white;
+}
